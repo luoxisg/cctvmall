@@ -1,66 +1,51 @@
-# Online Export README
+# HDB Cloud BMS-CCTV / VA / Footfall Obsidian Vault
 
-## What Is Included
+Main entry page: [[00_Dashboard/01_Project Dashboard]]
 
-The `Online_Export` folder contains a clean, non-sensitive management-summary version of the PMO dashboard:
+This Obsidian vault is used to manage the HDB Cloud BMS-CCTV / VA / Footfall deployment project.
 
-- `index.md`
-- `01_Project Dashboard.md`
-- `02_Action Tracker.md`
-- `03_Submission Tracker.md`
-- `04_Site & Installation Tracker.md`
-- `05_Risk Commercial Decision Log.md`
-- `assets/`
+## Project Roles
 
-This export is suitable for controlled online sharing at management-summary level only.
+- HDB: Client / owner
+- Univers: Cloud BMS and overall integration lead
+- Xjera Labs: CCTV / Video Analytics / Footfall subsystem
+- MA / Building Management: Site access, survey support and sign-off
+- Installer / Contractor: Physical installation, cabling, testing and handover support
 
-## What Is Excluded
+## Dashboard Structure
 
-The following are intentionally excluded from the online export:
+The main dashboard set in `00_Dashboard` has been simplified into 5 core project control pages:
 
-- Private email content and raw email files
-- Worker records and personal identifiers
-- FIN / IC details
-- Payment details and claim amounts
-- Sensitive subcontractor rate details
-- Internal technical notes
-- Raw attachments
-- Signed source documents
-- Detailed testing sheets, punch lists and handover evidence
+- `01_Project Dashboard`: Management homepage, deadlines, KPI overview, priority sites and blockers
+- `02_Action Tracker`: Open, blocked, waiting and completed action control
+- `03_Submission Tracker`: Submission packs, checklist items, missing documents and blockers
+- `04_Site & Installation Tracker`: Site status, subcontractor readiness, installation, testing and handover
+- `05_Risk Commercial Decision Log`: Risks, variation items, commercial assumptions and decisions
 
-## Data Handling Rules Used
+Older dashboard pages are retained in `00_Dashboard/_Archive` when needed for traceability.
 
-- Personal data has been removed or generalized
-- Sensitive commercial figures are replaced with `Internal / Confidential`
-- Unverified fields are shown as `TBC` or `Pending Verification`
-- No new facts have been invented
+## Folder Structure
 
-## Publishing Options
+- `00_Dashboard`: Simplified dashboard and project control pages
+- `01_Sites`: Site-level notes for each mall or property
+- `02_CCTV_VA`: CCTV, video analytics, equipment and cabling notes
+- `03_Footfall`: Footfall counter quantity, deployment and device notes
+- `04_Survey_Report`: Site survey findings and MA / HDB sign-off records
+- `05_HDB_Requirements`: HDB requirements, tender documents and specifications
+- `06_Emails_Meetings`: Important emails, meeting notes and action items
+- `07_Attachments`: Original PDF, Excel, image, JSON, ZIP and supporting files
+- `08_Bases`: Obsidian Bases database views
+- `09_Templates`: Reusable note templates
+- `10_Subcontractors`: Subcontractor records, compliance, rate cards and evaluations
+- `11_Installation_Management`: Installation trackers, progress, defects and handover controls
+- `12_Testing_QA_Handover`: Testing, QA, defect and handover control notes
+- `13_Material_Inventory`: Material control, procurement, allocation and balance tracking
+- `14_Payment_Claims`: Payment, invoice, claim and approval tracking
+- `15_Milestone_Weekly_Lookahead`: Milestones, blockers and lookahead planning
+- `16_Financial_Model`: Financial and revenue model working area
+- `_Archive`: Archived pages and historical project control material
 
-### Obsidian Publish
+## Key Principle
 
-1. Open the `Online_Export` folder as a separate Obsidian vault, or copy it into a publish-safe vault.
-2. Review links and formatting.
-3. Publish only the pages inside `Online_Export`.
-
-### GitHub Pages
-
-1. Put `Online_Export` in a GitHub repository.
-2. Convert the Markdown files to a simple static site if needed, or use a docs-friendly generator such as MkDocs, Docusaurus or Quartz.
-3. Publish the generated site with GitHub Pages.
-
-### Cloudflare Pages
-
-1. Upload a repository or generated static site based on `Online_Export`.
-2. Configure the build to publish Markdown as a static website.
-3. Review the final public output before sharing.
-
-### Google Drive Shared HTML / PDF
-
-1. Export the Markdown pages to PDF or HTML.
-2. Upload the exported files to Google Drive.
-3. Share only the sanitized output files, not the internal vault.
-
-## Final Reminder
-
-This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
+Obsidian is used for project knowledge, document indexing, responsibility boundaries, project controls and submission tracking.
+Excel remains the master tool for detailed CCTV point lists, cabling quantities, cost calculations and export-based action plan sharing where required.
