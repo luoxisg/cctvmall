@@ -24,7 +24,7 @@ cssclasses:
 | Client / Owner | HDB |
 | Integration Lead | Univers |
 | CCTV / VA / Footfall Subsystem | Xjera Labs |
-| Priority Focus | Loyang Point plus second Phase 1 site confirmation |
+| Priority Focus | Loyang Point & Canberra Plaza (Xjera CCTV) \| Loyang Point & Rivervale Plaza (Univers BMS) |
 | Overall Status | Pending Verification |
 
 ## Critical Deadlines
@@ -116,7 +116,7 @@ cssclasses:
 | Site | Current Note | Control Link | Status |
 |---|---|---|---|
 | Loyang Point | Survey report source found in vault | [[03_Submission Tracker]] | In Preparation |
-| Canberra Plaza | Submission path under review | [[03_Submission Tracker]] | Pending Verification |
+| Canberra Plaza | Confirmed Phase 1 CCTV site 鈥?survey report (SN 5) still required | [[03_Submission Tracker]] | In Preparation |
 | Rivervale Plaza | Site-level control summary required | [[04_Site & Installation Tracker]] | TBC |
 | Parc Point | Survey coordination noted in email evidence | [[04_Site & Installation Tracker]] | Pending Verification |
 
@@ -124,17 +124,16 @@ cssclasses:
 
 - Review and update [[CEO Arrangements]] as the first management priority.
 - Review [[06_Emails_Meetings/Email Action Audit Report|Email Action Audit Report]] and confirm email-driven follow-up as the second priority.
-- Confirm and complete the 5-document package for Loyang Point before **4 May 2026**.
-- Confirm the actual second Phase 1 site before using Canberra Plaza as an active submission assumption.
-- Verify Canberra Plaza survey evidence and submission path before treating it as ready.
+- Confirm and complete the 5-document package for **Loyang Point** before **4 May 2026**.
+- Confirm and complete the 5-document package for **Canberra Plaza** before **4 May 2026** 鈥?site role confirmed, survey report (SN 5 / CR-06) still required.
+- Note: BMS Phase 1 (Univers) = Loyang Point + Rivervale Plaza; CCTV Phase 1 (Xjera) = Loyang Point + Canberra Plaza.
 - Review blocked or externally dependent actions and chase owners where required.
 
 ## Key Blockers
 
 | Blocker | Impact | Control Page | Status |
 |---|---|---|---|
-| Second Phase 1 site confirmation | Affects submission scope and site readiness | [[03_Submission Tracker]] | Open |
-| Canberra Plaza survey and sign-off evidence | Affects submission readiness | [[03_Submission Tracker]] | Pending Verification |
+| Canberra Plaza survey report and MA/HDB sign-off (CR-06) | Affects Canberra Plaza submission readiness | [[03_Submission Tracker]] | Open |
 | Power point, DB tap-in, and LEW scope clarification | Affects cabling and commercial assumptions | [[05_Risk Commercial Decision Log]] | Open |
 | Lift contractor dependency for elevator camera items | Affects installation completion dates | [[04_Site & Installation Tracker]] | Open |
 | Parc Point survey response from MA / HDB | Affects site planning | [[04_Site & Installation Tracker]] | Waiting |
