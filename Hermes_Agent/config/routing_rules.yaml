@@ -1,0 +1,125 @@
+defaults:
+  project_name: HDB Cloud BMS-CCTV / VA / Footfall Deployment
+  default_status: Pending Verification
+  default_priority: TBC
+  default_evidence_status: Pending Verification
+
+rules:
+  - name: ceo_arrangement
+    route: CEO_Arrangement
+    target_tracker: CEO_Arrangement
+    workstream: CEO Arrangement
+    priority: Critical
+    create_action: true
+    create_ceo_note: true
+    create_message_note: false
+    keywords:
+      - ceo
+      - schedule
+      - scheduling
+      - calendar
+      - meeting
+      - call
+      - visit
+      - arrangement
+      - appointment
+      - travel
+      - decision
+
+  - name: email_meeting
+    route: 06_Emails_Meetings
+    target_tracker: 02_Action Tracker
+    workstream: Email / Meeting
+    priority: High
+    create_action: true
+    create_ceo_note: false
+    create_message_note: true
+    keywords:
+      - hdb
+      - univers
+      - xjera
+      - email
+      - meeting
+      - minutes
+      - follow up
+      - sign-off
+      - sign off
+
+  - name: submission_documents
+    route: 03_Submission Tracker
+    target_tracker: 03_Submission Tracker
+    workstream: Submission
+    priority: High
+    create_action: true
+    create_ceo_note: false
+    create_message_note: true
+    keywords:
+      - device catalogue
+      - equipment list
+      - floor plan
+      - markup
+      - cable route
+      - power point tap-in
+      - power point tap in
+      - survey report
+      - submission
+      - sign-off
+      - sign off
+
+  - name: site_installation
+    route: 04_Site & Installation Tracker
+    target_tracker: 04_Site & Installation Tracker
+    workstream: Site & Installation
+    priority: High
+    create_action: true
+    create_ceo_note: false
+    create_message_note: true
+    keywords:
+      - site survey
+      - cabling
+      - cable
+      - camera
+      - relocation
+      - elevator
+      - lift
+      - footfall
+      - poe
+      - nvr
+      - subcontractor
+      - installer
+      - installation
+      - testing
+      - handover
+
+  - name: risk_commercial
+    route: 05_Risk Commercial Decision Log
+    target_tracker: 05_Risk Commercial Decision Log
+    workstream: Commercial / VO
+    priority: High
+    create_action: true
+    create_ceo_note: false
+    create_message_note: true
+    keywords:
+      - vo
+      - variation
+      - claim
+      - payment
+      - invoice
+      - cost
+      - commercial
+      - rate card
+      - lew
+      - db tap-in
+      - after-hours
+      - after hours
+      - fire stopping
+      - core drilling
+
+fallback:
+  route: raw
+  target_tracker: Hermes_Agent/inbox/raw
+  workstream: Unknown
+  priority: TBC
+  create_action: false
+  create_ceo_note: false
+  create_message_note: false

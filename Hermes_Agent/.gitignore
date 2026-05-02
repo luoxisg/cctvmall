@@ -1,0 +1,12 @@
+.env
+scripts/__pycache__/
+scripts/*.pyc
+logs/*.log
+processed/*
+!processed/.gitkeep
+inbox/telegram/*
+!inbox/telegram/.gitkeep
+inbox/email/*
+!inbox/email/.gitkeep
+inbox/raw/*
+!inbox/raw/.gitkeep

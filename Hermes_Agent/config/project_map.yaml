@@ -1,0 +1,51 @@
+project:
+  name: HDB Cloud BMS-CCTV / VA / Footfall Deployment
+  client: HDB
+  integration_lead: Univers
+  subsystem_lead: Xjera Labs
+
+paths:
+  dashboard_folder: 00_Dashboard
+  actions_folder: 08_Bases/Actions
+  emails_folder: 06_Emails_Meetings
+  online_export_folder: Online_Export
+  ceo_folder: CEO_Arrangement
+  ceo_inbox: CEO_Arrangement/CEO Inbox.md
+  ceo_decision_queue: CEO_Arrangement/CEO Decision Queue.md
+  ceo_followup_tracker: CEO_Arrangement/CEO Follow-up Tracker.md
+  ceo_calendar_notes: CEO_Arrangement/CEO Calendar Notes.md
+
+dashboards:
+  project: 00_Dashboard/01_Project Dashboard.md
+  actions: 00_Dashboard/02_Action Tracker.md
+  submissions: 00_Dashboard/03_Submission Tracker.md
+  site_installation: 00_Dashboard/04_Site & Installation Tracker.md
+  risk_commercial: 00_Dashboard/05_Risk Commercial Decision Log.md
+  ceo: 00_Dashboard/CEO Arrangements.md
+
+export:
+  selected_pages:
+    - 00_Dashboard/01_Project Dashboard.md
+    - 00_Dashboard/02_Action Tracker.md
+    - 00_Dashboard/03_Submission Tracker.md
+    - 00_Dashboard/04_Site & Installation Tracker.md
+    - 00_Dashboard/05_Risk Commercial Decision Log.md
+
+sites:
+  - Loyang Point
+  - Canberra Plaza
+  - Rivervale Plaza
+  - Parc Point
+  - Northshore Plaza
+
+workstreams:
+  - Submission
+  - Site Survey
+  - Cabling
+  - Subcontractor
+  - Safety / PTW
+  - Installation
+  - Testing / QA
+  - Handover
+  - Commercial / VO
+  - Payment / Claim

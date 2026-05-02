@@ -1,0 +1,31 @@
+telegram:
+  allowed_user_ids:
+    - 7972061466
+  known_users:
+    "7972061466": Xi Luo
+  notes: Hermes bot owner allowed for local intake testing
+
+email:
+  trusted_domains:
+    - hdb.gov.sg
+    - univers.com
+    - xjeralabs.com
+  notes: TBC
+
+organizations:
+  HDB:
+    domains:
+      - hdb.gov.sg
+  Univers:
+    domains:
+      - univers.com
+  Xjera Labs:
+    domains:
+      - xjeralabs.com
+
+contacts:
+  - name: Xi Luo
+    organization: Xjera Labs
+    email: TBC
+    telegram_user_id: 7972061466
+    role: PMO owner / Hermes test user
