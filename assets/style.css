@@ -723,6 +723,18 @@ tr:last-child td {
   vertical-align: top;
 }
 
+.cc-check-cell {
+  width: 72px;
+  text-align: center;
+}
+
+.cc-check {
+  width: 18px;
+  height: 18px;
+  accent-color: #15803d;
+  cursor: default;
+}
+
 .cc-table th {
   font-size: 11px;
   letter-spacing: 0.08em;
@@ -1068,6 +1080,11 @@ tr:last-child td {
     text-align: left;
     flex-basis: 42%;
     flex-shrink: 0;
+  }
+
+  .cc-table tbody td.cc-check-cell {
+    justify-content: flex-start;
+    text-align: left;
   }
 }
 
