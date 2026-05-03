@@ -1036,7 +1036,6 @@ tr:last-child td {
   .cc-span-3 {
     grid-column: span 1;
   }
-}
 
   .cc-table thead {
     display: none;
