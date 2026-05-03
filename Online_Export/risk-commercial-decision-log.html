@@ -4,30 +4,93 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>05 Risk Commercial Decision Log</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css?v=e1620aa5f7">
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
-      <h1>05 Risk Commercial Decision Log</h1>
-      <p>Management-level risk, commercial and decision control summary.</p>
-      <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="project-dashboard.html">Project Dashboard</a>
-        <a href="action-tracker.html">Action Tracker</a>
-        <a href="submission-tracker.html">Submission Tracker</a>
-        <a href="site-installation-tracker.html">Site & Installation Tracker</a>
-        <a href="risk-commercial-decision-log.html">Risk Commercial Decision Log</a>
+  <div class="cc-shell">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
+      <div class="cc-brand">
+        <div class="cc-brand-eyebrow">PMO Command Center</div>
+        <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
+        <div class="cc-brand-tags">
+          <span class="cc-brand-tag">HDB</span>
+          <span class="cc-brand-tag">Univers</span>
+          <span class="cc-brand-tag success">Xjera</span>
+        </div>
       </div>
-    </section>
+      <div class="cc-nav-section">Public Dashboards</div>
+      <nav class="cc-sidebar-nav" aria-label="Public dashboards">
+          <a class="cc-nav-item" href="index.html"><span class="cc-nav-label">00 Executive Dashboard</span></a>
+          <a class="cc-nav-item" href="action-tracker.html"><span class="cc-nav-label">01 Action Tracker</span></a>
+          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">02 Mall Tracker</span></a>
+          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03 Submission Control</span></a>
+          <a class="cc-nav-item" href="bms-interface.html"><span class="cc-nav-label">04 BMS Interface</span></a>
+          <a class="cc-nav-item" href="cost-management.html"><span class="cc-nav-label">05 Cost Management</span></a>
+          <a class="cc-nav-item active" href="risk-commercial-decision-log.html"><span class="cc-nav-label">06 Risk Watchlist</span></a>
+          <a class="cc-nav-item" href="publishing-guide.html"><span class="cc-nav-label">07 Publishing Guide</span></a>
+      </nav>
+      <div class="cc-sidebar-foot">
+        <div class="cc-status-dot"></div>
+        <div>
+          <div class="cc-status-label">Pending Verification</div>
+          <div class="cc-status-meta">Public-safe export only</div>
+        </div>
+      </div>
+    </aside>
 
-    <div class="notice">
-      <strong>Disclaimer:</strong> This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
-    </div>
+    <main class="cc-main">
+      <header class="cc-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
+        <div>
+          <div class="cc-topbar-title">05 Risk Commercial Decision Log</div>
+          <div class="cc-topbar-subtitle">Management-level risk, commercial and decision control summary.</div>
+        </div>
+        <div class="cc-topbar-meta">
+          <span>Client: <strong>HDB</strong></span>
+          <span>Lead: <strong>Univers</strong></span>
+          <span>Subsystem: <strong>Xjera Labs</strong></span>
+          <span class="cc-badge">Pending Verification</span>
+        </div>
+      </header>
 
-    <section class="panel markdown-body">
+      <div class="cc-canvas">
+        <section class="cc-page-hero">
+          <div>
+            <div class="cc-page-eyebrow">Public Dashboard</div>
+            <h1>05 Risk Commercial Decision Log</h1>
+            <p>Management-level risk, commercial and decision control summary.</p>
+          </div>
+          <div class="cc-page-meta">
+            <span class="cc-badge">Management Summary</span>
+            <div class="cc-page-meta-note">Use this page for controlled browsing and status review.</div>
+          </div>
+        </section>
+
+        <section class="cc-linkbar">
+          <a class="cc-linkchip" href="index.html">Executive Dashboard</a>
+          <a class="cc-linkchip" href="action-tracker.html">Action Tracker</a>
+          <a class="cc-linkchip" href="site-installation-tracker.html">Mall Tracker</a>
+          <a class="cc-linkchip" href="submission-tracker.html">Submission Control</a>
+          <a class="cc-linkchip" href="bms-interface.html">BMS Interface</a>
+          <a class="cc-linkchip" href="cost-management.html">Cost Management</a>
+          <a class="cc-linkchip active" href="risk-commercial-decision-log.html">Risk Watchlist</a>
+          <a class="cc-linkchip" href="publishing-guide.html">Publishing Guide</a>
+        </section>
+
+        <section class="cc-noticebar">
+          <strong>Data note:</strong> This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
+        </section>
+
+        <section class="cc-grid">
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>05 Risk Commercial Decision Log</h2>
+              <span class="cc-panel-tag">Management summary</span>
+            </div>
+            <div class="cc-panel-body markdown-body cc-markdown">
 <h2>Cabling Risks</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Risk ID</th>
@@ -38,43 +101,43 @@
 </thead>
 <tbody>
 <tr>
-<td>CR-01</td>
-<td>Replace camera wrongly treated as new cabling scope</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-01</td>
+<td data-label="Risk">Replace camera wrongly treated as new cabling scope</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-02</td>
-<td>AC power point, DB tap-in, and LEW works assumed included</td>
-<td>Loyang Point</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-02</td>
+<td data-label="Risk">AC power point, DB tap-in, and LEW works assumed included</td>
+<td data-label="Site">Loyang Point</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-03</td>
-<td>Lift contractor confirmation and shutdown planning may delay elevator camera works</td>
-<td>Loyang Point</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-03</td>
+<td data-label="Risk">Lift contractor confirmation and shutdown planning may delay elevator camera works</td>
+<td data-label="Site">Loyang Point</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-04</td>
-<td>Footfall counters may be mixed into standard CCTV count and scope</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-04</td>
+<td data-label="Risk">Footfall counters may be mixed into standard CCTV count and scope</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-05</td>
-<td>Fire stopping, core drilling, after-hours access, and attendance fees may become unplanned cost</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-05</td>
+<td data-label="Risk">Fire stopping, core drilling, after-hours access, and attendance fees may become unplanned cost</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-06</td>
-<td>Canberra Plaza survey report and sign-off not confirmed in vault</td>
-<td>Canberra Plaza</td>
-<td>At Risk</td>
+<td data-label="Risk ID">CR-06</td>
+<td data-label="Risk">Canberra Plaza survey report and sign-off not confirmed in vault</td>
+<td data-label="Site">Canberra Plaza</td>
+<td data-label="Status">At Risk</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>General Project Risks</h2>
 <ul>
 <li>Submission scope may be wrong until the actual second Phase 1 site is confirmed.</li>
@@ -94,7 +157,7 @@
 </ul>
 <h3>Rate Card Status</h3>
 <h2>Payment / Claim Risks</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Risk</th>
@@ -104,24 +167,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Payment based on installed quantity without testing or handover completion</td>
-<td>TBC</td>
-<td>Requires verified payment control records</td>
+<td data-label="Risk">Payment based on installed quantity without testing or handover completion</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified payment control records</td>
 </tr>
 <tr>
-<td>Variation work claimed before approval or instruction</td>
-<td>TBC</td>
-<td>Requires verified VO and claim linkage</td>
+<td data-label="Risk">Variation work claimed before approval or instruction</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified VO and claim linkage</td>
 </tr>
 <tr>
-<td>Owner-supplied material mixed with labour claims</td>
-<td>TBC</td>
-<td>Requires verified commercial breakdown</td>
+<td data-label="Risk">Owner-supplied material mixed with labour claims</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified commercial breakdown</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Decision Log</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Decision ID</th>
@@ -131,37 +194,37 @@
 </thead>
 <tbody>
 <tr>
-<td>DL-001</td>
-<td>Replace camera work uses existing cabling and is not new cabling by default</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-001</td>
+<td data-label="Decision">Replace camera work uses existing cabling and is not new cabling by default</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-002</td>
-<td>Footfall counters stay in a separate control lane</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-002</td>
+<td data-label="Decision">Footfall counters stay in a separate control lane</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-003</td>
-<td>Elevator camera work requires separate lift contractor coordination</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-003</td>
+<td data-label="Decision">Elevator camera work requires separate lift contractor coordination</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-004</td>
-<td>Power, LEW, and exclusion costs must be tracked separately</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-004</td>
+<td data-label="Decision">Power, LEW, and exclusion costs must be tracked separately</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-005</td>
-<td>Keep source files in place and use notes as the control layer</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-005</td>
+<td data-label="Decision">Keep source files in place and use notes as the control layer</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-006</td>
-<td>Canberra Plaza stays at risk until survey evidence is confirmed</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-006</td>
+<td data-label="Decision">Canberra Plaza stays at risk until survey evidence is confirmed</td>
+<td data-label="Status">Active</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Open Commercial Issues</h2>
 <ul>
 <li>Power point, DB tap-in, and LEW scope still need confirmation.</li>
@@ -170,12 +233,52 @@
 </ul>
 <h2>Related Controls</h2>
 <ul>
-<li>Management summary: <a href="./project-dashboard.html">01_Project Dashboard</a></li>
+<li>Management summary: <a href="./index.html">01_Project Dashboard</a></li>
 <li>Action follow-up: <a href="./action-tracker.html">02_Action Tracker</a></li>
 <li>Submission control: <a href="./submission-tracker.html">03_Submission Tracker</a></li>
-<li>Site delivery control: <a href="./site-amp-installation-tracker.html">04_Site &amp; Installation Tracker</a></li>
+<li>Site delivery control: <a href="./site-installation-tracker.html">04_Site &amp; Installation Tracker</a></li>
 </ul>
-    </section>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
   </div>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

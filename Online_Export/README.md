@@ -5,11 +5,17 @@
 The `Online_Export` folder contains a clean, non-sensitive management-summary version of the PMO dashboard:
 
 - `index.md`
+- `index.html`
 - `01_Project Dashboard.md`
 - `02_Action Tracker.md`
 - `03_Submission Tracker.md`
 - `04_Site & Installation Tracker.md`
 - `05_Risk Commercial Decision Log.md`
+- `project-dashboard.html`
+- `action-tracker.html`
+- `submission-tracker.html`
+- `site-installation-tracker.html`
+- `risk-commercial-decision-log.html`
 - `assets/`
 
 This export is suitable for controlled online sharing at management-summary level only.
@@ -45,9 +51,9 @@ The following are intentionally excluded from the online export:
 
 ### GitHub Pages
 
-1. Put `Online_Export` in a GitHub repository.
-2. Convert the Markdown files to a simple static site if needed, or use a docs-friendly generator such as MkDocs, Docusaurus or Quartz.
-3. Publish the generated site with GitHub Pages.
+1. Put `Online_Export` in a GitHub repository or publishing branch.
+2. Publish the generated HTML package directly with GitHub Pages.
+3. Review the final public output before sharing.
 
 ### Cloudflare Pages
 
