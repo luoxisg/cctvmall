@@ -1897,3 +1897,133 @@ tr:last-child td {
     flex-direction: column;
   }
 }
+
+.cc-live-map {
+  width: 100%;
+  min-height: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.cc-map-fallback[hidden] {
+  display: none;
+}
+
+.cc-map-fallback img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.cc-filter-chip {
+  cursor: pointer;
+}
+
+.cc-filter-chip strong {
+  font-size: 0.82em;
+}
+
+.cc-filter-context {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  color: #9ca3af;
+  font-size: 0.92rem;
+}
+
+.cc-map-div-icon {
+  background: transparent;
+  border: none;
+}
+
+.cc-map-marker.is-unverified {
+  opacity: 0.45;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.03);
+}
+
+.leaflet-container {
+  background: #0b1220;
+  font: inherit;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #111827;
+  color: #e5e7eb;
+  border: 1px solid #223149;
+}
+
+.leaflet-popup-content {
+  margin: 14px 16px;
+  min-width: 260px;
+}
+
+.cc-map-popup-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.cc-map-popup-meta {
+  margin-top: 4px;
+  color: #9ca3af;
+  font-size: 0.88rem;
+}
+
+.cc-map-popup-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  margin-top: 12px;
+}
+
+.cc-map-popup-grid div,
+.cc-map-popup-note {
+  display: grid;
+  gap: 2px;
+}
+
+.cc-map-popup-grid strong,
+.cc-map-popup-note strong {
+  color: #8ce5ff;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cc-map-popup-note {
+  margin-top: 12px;
+}
+
+.cc-map-popup-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #8ce5ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  background: rgba(0, 174, 239, 0.18);
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  background: rgba(0, 174, 239, 0.85);
+  color: #08111f;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .cc-live-map {
+    min-height: 420px;
+  }
+
+  .cc-map-popup-grid {
+    grid-template-columns: 1fr;
+  }
+}

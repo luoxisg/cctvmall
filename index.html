@@ -4,7 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>00 Executive Cockpit</title>
-  <link rel="stylesheet" href="assets/style.css?v=80b78b00bb">
+  <link rel="stylesheet" href="assets/style.css?v=03a1b715bb">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 </head>
 <body class="cc-cockpit-page">
   <div class="cc-shell">
@@ -114,7 +117,7 @@
         </section>
 
         <section class="cc-grid">
-          <article class="cc-panel cc-span-2">
+          <article class="cc-panel cc-span-2 cc-map-panel">
             <div class="cc-panel-head">
               <h2>Mall Coverage Live Map</h2>
               <span class="cc-panel-tag">Executive view</span>
@@ -124,36 +127,40 @@
               <div class="cc-filter-group">
                 <div class="cc-filter-group-title">Stage Filter</div>
                 <div class="cc-map-toolbar">
-<span class="cc-filter-chip active">All <strong>41</strong></span>
-<span class="cc-filter-chip">Not Started <strong>37</strong></span>
-<span class="cc-filter-chip">Site Survey <strong>1</strong></span>
-<span class="cc-filter-chip">Installation <strong>0</strong></span>
-<span class="cc-filter-chip">Testing <strong>0</strong></span>
-<span class="cc-filter-chip">Submitting <strong>0</strong></span>
-<span class="cc-filter-chip">BMS Interface <strong>1</strong></span>
-<span class="cc-filter-chip">Completed <strong>0</strong></span>
-<span class="cc-filter-chip">Blocked <strong>0</strong></span>
-<span class="cc-filter-chip">At Risk <strong>4</strong></span>
+<button class="cc-filter-chip active" type="button" data-filter-type="stage" data-filter-value="All">All <strong>41</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Not Started">Not Started <strong>37</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Site Survey">Site Survey <strong>1</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Installation">Installation <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Testing">Testing <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Submitting">Submitting <strong>2</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="BMS Interface">BMS Interface <strong>1</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Completed">Completed <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Blocked">Blocked <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="At Risk">At Risk <strong>2</strong></button>
                 </div>
               </div>
               <div class="cc-filter-group">
                 <div class="cc-filter-group-title">Region Filter</div>
                 <div class="cc-map-toolbar">
-<span class="cc-filter-chip is-region">North <strong>9</strong></span>
-<span class="cc-filter-chip is-region">North-East <strong>8</strong></span>
-<span class="cc-filter-chip is-region">East <strong>5</strong></span>
-<span class="cc-filter-chip is-region">Central / South <strong>9</strong></span>
-<span class="cc-filter-chip is-region">West <strong>10</strong></span>
+<button class="cc-filter-chip is-region active" type="button" data-filter-type="region" data-filter-value="All">All <strong>41</strong></button>
+<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="North">North <strong>9</strong></button>
+<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="North-East">North-East <strong>8</strong></button>
+<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="East">East <strong>5</strong></button>
+<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="Central / South">Central / South <strong>9</strong></button>
+<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="West">West <strong>10</strong></button>
                 </div>
               </div>
               </div>
               <div class="cc-map-shell">
-                <div class="cc-map-banner">OneMap / Mapbox / Leaflet-ready container - static fallback active</div>
-                <div class="cc-map-frame">
-                  <img src="assets/images/mall-map.png" alt="Singapore mall coverage map for the CCTV, VA, Footfall and BMS programme">
+                <div class="cc-map-banner">Live electronic map API active - OneMap + Leaflet preferred</div>
+                <div id="mall-live-map" class="cc-live-map" aria-label="Singapore live mall coverage map" data-default-lat="1.3521" data-default-lng="103.8198" data-default-zoom="11"></div>
+                <div class="cc-map-fallback" hidden>
+                  <img src="assets/images/mall-map.png" alt="Static fallback map for Singapore mall coverage">
+                  <div class="cc-map-footnote">Static fallback shown because live map API is unavailable.</div>
                 </div>
-                <div class="cc-map-footnote">41 main mall / complex markers are planned here. The image remains the public-safe fallback until live coordinates, marker clustering and filter callbacks are wired to a real map API.</div>
+                <div class="cc-map-footnote">Live map markers are generated from the exported GeoJSON file. Unverified locations are kept visible but flagged, and the fallback image only appears if the live map stack fails.</div>
               </div>
+              <div class="cc-filter-context">Showing all malls</div>
               <div class="cc-map-context">
                 <div class="cc-map-legend">
                   <div class="cc-filter-group-title">Marker Legend</div>
@@ -197,7 +204,7 @@
                       <span class="cc-map-marker is-risk"></span>
                       <div>
                         <div class="cc-map-roster-title">Loyang Point</div>
-                        <div class="cc-map-roster-meta">East · Submitting</div>
+                        <div class="cc-map-roster-meta">East / Submitting</div>
                       </div>
                     </div>
                     <span class="cc-state is-risk">At Risk</span>
@@ -207,7 +214,7 @@
                       <span class="cc-map-marker is-risk"></span>
                       <div>
                         <div class="cc-map-roster-title">Canberra Plaza</div>
-                        <div class="cc-map-roster-meta">North · Submitting</div>
+                        <div class="cc-map-roster-meta">North / Submitting</div>
                       </div>
                     </div>
                     <span class="cc-state is-risk">At Risk</span>
@@ -217,7 +224,7 @@
                       <span class="cc-map-marker is-bms"></span>
                       <div>
                         <div class="cc-map-roster-title">Rivervale Plaza</div>
-                        <div class="cc-map-roster-meta">North-East · BMS Interface</div>
+                        <div class="cc-map-roster-meta">North-East / BMS Interface</div>
                       </div>
                     </div>
                     <span class="cc-state is-progress">In Preparation</span>
@@ -227,7 +234,7 @@
                       <span class="cc-map-marker is-survey"></span>
                       <div>
                         <div class="cc-map-roster-title">Parc Point</div>
-                        <div class="cc-map-roster-meta">West · Site Survey</div>
+                        <div class="cc-map-roster-meta">West / Site Survey</div>
                       </div>
                     </div>
                     <span class="cc-state is-waiting">Waiting</span>
@@ -243,7 +250,7 @@
             </div>
             <div class="cc-panel-body">
               <div class="cc-alert-stack">
-              <a class="cc-alert-card is-is-risk" href="submission-tracker.html">
+              <a class="cc-alert-card is-risk" href="submission-tracker.html">
                 <div class="cc-alert-head">
                   <div class="cc-alert-title">Critical Deadline</div>
                   <span class="cc-state is-risk">Critical</span>
@@ -255,7 +262,7 @@
                   <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Lock the missing survey evidence, freeze the five-document package and escalate any owner gap within the week.</span></div>
                 </div>
               </a>
-              <a class="cc-alert-card is-is-waiting" href="bms-interface.html">
+              <a class="cc-alert-card is-waiting" href="bms-interface.html">
                 <div class="cc-alert-head">
                   <div class="cc-alert-title">BMS Interface Risk</div>
                   <span class="cc-state is-waiting">Warning</span>
@@ -267,7 +274,7 @@
                   <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Freeze the interface owner, confirm event catalogue and move the pending mapping list into a tested handoff path.</span></div>
                 </div>
               </a>
-              <a class="cc-alert-card is-is-waiting" href="cost-management.html">
+              <a class="cc-alert-card is-waiting" href="cost-management.html">
                 <div class="cc-alert-head">
                   <div class="cc-alert-title">Cost / VO Risk</div>
                   <span class="cc-state is-waiting">Warning</span>
@@ -279,7 +286,7 @@
                   <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Close the point-split baseline and quantify any MA-driven addition before procurement or subcontractor assumptions drift.</span></div>
                 </div>
               </a>
-              <a class="cc-alert-card is-is-muted" href="action-tracker.html">
+              <a class="cc-alert-card is-muted" href="action-tracker.html">
                 <div class="cc-alert-head">
                   <div class="cc-alert-title">Site Access Risk</div>
                   <span class="cc-state is-muted">Info</span>
@@ -358,7 +365,7 @@
               </div>
             </div>
           </article>
-          <article class="cc-panel cc-span-3">
+          <article class="cc-panel cc-span-3 cc-stage-board">
             <div class="cc-panel-head">
               <h2>Mall Stage + Installation Data Control Board</h2>
               <span class="cc-panel-tag">41-mall control view</span>
@@ -617,6 +624,10 @@
       </div>
     </main>
   </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="assets/map-config.js"></script>
+  <script src="assets/map-runtime.js"></script>
 <script>
   (() => {
     const shell = document.querySelector('.cc-shell');
