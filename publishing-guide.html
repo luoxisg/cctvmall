@@ -23,10 +23,12 @@
       <nav class="cc-sidebar-nav" aria-label="Public dashboards">
           <a class="cc-nav-item" href="index.html"><span class="cc-nav-label">00 Executive Dashboard</span></a>
           <a class="cc-nav-item" href="action-tracker.html"><span class="cc-nav-label">01 Action Tracker</span></a>
-          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">02 Site & Installation</span></a>
-          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03 Submission Tracker</span></a>
-          <a class="cc-nav-item" href="risk-commercial-decision-log.html"><span class="cc-nav-label">04 Risk / Commercial</span></a>
-          <a class="cc-nav-item active" href="publishing-guide.html"><span class="cc-nav-label">05 Publishing Guide</span></a>
+          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">02 Mall Tracker</span></a>
+          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03 Submission Control</span></a>
+          <a class="cc-nav-item" href="bms-interface.html"><span class="cc-nav-label">04 BMS Interface</span></a>
+          <a class="cc-nav-item" href="cost-management.html"><span class="cc-nav-label">05 Cost Management</span></a>
+          <a class="cc-nav-item" href="risk-commercial-decision-log.html"><span class="cc-nav-label">06 Risk Watchlist</span></a>
+          <a class="cc-nav-item active" href="publishing-guide.html"><span class="cc-nav-label">07 Publishing Guide</span></a>
       </nav>
       <div class="cc-sidebar-foot">
         <div class="cc-status-dot"></div>
@@ -56,13 +58,13 @@
         <section class="cc-kpi-row">
         <article class="cc-kpi">
           <div class="cc-kpi-label">Dashboard Views</div>
-          <div class="cc-kpi-value">6<span>public pages</span></div>
-          <p class="cc-kpi-note">Executive dashboard plus four trackers and one publishing guide.</p>
+          <div class="cc-kpi-value">8<span>public pages</span></div>
+          <p class="cc-kpi-note">Executive dashboard, six execution views and one publishing guide.</p>
         </article>
         <article class="cc-kpi">
           <div class="cc-kpi-label">HTML Screens</div>
-          <div class="cc-kpi-value">6<span>safe pages</span></div>
-          <p class="cc-kpi-note">Includes executive dashboard, four trackers and one publishing guide.</p>
+          <div class="cc-kpi-value">8<span>safe pages</span></div>
+          <p class="cc-kpi-note">Includes dashboard, tracker pages, cost and interface placeholders, plus publishing guide.</p>
         </article>
         <article class="cc-kpi">
           <div class="cc-kpi-label">Package Mode</div>
@@ -94,7 +96,7 @@
           <article class="cc-panel">
             <div class="cc-panel-head">
               <h2>Dashboard Stack</h2>
-              <span class="cc-panel-tag">5 views</span>
+              <span class="cc-panel-tag">8 views</span>
             </div>
             <div class="cc-panel-body cc-list">
             <div class="cc-list-row">
@@ -108,20 +110,30 @@
             </div>
             <p class="cc-row-note">Management-level action tracking for open, blocked, waiting and pending verification items.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="site-installation-tracker.html">Site & Installation</a>
+              <a class="cc-inline-link" href="site-installation-tracker.html">Mall Tracker</a>
               <span class="cc-chip">Execution</span>
             </div>
-            <p class="cc-row-note">Priority sites, installation path, subcontractor readiness, QA and handover summary.</p>
+            <p class="cc-row-note">Multi-mall site survey, installation, cabling, power, testing and handover control.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="submission-tracker.html">Submission Tracker</a>
+              <a class="cc-inline-link" href="submission-tracker.html">Submission Control</a>
               <span class="cc-chip">Regulatory</span>
             </div>
             <p class="cc-row-note">Submission readiness, checklist summary, missing documents and key blockers.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="risk-commercial-decision-log.html">Risk / Commercial</a>
-              <span class="cc-chip">Decision</span>
+              <a class="cc-inline-link" href="bms-interface.html">BMS Interface</a>
+              <span class="cc-chip">Integration</span>
             </div>
-            <p class="cc-row-note">Cabling risks, variation items, commercial assumptions and decision summary.</p>
+            <p class="cc-row-note">Cloud BMS interface dependencies, data types, owners and testing readiness.</p>
+            <div class="cc-list-row">
+              <a class="cc-inline-link" href="cost-management.html">Cost Management</a>
+              <span class="cc-chip">Cost</span>
+            </div>
+            <p class="cc-row-note">Procurement, materials, subcontractor, VO, claim and payment control.</p>
+            <div class="cc-list-row">
+              <a class="cc-inline-link" href="risk-commercial-decision-log.html">Risk Watchlist</a>
+              <span class="cc-chip">Risk</span>
+            </div>
+            <p class="cc-row-note">Cabling, power, lift, access and submission risks needing active control.</p>
             <div class="cc-list-row">
               <a class="cc-inline-link" href="publishing-guide.html">Publishing Guide</a>
               <span class="cc-chip">System</span>
@@ -183,17 +195,27 @@
               </tr>
               <tr>
                 <td data-label="File">site-installation-tracker.html</td>
-                <td data-label="Purpose">Installation and readiness view</td>
+                <td data-label="Purpose">Mall tracker and installation readiness view</td>
                 <td data-label="Status">Generated</td>
               </tr>
               <tr>
                 <td data-label="File">submission-tracker.html</td>
-                <td data-label="Purpose">Submission readiness summary</td>
+                <td data-label="Purpose">Submission control summary</td>
+                <td data-label="Status">Generated</td>
+              </tr>
+              <tr>
+                <td data-label="File">bms-interface.html</td>
+                <td data-label="Purpose">Cloud BMS interface control placeholder</td>
+                <td data-label="Status">Generated</td>
+              </tr>
+              <tr>
+                <td data-label="File">cost-management.html</td>
+                <td data-label="Purpose">Cost management placeholder</td>
                 <td data-label="Status">Generated</td>
               </tr>
               <tr>
                 <td data-label="File">risk-commercial-decision-log.html</td>
-                <td data-label="Purpose">Risk and commercial summary</td>
+                <td data-label="Purpose">Risk watchlist summary</td>
                 <td data-label="Status">Generated</td>
               </tr>
               <tr>
