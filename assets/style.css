@@ -2027,3 +2027,125 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .cc-stage-board .table-responsive {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cc-stage-board .table-responsive::before {
+    content: "Swipe left to view stages, owner and next action";
+    display: block;
+    margin-bottom: 10px;
+    color: #9ca3af;
+    font-size: 0.76rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .cc-stage-board .cc-table {
+    min-width: 1880px;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: auto;
+  }
+
+  .cc-stage-board .cc-table thead {
+    display: table-header-group;
+  }
+
+  .cc-stage-board .cc-table tbody {
+    display: table-row-group;
+    width: auto;
+  }
+
+  .cc-stage-board .cc-table tr,
+  .cc-stage-board .cc-table tbody tr {
+    display: table-row;
+    width: auto;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .cc-stage-board .cc-table td,
+  .cc-stage-board .cc-table th,
+  .cc-stage-board .cc-table tbody td {
+    display: table-cell;
+    width: auto;
+    min-width: 110px;
+    padding: 11px 12px;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+
+  .cc-stage-board .cc-table td::before,
+  .cc-stage-board .cc-table tbody td::before {
+    content: none;
+  }
+
+  .cc-stage-board .cc-table th {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: rgba(8, 17, 31, 0.96);
+  }
+
+  .cc-stage-board .cc-table th:first-child,
+  .cc-stage-board .cc-table td:first-child {
+    position: sticky;
+    left: 0;
+    min-width: 220px;
+    z-index: 3;
+    background: #0b1220;
+    box-shadow: 8px 0 16px rgba(8, 17, 31, 0.18);
+  }
+
+  .cc-stage-board .cc-table th:nth-child(2),
+  .cc-stage-board .cc-table td:nth-child(2) {
+    position: sticky;
+    left: 220px;
+    min-width: 128px;
+    z-index: 3;
+    background: #0b1220;
+    box-shadow: 8px 0 16px rgba(8, 17, 31, 0.12);
+  }
+
+  .cc-stage-board .cc-table th:first-child,
+  .cc-stage-board .cc-table th:nth-child(2) {
+    z-index: 5;
+  }
+
+  .cc-stage-board .cc-table th:nth-child(3),
+  .cc-stage-board .cc-table td:nth-child(3) {
+    min-width: 120px;
+  }
+
+  .cc-stage-board .cc-table th:nth-child(21),
+  .cc-stage-board .cc-table td:nth-child(21) {
+    min-width: 300px;
+    white-space: normal;
+  }
+
+  .cc-stage-board .cc-table th:nth-child(22),
+  .cc-stage-board .cc-table td:nth-child(22) {
+    min-width: 150px;
+  }
+
+  .cc-stage-board .cc-table th:nth-child(23),
+  .cc-stage-board .cc-table td:nth-child(23) {
+    min-width: 128px;
+  }
+
+  .cc-stage-board .cc-table th:nth-child(24),
+  .cc-stage-board .cc-table td:nth-child(24) {
+    min-width: 110px;
+  }
+}
