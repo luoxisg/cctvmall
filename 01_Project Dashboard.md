@@ -1,16 +1,14 @@
----
-type: dashboard
-project: HDB Cloud BMS-CCTV VA Footfall
-status: Active
-last_reviewed: TBC
----
-
 # 01_Project Dashboard
-
-[[index]] | [[01_Project Dashboard]] | [[02_Action Tracker]] | [[03_Submission Tracker]] | [[04_Site & Installation Tracker]] | [[05_Risk Commercial Decision Log]]
 
 > [!note] Disclaimer
 > This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
+
+
+[01_Project Dashboard](./01_Project Dashboard.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
+
+## Priority Control Links
+
+- CEO Arrangements (Internal / Confidential)
 
 ## Executive Summary
 
@@ -20,62 +18,130 @@ last_reviewed: TBC
 | Client / Owner | HDB |
 | Integration Lead | Univers |
 | CCTV / VA / Footfall Subsystem | Xjera Labs |
+| Priority Focus | Loyang Point & Canberra Plaza (Xjera CCTV) \| Loyang Point & Rivervale Plaza (Univers BMS) |
 | Overall Status | Pending Verification |
-| Reporting Scope | Management summary only |
 
 ## Critical Deadlines
 
-| Milestone | Date | Status |
-|---|---|---|
-| Xjera CCTV-related documents to Univers | 4 May 2026 | Active |
-| Univers submission to HDB | 6 May 2026 | Active |
+> [!danger] Critical Deadlines
+> - **4 May 2026** - Xjera CCTV-related documents due to Univers
+> - **6 May 2026** - Univers submission target to HDB
 
 ## Master KPI Overview
 
-| KPI | Value | Note |
-|---|---|---|
-| Submission Readiness | TBC | Pending source verification |
-| Open Actions | TBC | Review active management items |
-| Blocked Items | TBC | Requires PM review |
-| Priority Sites | 4 | Loyang Point, Canberra Plaza, Rivervale Plaza, Parc Point |
-| Cabling Risks | TBC | Route, power tap-in, riser and ceiling risk control |
-| Subcontractor Readiness | TBC | Summary only |
-| Installation Progress | TBC | Summary only |
-| QA / Handover | TBC | Summary only |
-| Variation Orders | TBC | Summary only |
-| Commercial Control | Internal / Confidential | Sensitive detail excluded |
-| Decisions Pending | TBC | Refer to risk and decision summary |
-| Critical Milestones | TBC | Refer to submission and site trackers |
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Submission Readiness</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Pending source verification - [03_Submission Tracker](./03_Submission Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Open Actions</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Review active open items - [02_Action Tracker](./02_Action Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Blocked Items</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Requires PM review - [02_Action Tracker](./02_Action Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Priority Sites</div>
+<div class="dashboard-card-value">4</div>
+<div class="dashboard-card-note">Loyang Point, Canberra Plaza, Rivervale Plaza, Parc Point - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Cabling Risks</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Cable route, power tap-in, riser and ceiling risks - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Subcontractor Readiness</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Rate card, worker list and safety document status - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Installation Progress</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Planned, completed, tested and handover points - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">QA / Handover</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Testing, defects and handover readiness - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Variation Orders</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Open, pending and approved VO items - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Commercial Control</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Rate card, cost drivers, claims and revenue trigger - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Decisions Pending</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Decisions requiring follow-up - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Critical Milestones</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">4 May and 6 May submission path - [03_Submission Tracker](./03_Submission Tracker.md)</div>
+</div>
+
+</div>
 
 ## Priority Sites
 
-| Site | Status | Current Note |
-|---|---|---|
-| Loyang Point | In Preparation | Priority submission path in focus |
-| Canberra Plaza | Pending Verification | Scope and readiness require confirmation |
-| Rivervale Plaza | TBC | Management summary only |
-| Parc Point | Pending Verification | Survey coordination path under review |
+| Site | Current Note | Control Link | Status |
+|---|---|---|---|
+| Loyang Point | Survey report source found in vault | [03_Submission Tracker](./03_Submission Tracker.md) | In Preparation |
+| Canberra Plaza | Confirmed Phase 1 CCTV site — survey report (SN 5) still required | [03_Submission Tracker](./03_Submission Tracker.md) | In Preparation |
+| Rivervale Plaza | Site-level control summary required | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | TBC |
+| Parc Point | Survey coordination noted in email evidence | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | Pending Verification |
 
 ## This Week Focus
 
-- Complete and validate the priority submission path before the 4 May and 6 May deadlines.
-- Confirm the active second Phase 1 site before treating all site assumptions as fixed.
-- Review any blocked or externally dependent actions.
-- Keep survey, cabling, testing and handover readiness aligned at management level.
+- Review and update CEO Arrangements (Internal / Confidential) as the first management priority.
+- CEO Telegram instruction recorded by Hermes: add **Admiralty Place** as a **May 4 backup candidate**. Current status: **Pending Verification**. Source: CEO Record - 2026-05-02 - admiralty place May 4 ceo (Internal / Confidential).
+- Confirm and complete the 5-document package for **Loyang Point** before **4 May 2026**.
+- Confirm and complete the 5-document package for **Canberra Plaza** before **4 May 2026** — site role confirmed, survey report (SN 5 / CR-06) still required.
+- Note: BMS Phase 1 (Univers) = Loyang Point + Rivervale Plaza; CCTV Phase 1 (Xjera) = Loyang Point + Canberra Plaza.
+- Review blocked or externally dependent actions and chase owners where required.
+
+## CEO Priority Updates
+
+| Item | Source | Management Status | Next Control Step |
+|---|---|---|---|
+| Admiralty Place added as a May 4 backup candidate | CEO Telegram instruction (Internal / Confidential) | Pending Verification | Confirm scope impact, priority impact, and whether Phase 1 control pages need formal update |
 
 ## Key Blockers
 
-| Blocker | Impact | Status |
-|---|---|---|
-| Second Phase 1 site confirmation | Affects submission scope and readiness | Open |
-| Canberra Plaza survey and sign-off evidence | Affects submission readiness | Pending Verification |
-| Power point, DB tap-in and LEW scope clarification | Affects cabling and commercial control | Open |
-| Lift contractor dependency for elevator camera items | Affects installation completion path | Open |
-| Parc Point survey response | Affects survey planning | Waiting |
+| Blocker | Impact | Control Page | Status |
+|---|---|---|---|
+| Canberra Plaza survey report and MA/HDB sign-off (CR-06) | Affects Canberra Plaza submission readiness | [03_Submission Tracker](./03_Submission Tracker.md) | Open |
+| Power point, DB tap-in, and LEW scope clarification | Affects cabling and commercial assumptions | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md) | Open |
+| Lift contractor dependency for elevator camera items | Affects installation completion dates | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | Open |
+| Parc Point survey response from MA / HDB | Affects site planning | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | Waiting |
 
 ## Quick Links
 
-- [[02_Action Tracker]]
-- [[03_Submission Tracker]]
-- [[04_Site & Installation Tracker]]
-- [[05_Risk Commercial Decision Log]]
+- CEO Arrangements (Internal / Confidential)
+- [02_Action Tracker](./02_Action Tracker.md)
+- [03_Submission Tracker](./03_Submission Tracker.md)
+- [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)
+- [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
