@@ -702,6 +702,33 @@ tr:last-child td {
   cursor: default;
 }
 
+.cc-media-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cc-media-frame {
+  border: 1px solid #dbe3ea;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  padding: 12px;
+}
+
+.cc-media-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+}
+
+.cc-media-caption {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
