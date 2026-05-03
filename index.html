@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>01 Project Dashboard</title>
-  <link rel="stylesheet" href="assets/style.css?v=ffa1787263">
+  <title>00 Executive Cockpit</title>
+  <link rel="stylesheet" href="assets/style.css?v=a493cee335">
 </head>
 <body>
   <div class="cc-shell">
@@ -40,361 +40,328 @@
     </aside>
 
     <main class="cc-main">
-      <header class="cc-topbar">
+      <header class="cc-topbar cc-cockpit-topbar">
         <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
-        <div>
-          <div class="cc-topbar-title">Home / Executive Dashboard</div>
-          <div class="cc-topbar-subtitle">Management homepage for the HDB Cloud BMS-CCTV / VA / Footfall PMO export.</div>
+        <div class="cc-cockpit-titlewrap">
+          <div class="cc-topbar-title">00 Executive Cockpit</div>
+          <div class="cc-topbar-subtitle">CCTC Multi-Mall CCTV / VA / Footfall Installation + Cloud BMS Interface</div>
+          <div class="cc-cockpit-meta-line">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Last Updated: <strong>04 May 2026</strong></div>
         </div>
         <div class="cc-topbar-meta">
-          <span>Client: <strong>HDB</strong></span>
-          <span>Lead: <strong>Univers</strong></span>
-          <span>Subsystem: <strong>Xjera Labs</strong></span>
-          <span class="cc-badge">Pending Verification</span>
+          <span class="cc-badge">At Risk</span>
+          <span class="cc-badge cc-badge-secondary">41 Malls</span>
+          <span class="cc-badge cc-badge-secondary">3,092 CCTV</span>
+          <span class="cc-badge cc-badge-secondary">1,075 VA</span>
         </div>
       </header>
 
       <div class="cc-canvas">
-        <section class="cc-page-hero">
-          <div>
-            <div class="cc-page-eyebrow">Public Dashboard</div>
-            <h1>01 Project Dashboard</h1>
-            <p>Management homepage for the HDB Cloud BMS-CCTV / VA / Footfall PMO export.</p>
-          </div>
-          <div class="cc-page-meta">
-            <span class="cc-badge">Management Summary</span>
-            <div class="cc-page-meta-note">Use this page for controlled browsing and status review.</div>
-          </div>
-        </section>
-
-        <section class="cc-linkbar">
-          <a class="cc-linkchip active" href="index.html">Executive Dashboard</a>
-          <a class="cc-linkchip" href="action-tracker.html">Action Tracker</a>
-          <a class="cc-linkchip" href="site-installation-tracker.html">Mall Tracker</a>
-          <a class="cc-linkchip" href="submission-tracker.html">Submission Control</a>
-          <a class="cc-linkchip" href="bms-interface.html">BMS Interface</a>
-          <a class="cc-linkchip" href="cost-management.html">Cost Management</a>
-          <a class="cc-linkchip" href="risk-commercial-decision-log.html">Risk Watchlist</a>
-          <a class="cc-linkchip" href="publishing-guide.html">Publishing Guide</a>
-        </section>
-
-        <section class="cc-noticebar">
-          <strong>Data note:</strong> This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
+        <section class="cc-kpi-row cc-kpi-row-cockpit">
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Total Malls</div>
+            <div class="cc-kpi-value">41</div>
+            <p class="cc-kpi-note">Main mall / complex list from the PDF baseline.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Total CCTV Points</div>
+            <div class="cc-kpi-value">3,092</div>
+            <p class="cc-kpi-note">Physical CCTV point count from the attached PDF.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">VA Function Points</div>
+            <div class="cc-kpi-value">1,075</div>
+            <p class="cc-kpi-note">Intrusion detection / VA baseline from the PDF.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Active Malls</div>
+            <div class="cc-kpi-value">5</div>
+            <p class="cc-kpi-note">Priority execution queue now being actively controlled.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Completed Malls</div>
+            <div class="cc-kpi-value">0</div>
+            <p class="cc-kpi-note">No mall is formally closed across delivery, BMS and cost at this export.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Blocked Malls</div>
+            <div class="cc-kpi-value">3</div>
+            <p class="cc-kpi-note">Priority malls currently carrying at-risk or waiting status.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">BMS Pending</div>
+            <div class="cc-kpi-value">5</div>
+            <p class="cc-kpi-note">Priority malls still carrying interface work or open BMS status.</p>
+          </article>
+          <article class="cc-kpi cc-kpi-cockpit">
+            <div class="cc-kpi-label">Cost / VO Risk</div>
+            <div class="cc-kpi-value">TBC</div>
+            <p class="cc-kpi-note">Add-on points and VO exposure still require formal confirmation.</p>
+          </article>
         </section>
 
         <section class="cc-grid">
           <article class="cc-panel cc-span-2">
             <div class="cc-panel-head">
-              <h2>Executive Overview</h2>
-              <span class="cc-panel-tag">Deadlines</span>
+              <h2>Mall Coverage Live Map</h2>
+              <span class="cc-panel-tag">Executive view</span>
             </div>
             <div class="cc-panel-body">
-<div class="cc-action-row">
-              <span class="cc-btn cc-btn-danger is-disabled">CEO Arrangements (Internal / Confidential)</span>
+              <div class="cc-map-toolbar">
+<span class="cc-filter-chip active">All <strong>41</strong></span>
+<span class="cc-filter-chip">Not Started <strong>37</strong></span>
+<span class="cc-filter-chip">Site Survey <strong>1</strong></span>
+<span class="cc-filter-chip">Installation <strong>0</strong></span>
+<span class="cc-filter-chip">Testing <strong>0</strong></span>
+<span class="cc-filter-chip">Submitting <strong>2</strong></span>
+<span class="cc-filter-chip">BMS Interface <strong>1</strong></span>
+<span class="cc-filter-chip">Completed <strong>0</strong></span>
+<span class="cc-filter-chip">Blocked <strong>3</strong></span>
+<span class="cc-filter-chip">At Risk <strong>2</strong></span>
+<span class="cc-filter-chip is-region">North <strong>9</strong></span>
+<span class="cc-filter-chip is-region">North-East <strong>8</strong></span>
+<span class="cc-filter-chip is-region">East <strong>5</strong></span>
+<span class="cc-filter-chip is-region">Central / South <strong>9</strong></span>
+<span class="cc-filter-chip is-region">West <strong>10</strong></span>
               </div>
-              <section class="cc-section-block">
-                <h3>Executive Summary</h3>
-                <div class="cc-section-content"><div class="table-responsive"><table class="cc-table">
-<thead>
-<tr>
-<th>Field</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td data-label="Field">Project</td>
-<td data-label="Value">HDB Cloud BMS-CCTV / VA / Footfall Deployment</td>
-</tr>
-<tr>
-<td data-label="Field">Client / Owner</td>
-<td data-label="Value">HDB</td>
-</tr>
-<tr>
-<td data-label="Field">Integration Lead</td>
-<td data-label="Value">Univers</td>
-</tr>
-<tr>
-<td data-label="Field">CCTV / VA / Footfall Subsystem</td>
-<td data-label="Value">Xjera Labs</td>
-</tr>
-<tr>
-<td data-label="Field">Priority Focus</td>
-<td data-label="Value">Loyang Point &amp; Canberra Plaza (Xjera CCTV) | Loyang Point &amp; Rivervale Plaza (Univers BMS)</td>
-</tr>
-<tr>
-<td data-label="Field">Overall Status</td>
-<td data-label="Value">Pending Verification</td>
-</tr>
-</tbody>
-</table></div></div>
-              </section>
-              <section class="cc-section-block">
-                <h3>Critical Deadlines</h3>
-                <div class="cc-section-content"><div class="notice callout callout-danger">
-  <strong>Critical Deadlines:</strong>
-  <ul>
-<li><strong>4 May 2026</strong> - Xjera CCTV-related documents due to Univers</li>
-<li><strong>6 May 2026</strong> - Univers submission target to HDB</li>
-</ul>
-</div></div>
-              </section>
+              <div class="cc-map-shell">
+                <div class="cc-map-banner">Map API-ready container - static fallback active</div>
+                <div class="cc-map-frame">
+                  <img src="assets/images/mall-map.png" alt="Singapore mall coverage map for the CCTV, VA, Footfall and BMS programme">
+                </div>
+                <div class="cc-map-footnote">41 main mall / complex markers are planned here. HDB Hub sub-sites are preserved as drill-down data and the static image remains the safe fallback until live coordinates are wired.</div>
+              </div>
             </div>
           </article>
           <article class="cc-panel">
             <div class="cc-panel-head">
-              <h2>This Week Control</h2>
-              <span class="cc-panel-tag">CEO / Follow-up</span>
+              <h2>Executive Alert Stack</h2>
+              <span class="cc-panel-tag">Deadlines / Risks</span>
             </div>
             <div class="cc-panel-body">
-<section class="cc-section-block">
-                <h3>This Week Focus</h3>
-                <div class="cc-section-content"><ul>
-<li>Review and update CEO Arrangements (Internal / Confidential) as the first management priority.</li>
-<li>CEO Telegram instruction recorded by Hermes: add <strong>Admiralty Place</strong> as a <strong>May 4 backup candidate</strong>. Current status: <strong>Pending Verification</strong>. Source: CEO Record - 2026-05-02 - admiralty place May 4 ceo (Internal / Confidential).</li>
-<li>Confirm and complete the 5-document package for <strong>Loyang Point</strong> before <strong>4 May 2026</strong>.</li>
-<li>Confirm and complete the 5-document package for <strong>Canberra Plaza</strong> before <strong>4 May 2026</strong> — site role confirmed, survey report (SN 5 / CR-06) still required.</li>
-<li>Note: BMS Phase 1 (Univers) = Loyang Point + Rivervale Plaza; CCTV Phase 1 (Xjera) = Loyang Point + Canberra Plaza.</li>
-<li>Review blocked or externally dependent actions and chase owners where required.</li>
-</ul></div>
-              </section>
-              <section class="cc-section-block">
-                <h3>CEO Priority Updates</h3>
-                <div class="cc-section-content"><div class="table-responsive"><table class="cc-table">
-<thead>
-<tr>
-<th>Item</th>
-<th>Source</th>
-<th>Management Status</th>
-<th>Next Control Step</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td data-label="Item">Admiralty Place added as a May 4 backup candidate</td>
-<td data-label="Source">CEO Telegram instruction (Internal / Confidential)</td>
-<td data-label="Management Status">Pending Verification</td>
-<td data-label="Next Control Step">Confirm scope impact, priority impact, and whether Phase 1 control pages need formal update</td>
-</tr>
-</tbody>
-</table></div></div>
-              </section>
+              <div class="cc-alert-stack">
+              <a class="cc-alert-card is-risk" href="submission-tracker.html">
+                <div class="cc-alert-title">Critical Deadline</div>
+                <div class="cc-alert-body">4 May 2026 - CCTV-related documents due to Univers.</div>
+              </a>
+              <a class="cc-alert-card is-warn" href="submission-tracker.html">
+                <div class="cc-alert-title">Submission Target</div>
+                <div class="cc-alert-body">6 May 2026 - Univers submission target to HDB.</div>
+              </a>
+              <a class="cc-alert-card is-risk" href="bms-interface.html">
+                <div class="cc-alert-title">BMS Interface Risk</div>
+                <div class="cc-alert-body">VA event mapping and dependency ownership remain TBC.</div>
+              </a>
+              <a class="cc-alert-card is-warn" href="cost-management.html">
+                <div class="cc-alert-title">Cost / VO Risk</div>
+                <div class="cc-alert-body">MA add-on points and VO impact remain unconfirmed.</div>
+              </a>
+              <a class="cc-alert-card is-risk" href="action-tracker.html">
+                <div class="cc-alert-title">Escalation Needed</div>
+                <div class="cc-alert-body">Canberra Plaza and Loyang Point need controlled follow-through this week.</div>
+              </a>
+              </div>
             </div>
           </article>
           <article class="cc-panel cc-span-3">
             <div class="cc-panel-head">
-              <h2>Master KPI Overview</h2>
-              <span class="cc-panel-tag">Control grid</span>
+              <h2>Installation Data Summary</h2>
+              <span class="cc-panel-tag">Point baseline</span>
             </div>
             <div class="cc-panel-body">
-<div class="dashboard-grid">
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Submission Readiness</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Pending source verification - [03_Submission Tracker](./03_Submission Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Open Actions</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Review active open items - [02_Action Tracker](./02_Action Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Blocked Items</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Requires PM review - [02_Action Tracker](./02_Action Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Priority Sites</div>
-<div class="dashboard-card-value">4</div>
-<div class="dashboard-card-note">Loyang Point, Canberra Plaza, Rivervale Plaza, Parc Point - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Cabling Risks</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Cable route, power tap-in, riser and ceiling risks - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Subcontractor Readiness</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Rate card, worker list and safety document status - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Installation Progress</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Planned, completed, tested and handover points - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">QA / Handover</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Testing, defects and handover readiness - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Variation Orders</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Open, pending and approved VO items - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Commercial Control</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Rate card, cost drivers, claims and revenue trigger - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Decisions Pending</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Decisions requiring follow-up - [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Critical Milestones</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">4 May and 6 May submission path - [03_Submission Tracker](./03_Submission Tracker.md)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Total CCTV Points</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">All installations across malls - 02_Mall Tracker (Internal / Confidential)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">New Installation Points</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">New camera / device installations - 02_Mall Tracker (Internal / Confidential)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">VA Function Points</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Video Analytics enabled points - 02_Mall Tracker (Internal / Confidential)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">Footfall Points</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Footfall counting points - 02_Mall Tracker (Internal / Confidential)</div>
-</div>
-
-<div class="dashboard-card">
-<div class="dashboard-card-title">MA Add-on Points</div>
-<div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">MA / HDB requested additions - 02_Mall Tracker (Internal / Confidential)</div>
-</div>
-
-</div>
+              <div class="cc-mini-metric-grid">
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">Total CCTV Points</div>
+                <div class="cc-mini-metric-value">3,092</div>
+                <div class="cc-mini-metric-note">PDF baseline</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">Replacement Only</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">Relocation</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">New Installation</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">VA Function</div>
+                <div class="cc-mini-metric-value">1,075</div>
+                <div class="cc-mini-metric-note">PDF baseline</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">Footfall</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">As per Drawing</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">MA Requested Addition</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending split</div>
+              </article>
+              <article class="cc-mini-metric">
+                <div class="cc-mini-metric-label">TBC / Unconfirmed</div>
+                <div class="cc-mini-metric-value">TBC</div>
+                <div class="cc-mini-metric-note">Pending count</div>
+              </article>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Mall Stage + Installation Data Control Board</h2>
+              <span class="cc-panel-tag">41-mall control view</span>
+            </div>
+            <div class="cc-panel-body">
+<div class="table-responsive"><table class="cc-table">
+  <thead>
+    <tr><th>Mall</th><th>Priority</th><th>Total CCTV</th><th>VA</th><th>Footfall</th><th>MA Add-on</th><th>Current Stage</th><th>Survey</th><th>Install</th><th>Test</th><th>Submit</th><th>BMS</th><th>Status</th><th>Next Action</th></tr>
+  </thead>
+  <tbody>
+  <tr><td data-label="Mall">888 Plaza</td><td data-label="Priority">Main</td><td data-label="Total CCTV">15</td><td data-label="VA">10</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Admiralty Place</td><td data-label="Priority">Medium</td><td data-label="Total CCTV">81</td><td data-label="VA">12</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Priority Review</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm whether backup-candidate status should activate</td></tr>
+  <tr><td data-label="Mall">Anchorvale Village</td><td data-label="Priority">Main</td><td data-label="Total CCTV">127</td><td data-label="VA">16</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Bras Basah Complex</td><td data-label="Priority">Main</td><td data-label="Total CCTV">52</td><td data-label="VA">37</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Buangkok Square</td><td data-label="Priority">Main</td><td data-label="Total CCTV">66</td><td data-label="VA">18</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Canberra Plaza</td><td data-label="Priority">High</td><td data-label="Total CCTV">192</td><td data-label="VA">20</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Submission Preparation</td><td data-label="Survey"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-waiting">Waiting</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-risk">At Risk</span></td><td data-label="Next Action">Obtain survey report and MA/HDB sign-off for CR-06</td></tr>
+  <tr><td data-label="Mall">Choa Chu Kang Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">69</td><td data-label="VA">47</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Connection One</td><td data-label="Priority">Main</td><td data-label="Total CCTV">156</td><td data-label="VA">80</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Dawson Place</td><td data-label="Priority">Main</td><td data-label="Total CCTV">25</td><td data-label="VA">15</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Depot Heights Shopping Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">38</td><td data-label="VA">23</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Elias Mall</td><td data-label="Priority">Main</td><td data-label="Total CCTV">15</td><td data-label="VA">15</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Fajar Shopping Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">27</td><td data-label="VA">20</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Greenridge Shopping Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">24</td><td data-label="VA">24</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">HDB Hub</td><td data-label="Priority">Main</td><td data-label="Total CCTV">508</td><td data-label="VA">120</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">HDB Hub Data Centre and DRC</td><td data-label="Priority">Main</td><td data-label="Total CCTV">53</td><td data-label="VA">53</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Hougang Rivercourt</td><td data-label="Priority">Main</td><td data-label="Total CCTV">110</td><td data-label="VA">18</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Joo Chiat Complex</td><td data-label="Priority">Main</td><td data-label="Total CCTV">121</td><td data-label="VA">24</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Kampung Admiralty</td><td data-label="Priority">Main</td><td data-label="Total CCTV">179</td><td data-label="VA">18</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Kitchener Complex</td><td data-label="Priority">Main</td><td data-label="Total CCTV">133</td><td data-label="VA">60</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Limbang Shopping Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">96</td><td data-label="VA">42</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Loyang Point</td><td data-label="Priority">High</td><td data-label="Total CCTV">66</td><td data-label="VA">22</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Submission Preparation</td><td data-label="Survey"><span class="cc-state is-done">Done</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-progress">In Progress</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Status"><span class="cc-state is-risk">At Risk</span></td><td data-label="Next Action">Complete 5-document package before 4 May 2026</td></tr>
+  <tr><td data-label="Mall">MND Complex</td><td data-label="Priority">Main</td><td data-label="Total CCTV">2</td><td data-label="VA">2</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">New Bridge Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">70</td><td data-label="VA">55</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Northshore Plaza I</td><td data-label="Priority">Main</td><td data-label="Total CCTV">32</td><td data-label="VA">6</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Northshore Plaza II</td><td data-label="Priority">Main</td><td data-label="Total CCTV">33</td><td data-label="VA">6</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Oasis Terraces</td><td data-label="Priority">Main</td><td data-label="Total CCTV">143</td><td data-label="VA">18</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Parc Point</td><td data-label="Priority">Medium</td><td data-label="Total CCTV">89</td><td data-label="VA">20</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Site Survey</td><td data-label="Survey"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Next Action">Arrange site survey with MA and HDB support</td></tr>
+  <tr><td data-label="Mall">Pasir Ris West Plaza</td><td data-label="Priority">Main</td><td data-label="Total CCTV">34</td><td data-label="VA">22</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Pioneer Mall</td><td data-label="Priority">Main</td><td data-label="Total CCTV">23</td><td data-label="VA">20</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Plantation Plaza</td><td data-label="Priority">Main</td><td data-label="Total CCTV">122</td><td data-label="VA">52</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Punggol Town Square</td><td data-label="Priority">Main</td><td data-label="Total CCTV">26</td><td data-label="VA">4</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Rivervale Plaza</td><td data-label="Priority">High</td><td data-label="Total CCTV">29</td><td data-label="VA">16</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">BMS Coordination</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Status"><span class="cc-state is-progress">In Preparation</span></td><td data-label="Next Action">Confirm site-level control summary and BMS dependency</td></tr>
+  <tr><td data-label="Mall">Sembawang Mart</td><td data-label="Priority">Main</td><td data-label="Total CCTV">29</td><td data-label="VA">10</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Sunshine Place</td><td data-label="Priority">Main</td><td data-label="Total CCTV">32</td><td data-label="VA">22</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Taman Jurong Shopping Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">19</td><td data-label="VA">15</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Tampines Central Community Complex</td><td data-label="Priority">Main</td><td data-label="Total CCTV">22</td><td data-label="VA">16</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Vista Point</td><td data-label="Priority">Main</td><td data-label="Total CCTV">30</td><td data-label="VA">10</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Woodlands Civic Centre</td><td data-label="Priority">Main</td><td data-label="Total CCTV">82</td><td data-label="VA">24</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Woodlands Mart</td><td data-label="Priority">Main</td><td data-label="Total CCTV">33</td><td data-label="VA">10</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Woodlands North Plaza</td><td data-label="Priority">Main</td><td data-label="Total CCTV">24</td><td data-label="VA">10</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  <tr><td data-label="Mall">Yew Tee Square</td><td data-label="Priority">Main</td><td data-label="Total CCTV">22</td><td data-label="VA">20</td><td data-label="Footfall">TBC</td><td data-label="MA Add-on">TBC</td><td data-label="Current Stage">Planning</td><td data-label="Survey"><span class="cc-state is-muted">TBC</span></td><td data-label="Install"><span class="cc-state is-muted">TBC</span></td><td data-label="Test"><span class="cc-state is-muted">TBC</span></td><td data-label="Submit"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td></tr>
+  </tbody>
+</table></div>
             </div>
           </article>
           <article class="cc-panel cc-span-2">
             <div class="cc-panel-head">
-              <h2>Priority Sites & Key Blockers</h2>
-              <span class="cc-panel-tag">Execution watchlist</span>
+              <h2>Active Priority Malls</h2>
+              <span class="cc-panel-tag">Current execution queue</span>
             </div>
             <div class="cc-panel-body">
-<section class="cc-section-block">
-                <h3>Priority Sites</h3>
-                <div class="cc-section-content"><div class="table-responsive"><table class="cc-table">
-<thead>
-<tr>
-<th>Site</th>
-<th>Current Note</th>
-<th>Control Link</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td data-label="Site">Loyang Point</td>
-<td data-label="Current Note">Survey report source found in vault</td>
-<td data-label="Control Link"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
-<td data-label="Status">In Preparation</td>
-</tr>
-<tr>
-<td data-label="Site">Canberra Plaza</td>
-<td data-label="Current Note">Confirmed Phase 1 CCTV site — survey report (SN 5) still required</td>
-<td data-label="Control Link"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
-<td data-label="Status">In Preparation</td>
-</tr>
-<tr>
-<td data-label="Site">Rivervale Plaza</td>
-<td data-label="Current Note">Site-level control summary required</td>
-<td data-label="Control Link"><a href="./site-installation-tracker.html">04_Site &amp; Installation Tracker</a></td>
-<td data-label="Status">TBC</td>
-</tr>
-<tr>
-<td data-label="Site">Parc Point</td>
-<td data-label="Current Note">Survey coordination noted in email evidence</td>
-<td data-label="Control Link"><a href="./site-installation-tracker.html">04_Site &amp; Installation Tracker</a></td>
-<td data-label="Status">Pending Verification</td>
-</tr>
-</tbody>
-</table></div></div>
-              </section>
-              <section class="cc-section-block">
-                <h3>Key Blockers</h3>
-                <div class="cc-section-content"><div class="table-responsive"><table class="cc-table">
-<thead>
-<tr>
-<th>Blocker</th>
-<th>Impact</th>
-<th>Control Page</th>
-<th>Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td data-label="Blocker">Canberra Plaza survey report and MA/HDB sign-off (CR-06)</td>
-<td data-label="Impact">Affects Canberra Plaza submission readiness</td>
-<td data-label="Control Page"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
-<td data-label="Status">Open</td>
-</tr>
-<tr>
-<td data-label="Blocker">Power point, DB tap-in, and LEW scope clarification</td>
-<td data-label="Impact">Affects cabling and commercial assumptions</td>
-<td data-label="Control Page"><a href="./risk-commercial-decision-log.html">05_Risk Commercial Decision Log</a></td>
-<td data-label="Status">Open</td>
-</tr>
-<tr>
-<td data-label="Blocker">Lift contractor dependency for elevator camera items</td>
-<td data-label="Impact">Affects installation completion dates</td>
-<td data-label="Control Page"><a href="./site-installation-tracker.html">04_Site &amp; Installation Tracker</a></td>
-<td data-label="Status">Open</td>
-</tr>
-<tr>
-<td data-label="Blocker">Parc Point survey response from MA / HDB</td>
-<td data-label="Impact">Affects site planning</td>
-<td data-label="Control Page"><a href="./site-installation-tracker.html">04_Site &amp; Installation Tracker</a></td>
-<td data-label="Status">Waiting</td>
-</tr>
-</tbody>
-</table></div></div>
-              </section>
+<div class="table-responsive"><table class="cc-table">
+  <thead>
+    <tr><th>Mall</th><th>Current Stage</th><th>Total CCTV</th><th>VA</th><th>Submission</th><th>BMS</th><th>Cost / VO</th><th>Blocker</th><th>Next Action</th><th>Owner</th><th>Linked Page</th></tr>
+  </thead>
+  <tbody>
+  <tr><td data-label="Mall">Admiralty Place</td><td data-label="Current Stage">Priority Review</td><td data-label="Total CCTV">81</td><td data-label="VA">12</td><td data-label="Submission"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Cost / VO"><span class="cc-state is-muted">TBC</span></td><td data-label="Blocker">Awaiting formal priority confirmation</td><td data-label="Next Action">Confirm whether backup-candidate status should activate</td><td data-label="Owner">PMO / Xjera</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Mall">Canberra Plaza</td><td data-label="Current Stage">Submission Preparation</td><td data-label="Total CCTV">192</td><td data-label="VA">20</td><td data-label="Submission"><span class="cc-state is-waiting">Waiting</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Cost / VO"><span class="cc-state is-muted">TBC</span></td><td data-label="Blocker">Survey report and MA/HDB sign-off still pending</td><td data-label="Next Action">Obtain survey report and MA/HDB sign-off for CR-06</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Mall">Loyang Point</td><td data-label="Current Stage">Submission Preparation</td><td data-label="Total CCTV">66</td><td data-label="VA">22</td><td data-label="Submission"><span class="cc-state is-progress">In Progress</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Cost / VO"><span class="cc-state is-muted">TBC</span></td><td data-label="Blocker">Point list split and survey package confirmation</td><td data-label="Next Action">Complete 5-document package before 4 May 2026</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Mall">Parc Point</td><td data-label="Current Stage">Site Survey</td><td data-label="Total CCTV">89</td><td data-label="VA">20</td><td data-label="Submission"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-muted">TBC</span></td><td data-label="Cost / VO"><span class="cc-state is-muted">TBC</span></td><td data-label="Blocker">External survey response from MA / HDB</td><td data-label="Next Action">Arrange site survey with MA and HDB support</td><td data-label="Owner">Xjera Labs</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Mall">Rivervale Plaza</td><td data-label="Current Stage">BMS Coordination</td><td data-label="Total CCTV">29</td><td data-label="VA">16</td><td data-label="Submission"><span class="cc-state is-muted">TBC</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Cost / VO"><span class="cc-state is-muted">TBC</span></td><td data-label="Blocker">BMS coordination path still being structured</td><td data-label="Next Action">Confirm site-level control summary and BMS dependency</td><td data-label="Owner">Univers / Xjera</td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td></tr>
+  </tbody>
+</table></div>
             </div>
           </article>
           <article class="cc-panel">
             <div class="cc-panel-head">
-              <h2>Mall Coverage Map</h2>
-              <span class="cc-panel-tag">Reference</span>
+              <h2>Completed Malls</h2>
+              <span class="cc-panel-tag">Formal closure only</span>
             </div>
             <div class="cc-panel-body">
-<div class="cc-media-card">
-                <div class="cc-media-frame">
-                  <img src="assets/images/mall-map.png" alt="Mall map overview for the HDB Cloud BMS-CCTV, VA and Footfall deployment">
-                </div>
-                <p class="cc-media-caption">Mall layout reference for executive browsing. Use it as a quick geographic cue alongside the site tracker and priority-site watchlist.</p>
+              <div class="cc-empty-state">
+                <div class="cc-empty-title">0 confirmed completed malls</div>
+                <p>No mall is formally closed across installation, testing, submission, BMS and cost at the time of this export.</p>
               </div>
             </div>
           </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Key Blockers</h2>
+              <span class="cc-panel-tag">Execution and interface risks</span>
+            </div>
+            <div class="cc-panel-body">
+<div class="table-responsive"><table class="cc-table">
+  <thead>
+    <tr><th>Blocker</th><th>Affected Mall</th><th>Impact Type</th><th>Impact</th><th>Owner</th><th>Next Control Step</th><th>Linked Page</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+  <tr><td data-label="Blocker">Canberra Plaza survey report and MA/HDB sign-off (CR-06)</td><td data-label="Affected Mall">Canberra Plaza</td><td data-label="Impact Type">Submission</td><td data-label="Impact">Affects submission readiness and May target path.</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Next Control Step">Obtain survey report and formal sign-off.</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
+  <tr><td data-label="Blocker">BMS event mapping and interface owner still TBC</td><td data-label="Affected Mall">Loyang Point / Rivervale Plaza</td><td data-label="Impact Type">BMS</td><td data-label="Impact">Blocks interface clarity for VA alert routing.</td><td data-label="Owner">Univers / Xjera</td><td data-label="Next Control Step">Confirm owner, data types and event mapping.</td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
+  <tr><td data-label="Blocker">MA add-on scope and VO exposure remain unconfirmed</td><td data-label="Affected Mall">Multi-mall</td><td data-label="Impact Type">Commercial / VO</td><td data-label="Impact">Can shift count baseline and cost exposure.</td><td data-label="Owner">PMO / Cost</td><td data-label="Next Control Step">Freeze add-on list and quantify VO impact.</td><td data-label="Linked Page"><a class="cc-inline-link" href="cost-management.html">Open page</a></td><td data-label="Status"><span class="cc-state is-muted">TBC</span></td></tr>
+  <tr><td data-label="Blocker">Power point, DB tap-in and LEW scope clarification</td><td data-label="Affected Mall">Multi-mall</td><td data-label="Impact Type">Site</td><td data-label="Impact">Affects installation sequencing and assumptions.</td><td data-label="Owner">Site / PMO</td><td data-label="Next Control Step">Resolve utility and enabling-work dependencies.</td><td data-label="Linked Page"><a class="cc-inline-link" href="risk-commercial-decision-log.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
+  <tr><td data-label="Blocker">Parc Point survey response from MA / HDB</td><td data-label="Affected Mall">Parc Point</td><td data-label="Impact Type">Schedule</td><td data-label="Impact">Prevents survey closure and downstream planning.</td><td data-label="Owner">Xjera Labs</td><td data-label="Next Control Step">Chase external response and lock survey date.</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td><td data-label="Status"><span class="cc-state is-waiting">Waiting</span></td></tr>
+  </tbody>
+</table></div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>This Week Control</h2>
+              <span class="cc-panel-tag">Action checklist</span>
+            </div>
+            <div class="cc-panel-body">
+<div class="table-responsive"><table class="cc-table">
+  <thead>
+    <tr><th>Action</th><th>Mall</th><th>Owner</th><th>Due Date</th><th>Impact</th><th>Status</th><th>Linked Page</th></tr>
+  </thead>
+  <tbody>
+  <tr><td data-label="Action">Confirm Canberra Plaza survey report and CR-06 sign-off</td><td data-label="Mall">Canberra Plaza</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Due Date">2026-05-04</td><td data-label="Impact">Submission readiness</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Action">Complete Loyang Point 5-document package</td><td data-label="Mall">Loyang Point</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Due Date">2026-05-04</td><td data-label="Impact">Submission target</td><td data-label="Status"><span class="cc-state is-progress">In Progress</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Action">Confirm BMS event mapping for VA alerts</td><td data-label="Mall">Loyang Point / Rivervale Plaza</td><td data-label="Owner">Univers / Xjera</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">BMS interface</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td></tr>
+  <tr><td data-label="Action">Confirm point list split: replacement / relocation / new install</td><td data-label="Mall">Multi-mall</td><td data-label="Owner">PMO / Mall Tracker</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">Installation data baseline</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
+  <tr><td data-label="Action">Confirm MA add-on points and VO impact</td><td data-label="Mall">Multi-mall</td><td data-label="Owner">PMO / Cost</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">Cost exposure</td><td data-label="Status"><span class="cc-state is-muted">TBC</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="cost-management.html">Open page</a></td></tr>
+  </tbody>
+</table></div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Data Source / Internal Notes</h2>
+              <span class="cc-panel-tag">Collapsed</span>
+            </div>
+            <div class="cc-panel-body">
+              <details class="cc-disclosure">
+                <summary>Data source and internal notes</summary>
+                <p>This public cockpit uses the current PDF-derived mall baseline: 41 main malls / complexes, 3,092 CCTV points and 1,075 VA points.</p>
+                <p>Raw CEO records, Telegram notes, survey attachments, and unresolved working files remain inside the internal vault and are intentionally not reproduced on the executive home screen.</p>
+                <p>Sub-site support is preserved in the generator data model for HDB Hub variants and related clusters. This cockpit currently renders 41 main mall / complex rows in the control board.</p>
+              </details>
+            </div>
+          </article>
         </section>
+
+        <p class="footer">Public-safe cockpit view. Raw source records, attachments and internal chat notes remain outside this export package.</p>
       </div>
     </main>
   </div>
