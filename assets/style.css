@@ -25,7 +25,8 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--bg);
   color: var(--text);
-  line-height: 1.55;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 .wrap {
@@ -51,7 +52,7 @@ body {
 
 .hero h1 {
   margin: 0 0 8px;
-  font-size: 2rem;
+  font-size: 2.15rem;
 }
 
 .hero p,
@@ -76,15 +77,16 @@ body {
   background: var(--blue-soft);
   border: 1px solid #bfdbfe;
   border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 0.92rem;
+  padding: 10px 14px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .notice {
-  padding: 14px 16px;
+  padding: 16px 18px;
   margin: 18px 0;
   border-left: 4px solid var(--blue);
+  font-size: 1rem;
 }
 
 .grid {
@@ -104,14 +106,14 @@ body {
 
 .card h3 {
   margin: 0 0 8px;
-  font-size: 0.88rem;
+  font-size: 0.96rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--muted);
 }
 
 .card .value {
-  font-size: 1.7rem;
+  font-size: 1.95rem;
   font-weight: 700;
   margin: 0 0 6px;
 }
@@ -119,7 +121,7 @@ body {
 .card p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .two-col {
@@ -129,13 +131,13 @@ body {
 }
 
 .panel {
-  padding: 20px;
+  padding: 22px;
   margin-bottom: 18px;
 }
 
 .panel h2 {
   margin: 0 0 14px;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .panel ul {
@@ -162,6 +164,12 @@ body {
 .markdown-body p,
 .markdown-body li {
   color: var(--text);
+  font-size: 1.02rem;
+}
+
+.markdown-body td,
+.markdown-body th {
+  font-size: 0.98rem;
 }
 
 .markdown-body code {
@@ -245,7 +253,7 @@ tr:last-child td {
 
 .footer {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-top: 28px;
 }
 
@@ -278,7 +286,7 @@ tr:last-child td {
 }
 
 .cc-brand-eyebrow {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #64748b;
@@ -288,7 +296,7 @@ tr:last-child td {
 
 .cc-brand-title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.18rem;
   line-height: 1.35;
   color: #f8fafc;
 }
@@ -304,7 +312,7 @@ tr:last-child td {
   border: 1px solid #1e3a5f;
   color: #93c5fd;
   padding: 2px 8px;
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
@@ -317,7 +325,7 @@ tr:last-child td {
 
 .cc-nav-section {
   padding: 14px 16px 8px;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #475569;
@@ -345,7 +353,7 @@ tr:last-child td {
 
 .cc-nav-label {
   flex: 1;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.35;
   font-weight: 600;
 }
@@ -353,7 +361,7 @@ tr:last-child td {
 .cc-nav-count {
   min-width: 20px;
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   color: #93c5fd;
   background: rgba(29, 78, 216, 0.18);
@@ -379,13 +387,13 @@ tr:last-child td {
 }
 
 .cc-status-label {
-  font-size: 12px;
+  font-size: 13px;
   color: #e2e8f0;
   font-weight: 600;
 }
 
 .cc-status-meta {
-  font-size: 11px;
+  font-size: 12px;
   color: #64748b;
   margin-top: 2px;
 }
@@ -409,13 +417,13 @@ tr:last-child td {
 }
 
 .cc-topbar-title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #0f172a;
 }
 
 .cc-topbar-subtitle {
-  font-size: 11px;
+  font-size: 12px;
   color: #64748b;
   margin-top: 2px;
 }
@@ -425,7 +433,7 @@ tr:last-child td {
   align-items: center;
   gap: 12px;
   flex-wrap: wrap;
-  font-size: 11px;
+  font-size: 12px;
   color: #64748b;
 }
 
@@ -437,7 +445,7 @@ tr:last-child td {
   background: #fef3c7;
   color: #92400e;
   border-left: 3px solid #b45309;
-  padding: 4px 10px;
+  padding: 5px 11px;
   font-weight: 700;
 }
 
@@ -460,7 +468,7 @@ tr:last-child td {
 }
 
 .cc-kpi-label {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #64748b;
@@ -469,14 +477,14 @@ tr:last-child td {
 }
 
 .cc-kpi-value {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1;
   color: #0f172a;
   font-weight: 700;
 }
 
 .cc-kpi-value span {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #475569;
   margin-left: 4px;
@@ -484,7 +492,7 @@ tr:last-child td {
 
 .cc-kpi-note {
   margin: 6px 0 0;
-  font-size: 11px;
+  font-size: 12px;
   color: #64748b;
 }
 
@@ -494,7 +502,7 @@ tr:last-child td {
   border-left: 3px solid #b45309;
   padding: 10px 12px;
   color: #92400e;
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 12px;
 }
 
@@ -529,13 +537,13 @@ tr:last-child td {
 
 .cc-panel-head h2 {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   color: #0f172a;
 }
 
 .cc-panel-tag,
 .cc-chip {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -563,7 +571,7 @@ tr:last-child td {
 
 .cc-inline-link {
   color: #0f172a;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -576,7 +584,7 @@ tr:last-child td {
 .cc-copy,
 .cc-timeline-note {
   margin: 4px 0 0;
-  font-size: 12px;
+  font-size: 13px;
   color: #64748b;
 }
 
@@ -593,7 +601,7 @@ tr:last-child td {
 }
 
 .cc-rule-title {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #475569;
@@ -614,7 +622,7 @@ tr:last-child td {
 .cc-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .cc-table th,
@@ -626,7 +634,7 @@ tr:last-child td {
 }
 
 .cc-table th {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #64748b;
@@ -650,16 +658,92 @@ tr:last-child td {
 
 .cc-timeline-step {
   min-width: 34px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1;
   font-weight: 700;
   color: #1d4ed8;
 }
 
 .cc-timeline-title {
-  font-size: 12px;
+  font-size: 14px;
   color: #0f172a;
   font-weight: 600;
+}
+
+.cc-span-3 {
+  grid-column: span 3;
+}
+
+.cc-page-hero {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.cc-page-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cc-page-hero h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #0f172a;
+}
+
+.cc-page-hero p {
+  margin: 10px 0 0;
+  font-size: 1.05rem;
+  color: #64748b;
+  max-width: 760px;
+}
+
+.cc-page-meta {
+  min-width: 220px;
+  text-align: right;
+}
+
+.cc-page-meta-note {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.cc-linkbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.cc-linkchip {
+  text-decoration: none;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 9px 14px;
+  font-size: 0.96rem;
+  font-weight: 600;
+}
+
+.cc-linkchip.active {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.cc-markdown {
+  padding: 18px 20px;
 }
 
 @media (max-width: 1180px) {
@@ -672,6 +756,10 @@ tr:last-child td {
   }
 
   .cc-span-2 {
+    grid-column: span 2;
+  }
+
+  .cc-span-3 {
     grid-column: span 2;
   }
 }
@@ -699,7 +787,20 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 
+  .cc-page-hero {
+    flex-direction: column;
+  }
+
+  .cc-page-meta {
+    min-width: 0;
+    text-align: left;
+  }
+
   .cc-span-2 {
+    grid-column: span 1;
+  }
+
+  .cc-span-3 {
     grid-column: span 1;
   }
 }
