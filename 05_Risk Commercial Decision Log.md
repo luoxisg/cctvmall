@@ -6,6 +6,20 @@
 
 [01_Project Dashboard](./01_Project Dashboard.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
 
+## Point Quantity & MA Add-on Risks
+
+| Risk | Affected Mall(s) | Point Type | Severity | Owner | Status |
+|---|---|---|---|---|---|
+| Installation point list not confirmed | All | Total CCTV Points | High | CCTC / Univers | Open |
+| Replacement / Relocation / New Install mix unclear | Loyang Point, Canberra Plaza | Installation Type | High | CCTC / Xjera | Open |
+| VA function point list not confirmed | Loyang Point, Canberra Plaza | VA Function | Medium | CCTC / Xjera | Open |
+| Footfall point counts not finalized | Loyang Point, Rivervale Plaza | Footfall | Medium | CCTC / Univers | Open |
+| MA Requested Addition points not approved | TBC | MA Add-on | High | PM / MA | Open |
+| Drawing-based vs MA Add-on split unclear | All | Source Type | Medium | PM | Open |
+| MA Add-on cost and VO impact not quantified | TBC | MA Add-on | High | Finance / PM | Open |
+
+*Installation point confirmation is a prerequisite for scope, cost, and submission control. See [02_Mall Tracker](./02_Mall Tracker.md) for point tracking.*
+
 ## Cabling Risks
 
 | Risk ID | Risk | Site | Status |

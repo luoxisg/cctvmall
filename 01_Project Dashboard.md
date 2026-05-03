@@ -4,7 +4,7 @@
 > This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
 
 
-[01_Project Dashboard](./01_Project Dashboard.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
+[01_Project Dashboard](./01_Project Dashboard.md) | [02_Mall Tracker](./02_Mall Tracker.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
 
 ## Priority Control Links
 
@@ -103,7 +103,52 @@
 <div class="dashboard-card-note">4 May and 6 May submission path - [03_Submission Tracker](./03_Submission Tracker.md)</div>
 </div>
 
+<div class="dashboard-card">
+<div class="dashboard-card-title">Total CCTV Points</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">All installations across malls - [02_Mall Tracker](./02_Mall Tracker.md)</div>
 </div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">New Installation Points</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">New camera / device installations - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">VA Function Points</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Video Analytics enabled points - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">Footfall Points</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">Footfall counting points - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+</div>
+
+<div class="dashboard-card">
+<div class="dashboard-card-title">MA Add-on Points</div>
+<div class="dashboard-card-value">TBC</div>
+<div class="dashboard-card-note">MA / HDB requested additions - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+</div>
+
+</div>
+
+## Installation Data Summary
+
+| Metric | Count | Notes |
+|--------|-------|-------|
+| **Total CCTV Points** | TBC | All installations across malls |
+| **Replacement Only** | TBC | Utilizing existing position and cables |
+| **Relocation** | TBC | Moving camera/device to new position |
+| **New Installation** | TBC | New camera/device with new cabling |
+| **VA Function** | TBC | Video Analytics enabled points |
+| **Footfall** | TBC | Footfall counting / occupancy points |
+| **As per Drawing** | TBC | Points per original design drawing |
+| **MA Requested Addition** | TBC | MA / HDB requested add-on points |
+
+*All values pending source verification. See [02_Mall Tracker](./02_Mall Tracker.md) for detailed breakdown by mall.*
 
 ## Priority Sites
 
@@ -128,6 +173,18 @@
 | Item | Source | Management Status | Next Control Step |
 |---|---|---|---|
 | Admiralty Place added as a May 4 backup candidate | CEO Telegram instruction (Internal / Confidential) | Pending Verification | Confirm scope impact, priority impact, and whether Phase 1 control pages need formal update |
+
+## Mall Stage + Installation Data Control Board
+
+| Mall | Priority | Replacement | Relocation | New Install | VA | Footfall | MA Add-on | Stage | Status | Next Action |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Loyang Point | High | TBC | TBC | TBC | TBC | TBC | TBC | Submission | At Risk | Confirm point list and survey package |
+| Canberra Plaza | High | TBC | TBC | TBC | TBC | TBC | TBC | Submission | In Preparation | Complete submission documentation |
+| Rivervale Plaza | Medium | TBC | TBC | TBC | TBC | TBC | TBC | Survey | TBC | Site-level control summary required |
+| Parc Point | Medium | TBC | TBC | TBC | TBC | TBC | TBC | Planning | Pending Verification | Confirm scope and survey response |
+
+*Click on a mall row to view detailed installation data in modal.* 
+*Full tracker available at [02_Mall Tracker](./02_Mall Tracker.md).*
 
 ## Key Blockers
 
