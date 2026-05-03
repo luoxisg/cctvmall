@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>05 Risk Commercial Decision Log</title>
-  <link rel="stylesheet" href="assets/style.css?v=5923098aa1">
+  <link rel="stylesheet" href="assets/style.css?v=6a5b6ca1b4">
 </head>
 <body>
   <div class="cc-shell">
-    <aside class="cc-sidebar">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
       <div class="cc-brand">
         <div class="cc-brand-eyebrow">PMO Command Center</div>
         <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
@@ -38,6 +39,7 @@
 
     <main class="cc-main">
       <header class="cc-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
         <div>
           <div class="cc-topbar-title">05 Risk Commercial Decision Log</div>
           <div class="cc-topbar-subtitle">Management-level risk, commercial and decision control summary.</div>
@@ -84,7 +86,7 @@
             </div>
             <div class="cc-panel-body markdown-body cc-markdown">
 <h2>Cabling Risks</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Risk ID</th>
@@ -95,43 +97,43 @@
 </thead>
 <tbody>
 <tr>
-<td>CR-01</td>
-<td>Replace camera wrongly treated as new cabling scope</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-01</td>
+<td data-label="Risk">Replace camera wrongly treated as new cabling scope</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-02</td>
-<td>AC power point, DB tap-in, and LEW works assumed included</td>
-<td>Loyang Point</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-02</td>
+<td data-label="Risk">AC power point, DB tap-in, and LEW works assumed included</td>
+<td data-label="Site">Loyang Point</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-03</td>
-<td>Lift contractor confirmation and shutdown planning may delay elevator camera works</td>
-<td>Loyang Point</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-03</td>
+<td data-label="Risk">Lift contractor confirmation and shutdown planning may delay elevator camera works</td>
+<td data-label="Site">Loyang Point</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-04</td>
-<td>Footfall counters may be mixed into standard CCTV count and scope</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-04</td>
+<td data-label="Risk">Footfall counters may be mixed into standard CCTV count and scope</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-05</td>
-<td>Fire stopping, core drilling, after-hours access, and attendance fees may become unplanned cost</td>
-<td>Loyang Point / Canberra Plaza</td>
-<td>Open</td>
+<td data-label="Risk ID">CR-05</td>
+<td data-label="Risk">Fire stopping, core drilling, after-hours access, and attendance fees may become unplanned cost</td>
+<td data-label="Site">Loyang Point / Canberra Plaza</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>CR-06</td>
-<td>Canberra Plaza survey report and sign-off not confirmed in vault</td>
-<td>Canberra Plaza</td>
-<td>At Risk</td>
+<td data-label="Risk ID">CR-06</td>
+<td data-label="Risk">Canberra Plaza survey report and sign-off not confirmed in vault</td>
+<td data-label="Site">Canberra Plaza</td>
+<td data-label="Status">At Risk</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>General Project Risks</h2>
 <ul>
 <li>Submission scope may be wrong until the actual second Phase 1 site is confirmed.</li>
@@ -151,7 +153,7 @@
 </ul>
 <h3>Rate Card Status</h3>
 <h2>Payment / Claim Risks</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Risk</th>
@@ -161,24 +163,24 @@
 </thead>
 <tbody>
 <tr>
-<td>Payment based on installed quantity without testing or handover completion</td>
-<td>TBC</td>
-<td>Requires verified payment control records</td>
+<td data-label="Risk">Payment based on installed quantity without testing or handover completion</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified payment control records</td>
 </tr>
 <tr>
-<td>Variation work claimed before approval or instruction</td>
-<td>TBC</td>
-<td>Requires verified VO and claim linkage</td>
+<td data-label="Risk">Variation work claimed before approval or instruction</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified VO and claim linkage</td>
 </tr>
 <tr>
-<td>Owner-supplied material mixed with labour claims</td>
-<td>TBC</td>
-<td>Requires verified commercial breakdown</td>
+<td data-label="Risk">Owner-supplied material mixed with labour claims</td>
+<td data-label="Status">TBC</td>
+<td data-label="Note">Requires verified commercial breakdown</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Decision Log</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Decision ID</th>
@@ -188,37 +190,37 @@
 </thead>
 <tbody>
 <tr>
-<td>DL-001</td>
-<td>Replace camera work uses existing cabling and is not new cabling by default</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-001</td>
+<td data-label="Decision">Replace camera work uses existing cabling and is not new cabling by default</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-002</td>
-<td>Footfall counters stay in a separate control lane</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-002</td>
+<td data-label="Decision">Footfall counters stay in a separate control lane</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-003</td>
-<td>Elevator camera work requires separate lift contractor coordination</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-003</td>
+<td data-label="Decision">Elevator camera work requires separate lift contractor coordination</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-004</td>
-<td>Power, LEW, and exclusion costs must be tracked separately</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-004</td>
+<td data-label="Decision">Power, LEW, and exclusion costs must be tracked separately</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-005</td>
-<td>Keep source files in place and use notes as the control layer</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-005</td>
+<td data-label="Decision">Keep source files in place and use notes as the control layer</td>
+<td data-label="Status">Active</td>
 </tr>
 <tr>
-<td>DL-006</td>
-<td>Canberra Plaza stays at risk until survey evidence is confirmed</td>
-<td>Active</td>
+<td data-label="Decision ID">DL-006</td>
+<td data-label="Decision">Canberra Plaza stays at risk until survey evidence is confirmed</td>
+<td data-label="Status">Active</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Open Commercial Issues</h2>
 <ul>
 <li>Power point, DB tap-in, and LEW scope still need confirmation.</li>
@@ -238,5 +240,41 @@
       </div>
     </main>
   </div>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

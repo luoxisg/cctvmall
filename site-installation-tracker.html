@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>04 Site & Installation Tracker</title>
-  <link rel="stylesheet" href="assets/style.css?v=5923098aa1">
+  <link rel="stylesheet" href="assets/style.css?v=6a5b6ca1b4">
 </head>
 <body>
   <div class="cc-shell">
-    <aside class="cc-sidebar">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
       <div class="cc-brand">
         <div class="cc-brand-eyebrow">PMO Command Center</div>
         <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
@@ -38,6 +39,7 @@
 
     <main class="cc-main">
       <header class="cc-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
         <div>
           <div class="cc-topbar-title">04 Site & Installation Tracker</div>
           <div class="cc-topbar-subtitle">Management-level site readiness, installation, QA and handover summary.</div>
@@ -85,7 +87,7 @@
             <div class="cc-panel-body markdown-body cc-markdown">
 <h2>Site Status</h2>
 <h2>Priority Sites</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Site</th>
@@ -96,31 +98,31 @@
 </thead>
 <tbody>
 <tr>
-<td>Loyang Point</td>
-<td>Phase 1 confirmed delivery path</td>
-<td>Survey report source found; submission in preparation</td>
-<td><a href="./submission-tracker.html">03_Submission Tracker</a></td>
+<td data-label="Site">Loyang Point</td>
+<td data-label="Focus">Phase 1 confirmed delivery path</td>
+<td data-label="Current Note">Survey report source found; submission in preparation</td>
+<td data-label="Control Link"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
 </tr>
 <tr>
-<td>Canberra Plaza</td>
-<td>Phase 1 confirmed CCTV delivery path (Xjera)</td>
-<td>Confirmed Phase 1 CCTV site per email 2 May 2026 — survey report (SN 5) still required</td>
-<td><a href="./submission-tracker.html">03_Submission Tracker</a></td>
+<td data-label="Site">Canberra Plaza</td>
+<td data-label="Focus">Phase 1 confirmed CCTV delivery path (Xjera)</td>
+<td data-label="Current Note">Confirmed Phase 1 CCTV site per email 2 May 2026 — survey report (SN 5) still required</td>
+<td data-label="Control Link"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
 </tr>
 <tr>
-<td>Rivervale Plaza</td>
-<td>Phase 1 confirmed BMS delivery path (Univers)</td>
-<td>Confirmed Phase 1 BMS site per email 2 May 2026</td>
-<td><a href="./submission-tracker.html">03_Submission Tracker</a></td>
+<td data-label="Site">Rivervale Plaza</td>
+<td data-label="Focus">Phase 1 confirmed BMS delivery path (Univers)</td>
+<td data-label="Current Note">Confirmed Phase 1 BMS site per email 2 May 2026</td>
+<td data-label="Control Link"><a href="./submission-tracker.html">03_Submission Tracker</a></td>
 </tr>
 <tr>
-<td>Parc Point</td>
-<td>Survey coordination</td>
-<td>Waiting for external response on survey support</td>
-<td><a href="./action-tracker.html">02_Action Tracker</a></td>
+<td data-label="Site">Parc Point</td>
+<td data-label="Focus">Survey coordination</td>
+<td data-label="Current Note">Waiting for external response on survey support</td>
+<td data-label="Control Link"><a href="./action-tracker.html">02_Action Tracker</a></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Subcontractor Readiness</h2>
 <h3>Approved Subcontractors</h3>
 <h3>Subcontractors Under Review</h3>
@@ -135,7 +137,7 @@
 <h3>Defects</h3>
 <h3>Handover Readiness</h3>
 <h2>Site-Level Timeline Notes</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Site Item</th>
@@ -146,25 +148,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Loyang Point replace camera target completion</td>
-<td>2026-05-05</td>
-<td>In Progress</td>
-<td>Existing site-level timeline detail retained from milestone view</td>
+<td data-label="Site Item">Loyang Point replace camera target completion</td>
+<td data-label="Target Date">2026-05-05</td>
+<td data-label="Status">In Progress</td>
+<td data-label="Notes">Existing site-level timeline detail retained from milestone view</td>
 </tr>
 <tr>
-<td>Canberra Plaza PoE and NVR target completion</td>
-<td>2026-05-09</td>
-<td>In Planning</td>
-<td>Site confirmed — survey report (SN 5) still required before full installation can proceed</td>
+<td data-label="Site Item">Canberra Plaza PoE and NVR target completion</td>
+<td data-label="Target Date">2026-05-09</td>
+<td data-label="Status">In Planning</td>
+<td data-label="Notes">Site confirmed — survey report (SN 5) still required before full installation can proceed</td>
 </tr>
 <tr>
-<td>Canberra Plaza handover preparation target</td>
-<td>2026-05-10</td>
-<td>In Planning</td>
-<td>Planning date confirmed; dependent on survey and installation completion</td>
+<td data-label="Site Item">Canberra Plaza handover preparation target</td>
+<td data-label="Target Date">2026-05-10</td>
+<td data-label="Status">In Planning</td>
+<td data-label="Notes">Planning date confirmed; dependent on survey and installation completion</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Related Controls</h2>
 <ul>
 <li>Actions: <a href="./action-tracker.html">02_Action Tracker</a></li>
@@ -177,5 +179,41 @@
       </div>
     </main>
   </div>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

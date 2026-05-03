@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>03 Submission Tracker</title>
-  <link rel="stylesheet" href="assets/style.css?v=5923098aa1">
+  <link rel="stylesheet" href="assets/style.css?v=6a5b6ca1b4">
 </head>
 <body>
   <div class="cc-shell">
-    <aside class="cc-sidebar">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
       <div class="cc-brand">
         <div class="cc-brand-eyebrow">PMO Command Center</div>
         <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
@@ -38,6 +39,7 @@
 
     <main class="cc-main">
       <header class="cc-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
         <div>
           <div class="cc-topbar-title">03 Submission Tracker</div>
           <div class="cc-topbar-subtitle">Management-level submission readiness, checklist control and blockers.</div>
@@ -84,7 +86,7 @@
             </div>
             <div class="cc-panel-body markdown-body cc-markdown">
 <h2>Univers / HDB Submission Checklist</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Submission Item</th>
@@ -93,29 +95,29 @@
 </thead>
 <tbody>
 <tr>
-<td>Device Catalogue - CCTV</td>
-<td>Required before submission</td>
+<td data-label="Submission Item">Device Catalogue - CCTV</td>
+<td data-label="Control Requirement">Required before submission</td>
 </tr>
 <tr>
-<td>Equipment List - CCTV</td>
-<td>Required before submission</td>
+<td data-label="Submission Item">Equipment List - CCTV</td>
+<td data-label="Control Requirement">Required before submission</td>
 </tr>
 <tr>
-<td>CCTV Floor Plan Markup</td>
-<td>Required before submission</td>
+<td data-label="Submission Item">CCTV Floor Plan Markup</td>
+<td data-label="Control Requirement">Required before submission</td>
 </tr>
 <tr>
-<td>CCTV Cable Route and Power Point Tap-in Location</td>
-<td>Required before submission</td>
+<td data-label="Submission Item">CCTV Cable Route and Power Point Tap-in Location</td>
+<td data-label="Control Requirement">Required before submission</td>
 </tr>
 <tr>
-<td>Site Survey Report / Finding signed by MA / HDB</td>
-<td>Required before submission</td>
+<td data-label="Submission Item">Site Survey Report / Finding signed by MA / HDB</td>
+<td data-label="Control Requirement">Required before submission</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Site-by-Site Readiness Table</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Site</th>
@@ -127,19 +129,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Rivervale Plaza</td>
-<td>TBC</td>
-<td>TBC</td>
-<td>TBC</td>
-<td>Site-level submission path not consolidated here yet</td>
+<td data-label="Site">Rivervale Plaza</td>
+<td data-label="Submission Record">TBC</td>
+<td data-label="Readiness">TBC</td>
+<td data-label="Key Action">TBC</td>
+<td data-label="Notes">Site-level submission path not consolidated here yet</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Pending Submissions</h2>
 <h2>Checklist by Site</h2>
 <h2>Missing Documents</h2>
 <h2>Workstream Scope (Phase 1)</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Workstream</th>
@@ -148,17 +150,17 @@
 </thead>
 <tbody>
 <tr>
-<td>Univers Cloud BMS</td>
-<td>Loyang Point, Rivervale Plaza</td>
+<td data-label="Workstream">Univers Cloud BMS</td>
+<td data-label="Sites">Loyang Point, Rivervale Plaza</td>
 </tr>
 <tr>
-<td>Xjera CCTV / VA / Footfall</td>
-<td>Loyang Point, Canberra Plaza</td>
+<td data-label="Workstream">Xjera CCTV / VA / Footfall</td>
+<td data-label="Sites">Loyang Point, Canberra Plaza</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Submission Blockers</h2>
-<table>
+<div class="table-responsive"><table class="cc-table">
 <thead>
 <tr>
 <th>Blocker</th>
@@ -169,19 +171,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Canberra Plaza survey report and MA/HDB sign-off (CR-06)</td>
-<td>Canberra Plaza</td>
-<td>Submission readiness cannot be completed without survey</td>
-<td>Open</td>
+<td data-label="Blocker">Canberra Plaza survey report and MA/HDB sign-off (CR-06)</td>
+<td data-label="Site">Canberra Plaza</td>
+<td data-label="Impact">Submission readiness cannot be completed without survey</td>
+<td data-label="Status">Open</td>
 </tr>
 <tr>
-<td>Cable route and power tap-in scope still needs confirmation</td>
-<td>Loyang Point / TBC</td>
-<td>Affects submission quality and scope clarity</td>
-<td>Open</td>
+<td data-label="Blocker">Cable route and power tap-in scope still needs confirmation</td>
+<td data-label="Site">Loyang Point / TBC</td>
+<td data-label="Impact">Affects submission quality and scope clarity</td>
+<td data-label="Status">Open</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Submission Support Links</h2>
 <ul>
 <li>Action follow-up: <a href="./action-tracker.html">02_Action Tracker</a></li>
@@ -194,5 +196,41 @@
       </div>
     </main>
   </div>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>

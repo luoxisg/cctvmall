@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</title>
-  <link rel="stylesheet" href="assets/style.css?v=5923098aa1">
+  <link rel="stylesheet" href="assets/style.css?v=6a5b6ca1b4">
 </head>
 <body>
   <div class="cc-shell">
-    <aside class="cc-sidebar">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
       <div class="cc-brand">
         <div class="cc-brand-eyebrow">PMO Command Center</div>
         <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
@@ -38,6 +39,7 @@
 
     <main class="cc-main">
       <header class="cc-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
         <div>
           <div class="cc-topbar-title">System / Publishing Guide</div>
           <div class="cc-topbar-subtitle">Management-summary package for controlled external sharing</div>
@@ -160,7 +162,7 @@
               <span class="cc-panel-tag">Generated artifacts</span>
             </div>
             <div class="cc-panel-body">
-              <table class="cc-table">
+              <div class="table-responsive"><table class="cc-table">
                 <thead>
                   <tr>
                     <th>File</th>
@@ -170,47 +172,47 @@
                 </thead>
                 <tbody>
               <tr>
-                <td>index.html</td>
-                <td>Executive dashboard home page</td>
-                <td>Generated</td>
+                <td data-label="File">index.html</td>
+                <td data-label="Purpose">Executive dashboard home page</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>action-tracker.html</td>
-                <td>Follow-up and escalation view</td>
-                <td>Generated</td>
+                <td data-label="File">action-tracker.html</td>
+                <td data-label="Purpose">Follow-up and escalation view</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>site-installation-tracker.html</td>
-                <td>Installation and readiness view</td>
-                <td>Generated</td>
+                <td data-label="File">site-installation-tracker.html</td>
+                <td data-label="Purpose">Installation and readiness view</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>submission-tracker.html</td>
-                <td>Submission readiness summary</td>
-                <td>Generated</td>
+                <td data-label="File">submission-tracker.html</td>
+                <td data-label="Purpose">Submission readiness summary</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>risk-commercial-decision-log.html</td>
-                <td>Risk and commercial summary</td>
-                <td>Generated</td>
+                <td data-label="File">risk-commercial-decision-log.html</td>
+                <td data-label="Purpose">Risk and commercial summary</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>publishing-guide.html</td>
-                <td>Publishing workflow and release guide</td>
-                <td>Generated</td>
+                <td data-label="File">publishing-guide.html</td>
+                <td data-label="Purpose">Publishing workflow and release guide</td>
+                <td data-label="Status">Generated</td>
               </tr>
               <tr>
-                <td>assets/style.css</td>
-                <td>Shared public-safe visual system</td>
-                <td>Tracked</td>
+                <td data-label="File">assets/style.css</td>
+                <td data-label="Purpose">Shared public-safe visual system</td>
+                <td data-label="Status">Tracked</td>
               </tr>
               <tr>
-                <td>.nojekyll</td>
-                <td>Static host compatibility</td>
-                <td>Tracked</td>
+                <td data-label="File">.nojekyll</td>
+                <td data-label="Purpose">Static host compatibility</td>
+                <td data-label="Status">Tracked</td>
               </tr>
                 </tbody>
-              </table>
+              </table></div>
             </div>
           </article>
 
@@ -256,5 +258,41 @@
       </div>
     </main>
   </div>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
 </body>
 </html>
