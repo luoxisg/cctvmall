@@ -4,7 +4,7 @@
 > This online dashboard is a management summary snapshot. Source-of-truth records remain in the internal Obsidian vault, Excel trackers, emails and signed project documents.
 
 
-[01_Project Dashboard](./01_Project Dashboard.md) | [02_Mall Tracker](./02_Mall Tracker.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
+[01_Project Dashboard](./01_Project Dashboard.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
 
 ## Priority Control Links
 
@@ -106,31 +106,31 @@
 <div class="dashboard-card">
 <div class="dashboard-card-title">Total CCTV Points</div>
 <div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">All installations across malls - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+<div class="dashboard-card-note">All installations across malls - 02_Mall Tracker (Internal / Confidential)</div>
 </div>
 
 <div class="dashboard-card">
 <div class="dashboard-card-title">New Installation Points</div>
 <div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">New camera / device installations - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+<div class="dashboard-card-note">New camera / device installations - 02_Mall Tracker (Internal / Confidential)</div>
 </div>
 
 <div class="dashboard-card">
 <div class="dashboard-card-title">VA Function Points</div>
 <div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Video Analytics enabled points - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+<div class="dashboard-card-note">Video Analytics enabled points - 02_Mall Tracker (Internal / Confidential)</div>
 </div>
 
 <div class="dashboard-card">
 <div class="dashboard-card-title">Footfall Points</div>
 <div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">Footfall counting points - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+<div class="dashboard-card-note">Footfall counting points - 02_Mall Tracker (Internal / Confidential)</div>
 </div>
 
 <div class="dashboard-card">
 <div class="dashboard-card-title">MA Add-on Points</div>
 <div class="dashboard-card-value">TBC</div>
-<div class="dashboard-card-note">MA / HDB requested additions - [02_Mall Tracker](./02_Mall Tracker.md)</div>
+<div class="dashboard-card-note">MA / HDB requested additions - 02_Mall Tracker (Internal / Confidential)</div>
 </div>
 
 </div>
@@ -148,7 +148,7 @@
 | **As per Drawing** | TBC | Points per original design drawing |
 | **MA Requested Addition** | TBC | MA / HDB requested add-on points |
 
-*All values pending source verification. See [02_Mall Tracker](./02_Mall Tracker.md) for detailed breakdown by mall.*
+*All values pending source verification. See 02_Mall Tracker (Internal / Confidential) for detailed breakdown by mall.*
 
 ## Priority Sites
 
@@ -184,7 +184,7 @@
 | Parc Point | Medium | TBC | TBC | TBC | TBC | TBC | TBC | Planning | Pending Verification | Confirm scope and survey response |
 
 *Click on a mall row to view detailed installation data in modal.* 
-*Full tracker available at [02_Mall Tracker](./02_Mall Tracker.md).*
+*Full tracker available at 02_Mall Tracker (Internal / Confidential).*
 
 ## Key Blockers
 

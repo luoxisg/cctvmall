@@ -6,22 +6,10 @@
 
 [01_Project Dashboard](./01_Project Dashboard.md) | [02_Action Tracker](./02_Action Tracker.md) | [03_Submission Tracker](./03_Submission Tracker.md) | [04_Site & Installation Tracker](./04_Site & Installation Tracker.md) | [05_Risk Commercial Decision Log](./05_Risk Commercial Decision Log.md)
 
-## Installation Point List Status
-
-| Mall | Total Points | Drawing-based | MA Add-on | TBC | Point List Submitted | Status |
-|---|---|---|---|---|---|---|
-| Loyang Point | TBC | TBC | TBC | TBC | No | Pending |
-| Canberra Plaza | TBC | TBC | TBC | TBC | No | Pending |
-| Rivervale Plaza | TBC | TBC | TBC | TBC | No | Pending |
-| Parc Point | TBC | TBC | TBC | TBC | No | Pending |
-
-*Installation point list is a prerequisite for all submission deliverables. See [02_Mall Tracker](./02_Mall Tracker.md) for detailed point breakdown by Installation Type and Function Type.*
-
 ## Univers / HDB Submission Checklist
 
 | Submission Item | Control Requirement |
 |---|---|
-| **Installation Point List** | Required before all other submissions (defines scope) |
 | Device Catalogue - CCTV | Required before submission |
 | Equipment List - CCTV | Required before submission |
 | CCTV Floor Plan Markup | Required before submission |

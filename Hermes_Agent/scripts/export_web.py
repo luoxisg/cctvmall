@@ -31,6 +31,7 @@ MALL_MAP_EXPORT = Path("assets") / "images" / "mall-map.png"
 
 PAGE_DESCRIPTIONS = {
     "01_Project Dashboard.md": "Management homepage for the HDB Cloud BMS-CCTV / VA / Footfall PMO export.",
+    "02_Mall Tracker.md": "Installation data control board with CCTV / VA / Footfall point tracking by type and source.",
     "02_Action Tracker.md": "Management-level action summary for ownership, follow-up and escalation.",
     "03_Submission Tracker.md": "Management-level submission readiness, checklist control and blockers.",
     "04_Site & Installation Tracker.md": "Management-level site readiness, installation, QA and handover summary.",
@@ -1037,6 +1038,7 @@ This online export is a clean management-summary version of the internal PMO das
 ## Navigation
 
 - [01_Project Dashboard](./01_Project Dashboard.md)
+- [02_Mall Tracker](./02_Mall Tracker.md)
 - [02_Action Tracker](./02_Action Tracker.md)
 - [03_Submission Tracker](./03_Submission Tracker.md)
 - [04_Site & Installation Tracker](./04_Site & Installation Tracker.md)

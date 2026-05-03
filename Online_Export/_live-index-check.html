@@ -4,12 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</title>
-  <link rel="stylesheet" href="assets/style.css?v=ffa1787263">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="cc-shell">
-    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
-    <aside class="cc-sidebar" id="cc-sidebar">
+    <aside class="cc-sidebar">
       <div class="cc-brand">
         <div class="cc-brand-eyebrow">PMO Command Center</div>
         <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
@@ -20,16 +19,11 @@
         </div>
       </div>
       <div class="cc-nav-section">Public Dashboards</div>
-      <nav class="cc-sidebar-nav" aria-label="Public dashboards">
-          <a class="cc-nav-item" href="index.html"><span class="cc-nav-label">00 Executive Dashboard</span></a>
-          <a class="cc-nav-item" href="action-tracker.html"><span class="cc-nav-label">01 Action Tracker</span></a>
-          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">02 Mall Tracker</span></a>
-          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03 Submission Control</span></a>
-          <a class="cc-nav-item" href="bms-interface.html"><span class="cc-nav-label">04 BMS Interface</span></a>
-          <a class="cc-nav-item" href="cost-management.html"><span class="cc-nav-label">05 Cost Management</span></a>
-          <a class="cc-nav-item" href="risk-commercial-decision-log.html"><span class="cc-nav-label">06 Risk Watchlist</span></a>
-          <a class="cc-nav-item active" href="publishing-guide.html"><span class="cc-nav-label">07 Publishing Guide</span></a>
-      </nav>
+          <a class="cc-nav-item active" href="project-dashboard.html"><span class="cc-nav-label">01  Project Dashboard</span><span class="cc-nav-count">1</span></a>
+          <a class="cc-nav-item" href="action-tracker.html"><span class="cc-nav-label">02  Action Tracker</span><span class="cc-nav-count">2</span></a>
+          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03  Submission Tracker</span><span class="cc-nav-count">3</span></a>
+          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">04  Site & Installation</span><span class="cc-nav-count">4</span></a>
+          <a class="cc-nav-item" href="risk-commercial-decision-log.html"><span class="cc-nav-label">05  Risk / Commercial</span><span class="cc-nav-count">5</span></a>
       <div class="cc-sidebar-foot">
         <div class="cc-status-dot"></div>
         <div>
@@ -41,9 +35,8 @@
 
     <main class="cc-main">
       <header class="cc-topbar">
-        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
         <div>
-          <div class="cc-topbar-title">System / Publishing Guide</div>
+          <div class="cc-topbar-title">Home / Command Center</div>
           <div class="cc-topbar-subtitle">Management-summary package for controlled external sharing</div>
         </div>
         <div class="cc-topbar-meta">
@@ -58,13 +51,13 @@
         <section class="cc-kpi-row">
         <article class="cc-kpi">
           <div class="cc-kpi-label">Dashboard Views</div>
-          <div class="cc-kpi-value">8<span>public pages</span></div>
-          <p class="cc-kpi-note">Executive dashboard, six execution views and one publishing guide.</p>
+          <div class="cc-kpi-value">5<span>public pages</span></div>
+          <p class="cc-kpi-note">Generated from selected PMO summaries.</p>
         </article>
         <article class="cc-kpi">
           <div class="cc-kpi-label">HTML Screens</div>
-          <div class="cc-kpi-value">8<span>safe pages</span></div>
-          <p class="cc-kpi-note">Includes dashboard, tracker pages, cost and interface placeholders, plus publishing guide.</p>
+          <div class="cc-kpi-value">6<span>safe pages</span></div>
+          <p class="cc-kpi-note">Includes home plus five management dashboards.</p>
         </article>
         <article class="cc-kpi">
           <div class="cc-kpi-label">Package Mode</div>
@@ -96,11 +89,11 @@
           <article class="cc-panel">
             <div class="cc-panel-head">
               <h2>Dashboard Stack</h2>
-              <span class="cc-panel-tag">8 views</span>
+              <span class="cc-panel-tag">5 views</span>
             </div>
             <div class="cc-panel-body cc-list">
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="index.html">Executive Dashboard</a>
+              <a class="cc-inline-link" href="project-dashboard.html">Project Dashboard</a>
               <span class="cc-chip">Core summary</span>
             </div>
             <p class="cc-row-note">Executive summary, key deadlines, KPI overview, priority sites and blockers.</p>
@@ -110,35 +103,20 @@
             </div>
             <p class="cc-row-note">Management-level action tracking for open, blocked, waiting and pending verification items.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="site-installation-tracker.html">Mall Tracker</a>
-              <span class="cc-chip">Execution</span>
-            </div>
-            <p class="cc-row-note">Multi-mall site survey, installation, cabling, power, testing and handover control.</p>
-            <div class="cc-list-row">
-              <a class="cc-inline-link" href="submission-tracker.html">Submission Control</a>
+              <a class="cc-inline-link" href="submission-tracker.html">Submission Tracker</a>
               <span class="cc-chip">Regulatory</span>
             </div>
             <p class="cc-row-note">Submission readiness, checklist summary, missing documents and key blockers.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="bms-interface.html">BMS Interface</a>
-              <span class="cc-chip">Integration</span>
+              <a class="cc-inline-link" href="site-installation-tracker.html">Site & Installation</a>
+              <span class="cc-chip">Execution</span>
             </div>
-            <p class="cc-row-note">Cloud BMS interface dependencies, data types, owners and testing readiness.</p>
+            <p class="cc-row-note">Priority sites, installation path, subcontractor readiness, QA and handover summary.</p>
             <div class="cc-list-row">
-              <a class="cc-inline-link" href="cost-management.html">Cost Management</a>
-              <span class="cc-chip">Cost</span>
+              <a class="cc-inline-link" href="risk-commercial-decision-log.html">Risk / Commercial</a>
+              <span class="cc-chip">Decision</span>
             </div>
-            <p class="cc-row-note">Procurement, materials, subcontractor, VO, claim and payment control.</p>
-            <div class="cc-list-row">
-              <a class="cc-inline-link" href="risk-commercial-decision-log.html">Risk Watchlist</a>
-              <span class="cc-chip">Risk</span>
-            </div>
-            <p class="cc-row-note">Cabling, power, lift, access and submission risks needing active control.</p>
-            <div class="cc-list-row">
-              <a class="cc-inline-link" href="publishing-guide.html">Publishing Guide</a>
-              <span class="cc-chip">System</span>
-            </div>
-            <p class="cc-row-note">Public publishing flow, release gate and exported package reference.</p>
+            <p class="cc-row-note">Cabling risks, variation items, commercial assumptions and decision summary.</p>
             </div>
           </article>
 
@@ -174,7 +152,7 @@
               <span class="cc-panel-tag">Generated artifacts</span>
             </div>
             <div class="cc-panel-body">
-              <div class="table-responsive"><table class="cc-table">
+              <table class="cc-table">
                 <thead>
                   <tr>
                     <th>File</th>
@@ -184,57 +162,47 @@
                 </thead>
                 <tbody>
               <tr>
-                <td data-label="File">index.html</td>
-                <td data-label="Purpose">Executive dashboard home page</td>
-                <td data-label="Status">Generated</td>
+                <td>index.html</td>
+                <td>Command-center homepage shell</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">action-tracker.html</td>
-                <td data-label="Purpose">Follow-up and escalation view</td>
-                <td data-label="Status">Generated</td>
+                <td>project-dashboard.html</td>
+                <td>Executive summary and blockers</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">site-installation-tracker.html</td>
-                <td data-label="Purpose">Mall tracker and installation readiness view</td>
-                <td data-label="Status">Generated</td>
+                <td>action-tracker.html</td>
+                <td>Follow-up and escalation view</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">submission-tracker.html</td>
-                <td data-label="Purpose">Submission control summary</td>
-                <td data-label="Status">Generated</td>
+                <td>submission-tracker.html</td>
+                <td>Submission readiness summary</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">bms-interface.html</td>
-                <td data-label="Purpose">Cloud BMS interface control placeholder</td>
-                <td data-label="Status">Generated</td>
+                <td>site-installation-tracker.html</td>
+                <td>Installation and readiness view</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">cost-management.html</td>
-                <td data-label="Purpose">Cost management placeholder</td>
-                <td data-label="Status">Generated</td>
+                <td>risk-commercial-decision-log.html</td>
+                <td>Risk and commercial summary</td>
+                <td>Generated</td>
               </tr>
               <tr>
-                <td data-label="File">risk-commercial-decision-log.html</td>
-                <td data-label="Purpose">Risk watchlist summary</td>
-                <td data-label="Status">Generated</td>
+                <td>assets/style.css</td>
+                <td>Shared public-safe visual system</td>
+                <td>Tracked</td>
               </tr>
               <tr>
-                <td data-label="File">publishing-guide.html</td>
-                <td data-label="Purpose">Publishing workflow and release guide</td>
-                <td data-label="Status">Generated</td>
-              </tr>
-              <tr>
-                <td data-label="File">assets/style.css</td>
-                <td data-label="Purpose">Shared public-safe visual system</td>
-                <td data-label="Status">Tracked</td>
-              </tr>
-              <tr>
-                <td data-label="File">.nojekyll</td>
-                <td data-label="Purpose">Static host compatibility</td>
-                <td data-label="Status">Tracked</td>
+                <td>.nojekyll</td>
+                <td>Static host compatibility</td>
+                <td>Tracked</td>
               </tr>
                 </tbody>
-              </table></div>
+              </table>
             </div>
           </article>
 
@@ -280,41 +248,6 @@
       </div>
     </main>
   </div>
-<script>
-  (() => {
-    const shell = document.querySelector('.cc-shell');
-    const toggle = document.querySelector('.cc-menu-toggle');
-    const sidebar = document.querySelector('.cc-sidebar');
-    const backdrop = document.querySelector('.cc-sidebar-backdrop');
-    if (!shell || !toggle || !sidebar || !backdrop) return;
-
-    const setOpen = (open) => {
-      shell.classList.toggle('is-sidebar-open', open);
-      document.body.classList.toggle('cc-nav-lock', open);
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    };
-
-    toggle.addEventListener('click', () => {
-      setOpen(!shell.classList.contains('is-sidebar-open'));
-    });
-
-    backdrop.addEventListener('click', () => setOpen(false));
-    sidebar.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => setOpen(false));
-    });
-
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        setOpen(false);
-      }
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        setOpen(false);
-      }
-    });
-  })();
-</script>
 </body>
 </html>
+
