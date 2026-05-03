@@ -1486,3 +1486,414 @@ tr:last-child td {
     padding: 12px 14px 14px;
   }
 }
+
+.cc-cockpit-page {
+  background: #08111f;
+  color: #e5e7eb;
+}
+
+.cc-cockpit-page .cc-shell {
+  background:
+    radial-gradient(circle at top left, rgba(0, 174, 239, 0.16), transparent 28%),
+    linear-gradient(180deg, #08111f 0%, #0b1220 100%);
+}
+
+.cc-cockpit-page .cc-main {
+  background: transparent;
+}
+
+.cc-cockpit-page .cc-topbar {
+  background: rgba(11, 18, 32, 0.9);
+  border-bottom: 1px solid #1f2a3d;
+  backdrop-filter: blur(14px);
+}
+
+.cc-cockpit-page .cc-topbar-title {
+  color: #f8fafc;
+  font-size: 1.08rem;
+}
+
+.cc-cockpit-page .cc-topbar-subtitle,
+.cc-cockpit-page .cc-cockpit-meta-line,
+.cc-cockpit-page .cc-topbar-meta {
+  color: #9ca3af;
+}
+
+.cc-cockpit-page .cc-topbar-meta strong {
+  color: #e5e7eb;
+}
+
+.cc-cockpit-page .cc-badge {
+  background: rgba(255, 75, 43, 0.16);
+  color: #ffb3a5;
+  border-left-color: #ff4b2b;
+}
+
+.cc-cockpit-page .cc-badge-secondary {
+  background: rgba(0, 174, 239, 0.14);
+  color: #8ce5ff;
+  border-left-color: #00aeef;
+}
+
+.cc-cockpit-page .cc-canvas {
+  padding-top: 18px;
+}
+
+.cc-cockpit-page .cc-kpi {
+  background: linear-gradient(180deg, #111827 0%, #162033 100%);
+  border: 1px solid #243248;
+  box-shadow: 0 16px 28px rgba(4, 8, 20, 0.32);
+}
+
+.cc-cockpit-page .cc-kpi-accent {
+  border-left: 4px solid #00aeef;
+}
+
+.cc-cockpit-page .cc-kpi-warn {
+  border-left: 4px solid #ffb020;
+}
+
+.cc-cockpit-page .cc-kpi-risk {
+  border-left: 4px solid #ff4b2b;
+}
+
+.cc-cockpit-page .cc-kpi-success {
+  border-left: 4px solid #28c76f;
+}
+
+.cc-cockpit-page .cc-kpi-label,
+.cc-cockpit-page .cc-panel-tag,
+.cc-cockpit-page .cc-mini-metric-label,
+.cc-cockpit-page .cc-filter-group-title,
+.cc-cockpit-page .cc-alert-label {
+  color: #9ca3af;
+}
+
+.cc-cockpit-page .cc-kpi-value,
+.cc-cockpit-page .cc-panel-head h2,
+.cc-cockpit-page .cc-inline-link,
+.cc-cockpit-page .cc-mini-metric-value,
+.cc-cockpit-page .cc-map-roster-title,
+.cc-cockpit-page .cc-empty-title,
+.cc-cockpit-page .cc-alert-title,
+.cc-cockpit-page .cc-disclosure summary {
+  color: #f8fafc;
+}
+
+.cc-cockpit-page .cc-kpi-note,
+.cc-cockpit-page .cc-mini-metric-note,
+.cc-cockpit-page .cc-map-footnote,
+.cc-cockpit-page .cc-map-roster-meta,
+.cc-cockpit-page .cc-empty-state p,
+.cc-cockpit-page .cc-disclosure p,
+.cc-cockpit-page .footer {
+  color: #9ca3af;
+}
+
+.cc-cockpit-page .cc-kpi-link,
+.cc-cockpit-page .cc-mini-metric-link,
+.cc-cockpit-page .footer a {
+  color: #8ce5ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.cc-cockpit-page .cc-panel,
+.cc-cockpit-page .cc-map-shell,
+.cc-cockpit-page .cc-map-legend,
+.cc-cockpit-page .cc-map-roster,
+.cc-cockpit-page .cc-alert-card,
+.cc-cockpit-page .cc-mini-metric,
+.cc-cockpit-page .cc-empty-state,
+.cc-cockpit-page .cc-disclosure {
+  background: linear-gradient(180deg, #111827 0%, #162033 100%);
+  border: 1px solid #223149;
+  box-shadow: 0 18px 28px rgba(4, 8, 20, 0.28);
+}
+
+.cc-cockpit-page .cc-panel-head,
+.cc-cockpit-page .cc-map-banner,
+.cc-cockpit-page .cc-table th {
+  background: rgba(8, 17, 31, 0.72);
+  border-bottom: 1px solid #223149;
+}
+
+.cc-cockpit-page .cc-panel-tag {
+  background: rgba(0, 174, 239, 0.12);
+  border-color: rgba(0, 174, 239, 0.3);
+  color: #8ce5ff;
+}
+
+.cc-cockpit-page .cc-filter-chip {
+  background: rgba(15, 23, 42, 0.75);
+  border-color: #2b3b55;
+  color: #cbd5e1;
+}
+
+.cc-cockpit-page .cc-filter-chip.active {
+  background: rgba(0, 174, 239, 0.16);
+  border-color: rgba(0, 174, 239, 0.44);
+  color: #8ce5ff;
+}
+
+.cc-cockpit-page .cc-filter-chip.is-region {
+  background: rgba(17, 24, 39, 0.85);
+}
+
+.cc-map-toolbar-groups {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.cc-filter-group {
+  display: grid;
+  gap: 8px;
+}
+
+.cc-map-context {
+  display: grid;
+  grid-template-columns: 1.2fr 1.8fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cc-map-legend,
+.cc-map-roster {
+  padding: 14px;
+}
+
+.cc-map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1;
+}
+
+.cc-map-legend-item + .cc-map-legend-item {
+  margin-top: 10px;
+}
+
+.cc-map-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+  flex-shrink: 0;
+}
+
+.cc-map-marker.is-not-started {
+  background: #6b7280;
+}
+
+.cc-map-marker.is-survey {
+  background: #00aeef;
+}
+
+.cc-map-marker.is-installation {
+  background: #7c3aed;
+}
+
+.cc-map-marker.is-testing {
+  background: #22d3ee;
+}
+
+.cc-map-marker.is-submitting {
+  background: #ffb020;
+}
+
+.cc-map-marker.is-bms {
+  background: #f97316;
+}
+
+.cc-map-marker.is-completed {
+  background: #28c76f;
+}
+
+.cc-map-marker.is-risk {
+  background: #ff4b2b;
+}
+
+.cc-map-roster-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.cc-map-roster-row:last-child {
+  border-bottom: none;
+}
+
+.cc-map-roster-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc-alert-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cc-alert-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.cc-alert-item {
+  display: grid;
+  gap: 4px;
+  color: #cbd5e1;
+}
+
+.cc-alert-card.is-risk,
+.cc-alert-card.is-blocked {
+  border-left: 4px solid #ff4b2b;
+  background: linear-gradient(180deg, rgba(255, 75, 43, 0.14) 0%, #162033 100%);
+}
+
+.cc-alert-card.is-waiting {
+  border-left: 4px solid #ffb020;
+  background: linear-gradient(180deg, rgba(255, 176, 32, 0.12) 0%, #162033 100%);
+}
+
+.cc-alert-card.is-progress {
+  border-left: 4px solid #00aeef;
+}
+
+.cc-mini-metric-grid {
+  align-items: stretch;
+}
+
+.cc-mini-metric-link {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.cc-mini-metric-accent {
+  border-color: rgba(0, 174, 239, 0.34);
+}
+
+.cc-mini-metric-warn {
+  border-color: rgba(255, 176, 32, 0.34);
+}
+
+.cc-mini-metric-risk {
+  border-color: rgba(255, 75, 43, 0.34);
+}
+
+.cc-mini-metric-success {
+  border-color: rgba(40, 199, 111, 0.34);
+}
+
+.cc-checkpoint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cc-checkpoint-box {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 7px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.cc-checkpoint-label {
+  font-size: 0.83rem;
+}
+
+.cc-state.is-not-started,
+.cc-checkpoint.is-not-started {
+  color: #cbd5e1;
+  background: rgba(107, 114, 128, 0.18);
+}
+
+.cc-state.is-tbc,
+.cc-checkpoint.is-tbc {
+  color: #cbd5e1;
+  background: rgba(71, 85, 105, 0.24);
+}
+
+.cc-state.is-blocked,
+.cc-checkpoint.is-blocked {
+  color: #ffb3a5;
+  background: rgba(255, 75, 43, 0.2);
+}
+
+.cc-state.is-completed,
+.cc-checkpoint.is-completed {
+  color: #9cf4bf;
+  background: rgba(40, 199, 111, 0.18);
+}
+
+.cc-cockpit-page .cc-state.is-progress,
+.cc-cockpit-page .cc-checkpoint.is-progress {
+  color: #8ce5ff;
+  background: rgba(0, 174, 239, 0.16);
+}
+
+.cc-cockpit-page .cc-state.is-waiting,
+.cc-cockpit-page .cc-checkpoint.is-waiting {
+  color: #ffd089;
+  background: rgba(255, 176, 32, 0.18);
+}
+
+.cc-cockpit-page .cc-state.is-risk,
+.cc-cockpit-page .cc-checkpoint.is-risk {
+  color: #ffb3a5;
+  background: rgba(255, 75, 43, 0.18);
+}
+
+.cc-cockpit-page .cc-state.is-done,
+.cc-cockpit-page .cc-checkpoint.is-done {
+  color: #9cf4bf;
+  background: rgba(40, 199, 111, 0.16);
+}
+
+.cc-cockpit-page .cc-table td,
+.cc-cockpit-page .cc-table th {
+  border-bottom-color: rgba(148, 163, 184, 0.14);
+  color: #e5e7eb;
+}
+
+.cc-cockpit-page .cc-table tbody tr {
+  background: transparent;
+}
+
+.cc-cockpit-page .cc-table td::before {
+  color: #9ca3af;
+}
+
+.cc-cockpit-page .cc-inline-link:hover,
+.cc-cockpit-page .cc-kpi-link:hover,
+.cc-cockpit-page .cc-mini-metric-link:hover,
+.cc-cockpit-page .footer a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .cc-map-context {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-map-roster-row,
+  .cc-alert-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
