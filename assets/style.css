@@ -2797,6 +2797,10 @@ tr:last-child td {
   gap: 14px;
 }
 
+.cc-section-kpi-summary-mobile {
+  display: none;
+}
+
 .cc-kpi-card {
   display: grid;
   gap: 10px;
@@ -2925,6 +2929,31 @@ tr:last-child td {
   gap: 18px;
 }
 
+.cc-ceo-card {
+  border: 1px solid #223149;
+  border-radius: 16px;
+  background: rgba(8, 17, 31, 0.54);
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+}
+
+.cc-ceo-title {
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.cc-ceo-list {
+  margin: 0;
+  padding-left: 18px;
+  color: #cbd5e1;
+}
+
+.cc-ceo-list li + li {
+  margin-top: 6px;
+}
+
 .cc-badge-list {
   display: flex;
   flex-wrap: wrap;
@@ -2979,6 +3008,142 @@ tr:last-child td {
 }
 
 @media (max-width: 768px) {
+  .cc-cockpit-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cc-cockpit-layout,
+  .cc-insight-grid {
+    display: contents;
+  }
+
+  .cc-section-kpis,
+  .cc-section-installation-summary,
+  .cc-section-stage-board,
+  .cc-section-blockers,
+  .cc-section-bms,
+  .cc-section-cost {
+    display: none;
+  }
+
+  .cc-section-kpi-summary-mobile {
+    display: block;
+  }
+
+  .cc-cockpit-hero {
+    order: 1;
+  }
+
+  .cc-section-action-need {
+    order: 2;
+  }
+
+  .cc-section-ceo {
+    order: 3;
+  }
+
+  .cc-section-map {
+    order: 4;
+  }
+
+  .cc-section-pipeline {
+    order: 5;
+  }
+
+  .cc-section-priority-list {
+    order: 6;
+  }
+
+  .cc-section-vendors {
+    order: 7;
+  }
+
+  .cc-section-kpi-summary-mobile {
+    order: 8;
+  }
+
+  .cc-section-completed {
+    order: 9;
+  }
+
+  .cc-section-data-quality {
+    order: 10;
+  }
+
+  .cc-command-card {
+    padding: 16px;
+  }
+
+  .cc-command-chipbar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cc-kpi-summary-mobile-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cc-map-context {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-map-shell {
+    margin-top: 4px;
+  }
+
+  .cc-live-map {
+    min-height: 340px;
+  }
+
+  .cc-alert-card,
+  .cc-pipeline-card,
+  .cc-mall-card,
+  .cc-vendor-card,
+  .cc-ceo-card {
+    padding: 14px;
+  }
+
+  .cc-alert-grid,
+  .cc-ceo-grid,
+  .cc-vendor-grid,
+  .cc-mall-sheet-grid,
+  .cc-mall-sheet-docs {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-alert-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cc-pipeline-steps {
+    gap: 6px;
+  }
+
+  .cc-pipeline-step {
+    padding: 7px 9px;
+    font-size: 0.76rem;
+  }
+
+  .cc-pipeline-step strong {
+    font-size: 0.72rem;
+  }
+
+  .cc-compact-kpi {
+    padding: 12px 10px;
+  }
+
+  .cc-compact-kpi strong {
+    font-size: 1rem;
+  }
+
+  .cc-mall-sheet {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
   .cc-kpi-grid,
   .cc-summary-grid,
   .cc-bms-grid,

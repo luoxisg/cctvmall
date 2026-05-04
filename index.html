@@ -71,12 +71,12 @@
           </div>
         </section>
 
-        <section class="cc-kpi-grid" id="kpi-grid" aria-label="Global header metrics"></section>
+        <section class="cc-kpi-grid cc-section-kpis" id="kpi-grid" aria-label="Global header metrics"></section>
 
         <section class="cc-cockpit-layout">
-          <article class="cc-panel cc-cockpit-map-panel">
+          <article class="cc-panel cc-cockpit-map-panel cc-section-map">
             <div class="cc-panel-head">
-              <h2>Mall Coverage Live Map</h2>
+              <h2>Mall Map & Vendor Layout</h2>
               <span class="cc-panel-tag">OneMap Singapore / Leaflet</span>
             </div>
             <div class="cc-panel-body">
@@ -86,7 +86,7 @@
                   <div class="cc-chip-row" id="stage-chip-row"></div>
                 </div>
                 <div class="cc-filter-group">
-                  <div class="cc-filter-group-title">Region Filter</div>
+                  <div class="cc-filter-group-title" id="secondary-filter-title">Region Filter</div>
                   <div class="cc-chip-row" id="region-chip-row"></div>
                 </div>
               </div>
@@ -131,10 +131,10 @@
             </div>
           </article>
 
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-action-need">
             <div class="cc-panel-head">
-              <h2>Executive Alert Stack</h2>
-              <span class="cc-panel-tag">Priority controls</span>
+              <h2>Action Need</h2>
+              <span class="cc-panel-tag">Top 3-5 priority actions</span>
             </div>
             <div class="cc-panel-body">
               <div class="cc-alert-stack" id="alert-stack"></div>
@@ -142,7 +142,23 @@
           </article>
         </section>
 
-        <section class="cc-panel">
+        <article class="cc-panel cc-section-ceo">
+          <div class="cc-panel-head">
+            <h2>CEO Arrangements</h2>
+            <span class="cc-panel-tag">Today / This Week</span>
+          </div>
+          <div class="cc-panel-body" id="ceo-arrangements"></div>
+        </article>
+
+        <article class="cc-panel cc-section-pipeline">
+          <div class="cc-panel-head">
+            <h2>Mall Delivery Pipeline</h2>
+            <span class="cc-panel-tag">Compact mobile stage rows</span>
+          </div>
+          <div class="cc-panel-body" id="delivery-pipeline"></div>
+        </article>
+
+        <section class="cc-panel cc-section-installation-summary">
           <div class="cc-panel-head">
             <h2>Installation Data Summary</h2>
             <span class="cc-panel-tag">Split fields preserved as TBC</span>
@@ -152,7 +168,7 @@
           </div>
         </section>
 
-        <section class="cc-panel cc-stage-board">
+        <section class="cc-panel cc-stage-board cc-section-stage-board">
           <div class="cc-panel-head">
             <h2>Mall Stage + Installation Data Control Board</h2>
             <span class="cc-panel-tag">Delivery stage control</span>
@@ -220,26 +236,44 @@
           </div>
         </section>
 
+        <article class="cc-panel cc-section-vendors">
+          <div class="cc-panel-head">
+            <h2>Vendor Responsibility</h2>
+            <span class="cc-panel-tag">Owner-based control</span>
+          </div>
+          <div class="cc-panel-body" id="vendor-responsibility"></div>
+        </article>
+
+        <article class="cc-panel cc-section-kpi-summary-mobile">
+          <div class="cc-panel-head">
+            <h2>KPI Summary</h2>
+            <span class="cc-panel-tag">Compact mobile grid</span>
+          </div>
+          <div class="cc-panel-body">
+            <div class="cc-compact-kpis cc-kpi-summary-mobile-grid" id="kpi-summary-mobile"></div>
+          </div>
+        </article>
+
         <section class="cc-insight-grid">
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-priority-list">
             <div class="cc-panel-head">
-              <h2>Active Priority Malls</h2>
-              <span class="cc-panel-tag">High attention only</span>
+              <h2>Mall Priority List</h2>
+              <span class="cc-panel-tag">At risk first</span>
             </div>
             <div class="cc-panel-body">
               <div class="cc-mall-card-list" id="priority-malls"></div>
             </div>
           </article>
 
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-completed">
             <div class="cc-panel-head">
-              <h2>Completed Malls</h2>
+              <h2>Completed / Closed</h2>
               <span class="cc-panel-tag">Formal closure only</span>
             </div>
             <div class="cc-panel-body" id="completed-malls"></div>
           </article>
 
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-blockers">
             <div class="cc-panel-head">
               <h2>Key Blockers</h2>
               <span class="cc-panel-tag">Escalation watchlist</span>
@@ -247,7 +281,7 @@
             <div class="cc-panel-body" id="blockers-panel"></div>
           </article>
 
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-bms">
             <div class="cc-panel-head">
               <h2>BMS Interface Snapshot</h2>
               <span class="cc-panel-tag">Cloud BMS status</span>
@@ -258,7 +292,7 @@
             </div>
           </article>
 
-          <article class="cc-panel">
+          <article class="cc-panel cc-section-cost">
             <div class="cc-panel-head">
               <h2>Cost / VO Exposure Snapshot</h2>
               <span class="cc-panel-tag">Commercial control</span>
@@ -267,6 +301,20 @@
               <div class="cc-mini-metric-grid cc-cost-grid" id="cost-snapshot"></div>
             </div>
           </article>
+        </section>
+
+        <article class="cc-panel cc-section-data-quality">
+          <div class="cc-panel-head">
+            <h2>Data Quality / Source Log</h2>
+            <span class="cc-panel-tag">Confidence and source</span>
+          </div>
+          <div class="cc-panel-body" id="data-quality-log"></div>
+        </article>
+
+        <div class="cc-mall-sheet-backdrop" id="mall-sheet-backdrop" hidden></div>
+        <section class="cc-mall-sheet" id="mall-sheet" hidden aria-live="polite" aria-label="Mall detail bottom sheet">
+          <button class="cc-mall-sheet-close" id="mall-sheet-close" type="button" aria-label="Close mall detail">Close</button>
+          <div class="cc-mall-sheet-content" id="mall-sheet-content"></div>
         </section>
 
         <p class="footer">Public-safe cockpit view. The homepage now stays data-driven: live map, stage control, blockers, BMS and cost exposure all read from the exported mall dataset without forcing unknown values to zero.</p>
