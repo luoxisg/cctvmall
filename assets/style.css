@@ -2773,3 +2773,221 @@ tr:last-child td {
     overflow-y: auto;
   }
 }
+
+.cc-cockpit-v2 {
+  display: grid;
+  gap: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(0, 174, 239, 0.08), transparent 28%),
+    radial-gradient(circle at top left, rgba(40, 199, 111, 0.05), transparent 20%);
+  border-radius: 24px;
+}
+
+.cc-cockpit-hero {
+  gap: 16px;
+}
+
+.cc-cockpit-hero p {
+  max-width: 1100px;
+}
+
+.cc-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cc-kpi-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 18px;
+  border: 1px solid #223149;
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.94) 0%, rgba(12, 18, 32, 0.98) 100%);
+  box-shadow: 0 18px 28px rgba(4, 8, 20, 0.28);
+}
+
+.cc-kpi-card-neutral {
+  border-color: rgba(0, 174, 239, 0.24);
+}
+
+.cc-kpi-card-warn {
+  border-color: rgba(255, 176, 32, 0.28);
+}
+
+.cc-kpi-card-risk {
+  border-color: rgba(255, 75, 43, 0.32);
+}
+
+.cc-kpi-card-success {
+  border-color: rgba(40, 199, 111, 0.32);
+}
+
+.cc-kpi-card-progress {
+  border-color: rgba(0, 174, 239, 0.36);
+}
+
+.cc-cockpit-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(320px, 0.95fr);
+  gap: 18px;
+}
+
+.cc-cockpit-layout > .cc-panel:last-child {
+  position: sticky;
+  top: 18px;
+  height: fit-content;
+}
+
+.cc-cockpit-map-panel,
+.cc-map-sidecard {
+  min-width: 0;
+}
+
+.cc-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cc-board-controls {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 14px;
+  border: 1px solid rgba(43, 59, 85, 0.8);
+  border-radius: 18px;
+  background: rgba(8, 17, 31, 0.48);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.cc-field {
+  display: grid;
+  gap: 8px;
+}
+
+.cc-field span {
+  color: #9ca3af;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.cc-input,
+.cc-select {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid #2b3b55;
+  background: rgba(8, 17, 31, 0.84);
+  color: #e5e7eb;
+  padding: 0 14px;
+  font: inherit;
+}
+
+.cc-input::placeholder {
+  color: #6b7280;
+}
+
+.cc-board-summary {
+  margin-bottom: 14px;
+  color: #9ca3af;
+  font-size: 0.94rem;
+  padding-left: 2px;
+}
+
+.cc-wrap-cell {
+  white-space: normal;
+  min-width: 240px;
+}
+
+.cc-summary-grid,
+.cc-bms-grid,
+.cc-cost-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cc-mini-metric-linkable {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cc-mini-metric-linkable:hover {
+  border-color: rgba(0, 174, 239, 0.4);
+}
+
+.cc-insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cc-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.cc-sublist-title {
+  margin-top: 18px;
+  color: #9ca3af;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cc-cockpit-page .cc-input:focus,
+.cc-cockpit-page .cc-select:focus {
+  outline: 2px solid rgba(0, 174, 239, 0.28);
+  outline-offset: 0;
+  border-color: rgba(0, 174, 239, 0.48);
+}
+
+.cc-cockpit-page .cc-kpi-card:hover,
+.cc-cockpit-page .cc-mini-metric-linkable:hover {
+  transform: translateY(-1px);
+  transition: transform 0.18s ease;
+}
+
+@media (max-width: 1280px) {
+  .cc-kpi-grid,
+  .cc-summary-grid,
+  .cc-bms-grid,
+  .cc-cost-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cc-board-controls {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  .cc-cockpit-layout,
+  .cc-insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-cockpit-layout > .cc-panel:last-child {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .cc-kpi-grid,
+  .cc-summary-grid,
+  .cc-bms-grid,
+  .cc-cost-grid,
+  .cc-board-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-wrap-cell {
+    min-width: 180px;
+  }
+}
