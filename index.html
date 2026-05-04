@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>00 Executive Cockpit</title>
-  <link rel="stylesheet" href="assets/style.css?v=e19d85506f">
+  <link rel="stylesheet" href="assets/style.css?v=1d15aea8d3">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
@@ -47,107 +47,409 @@
         <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
         <div class="cc-cockpit-titlewrap">
           <div class="cc-topbar-title">00 Executive Cockpit</div>
-          <div class="cc-topbar-subtitle">CCTC Multi-Mall CCTV / VA / Footfall Installation + Cloud BMS Interface</div>
-          <div class="cc-cockpit-meta-line">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Last Updated: <strong>04 May 2026</strong></div>
+          <div class="cc-topbar-subtitle">CCTC Multi-Mall CCTV / VA / Footfall + Cloud BMS</div>
+          <div class="cc-cockpit-meta-line">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Last Updated: <strong>04 May 2026</strong> | Data: <strong>PDF Baseline / Site Survey / Tracker</strong></div>
         </div>
         <div class="cc-topbar-meta">
           <span class="cc-badge">At Risk</span>
           <span class="cc-badge cc-badge-secondary">41 Malls</span>
           <span class="cc-badge cc-badge-secondary">3,092 CCTV</span>
           <span class="cc-badge cc-badge-secondary">1,075 VA</span>
+          <span class="cc-badge cc-badge-secondary">Footfall Pending</span>
         </div>
       </header>
 
       <div class="cc-canvas">
-        <section class="cc-kpi-row cc-kpi-row-cockpit">
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-accent">
-            <div class="cc-kpi-label">Total Malls</div>
-            <div class="cc-kpi-value">41</div>
-            <p class="cc-kpi-note">Main mall / complex list from the PDF baseline.</p>
-            <a class="cc-kpi-link" href="site-installation-tracker.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-accent">
-            <div class="cc-kpi-label">Total CCTV Points</div>
-            <div class="cc-kpi-value">3,092</div>
-            <p class="cc-kpi-note">Physical CCTV point count from the attached PDF.</p>
-            <a class="cc-kpi-link" href="site-installation-tracker.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-accent">
-            <div class="cc-kpi-label">VA Function Points</div>
-            <div class="cc-kpi-value">1,075</div>
-            <p class="cc-kpi-note">Intrusion detection / VA baseline from the PDF.</p>
-            <a class="cc-kpi-link" href="bms-interface.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-warn">
-            <div class="cc-kpi-label">Footfall Points</div>
-            <div class="cc-kpi-value">Pending Split</div>
-            <p class="cc-kpi-note">Footfall split stays visible as Pending Split until the detailed mall tracker is frozen.</p>
-            <a class="cc-kpi-link" href="site-installation-tracker.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-accent">
-            <div class="cc-kpi-label">Active Malls</div>
-            <div class="cc-kpi-value">5</div>
-            <p class="cc-kpi-note">Priority and near-term execution queue now under PMO control.</p>
-            <a class="cc-kpi-link" href="action-tracker.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-success">
-            <div class="cc-kpi-label">Completed Malls</div>
-            <div class="cc-kpi-value">0</div>
-            <p class="cc-kpi-note">Formal closure requires survey, install, test, submission, BMS, cost and handover close-out.</p>
-            <a class="cc-kpi-link" href="index.html#completed-malls">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-risk">
-            <div class="cc-kpi-label">Blocked / At Risk</div>
-            <div class="cc-kpi-value">3</div>
-            <p class="cc-kpi-note">Malls carrying waiting, blocked or at-risk status in the current export.</p>
-            <a class="cc-kpi-link" href="risk-commercial-decision-log.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-warn">
-            <div class="cc-kpi-label">BMS Pending</div>
-            <div class="cc-kpi-value">41</div>
-            <p class="cc-kpi-note">Cloud BMS interface is not yet closed for these malls.</p>
-            <a class="cc-kpi-link" href="bms-interface.html">Open detail</a>
-          </article>
-          <article class="cc-kpi cc-kpi-cockpit cc-kpi-risk">
-            <div class="cc-kpi-label">Cost / VO Risk</div>
-            <div class="cc-kpi-value">41</div>
-            <p class="cc-kpi-note">Point split and MA add-on exposure remain under controlled review.</p>
-            <a class="cc-kpi-link" href="cost-management.html">Open detail</a>
-          </article>
-        </section>
-
-        <section class="cc-grid">
-          <article class="cc-panel cc-span-2 cc-map-panel">
+        <section class="cc-desktop-summary">
+          <div class="cc-command-card">
+            <div class="cc-command-eyebrow">PC Summary</div>
+            <h2>00 Executive Cockpit</h2>
+            <p>CCTC Multi-Mall CCTV / VA / Footfall + Cloud BMS. Keep the homepage to one screen and push detailed review into the linked workstream pages.</p>
+            <div class="cc-command-chipbar">
+              <span class="cc-command-chip cc-command-chip-risk">
+                <strong>3</strong>
+                <span>At Risk</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>41</strong>
+                <span>Malls</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>3,092</strong>
+                <span>CCTV</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>1,075</strong>
+                <span>VA</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-warn">
+                <strong>Pending Split</strong>
+                <span>Footfall</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-success">
+                <strong>0</strong>
+                <span>Completed</span>
+              </span>
+            </div>
+            <div class="cc-command-meta">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Data: <strong>PDF Baseline / Site Survey / Tracker</strong></div>
+            <div class="cc-command-cta-row"><a class="cc-primary-cta" href="executive-desktop.html">Open PC summary board</a><a class="cc-secondary-cta" href="action-tracker.html">Go to Action Tracker</a></div>
+          </div>
+          <div class="cc-desktop-summary-grid">
+          <article class="cc-panel cc-span-2">
             <div class="cc-panel-head">
-              <h2>Mall Coverage Live Map</h2>
-              <span class="cc-panel-tag">Executive view</span>
+              <h2>Action Need</h2>
+              <span class="cc-panel-tag">Top 3 priorities</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-action-list">
+              <a class="cc-action-card cc-action-card-compact" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Canberra Plaza</div>
+                <div class="cc-action-issue">Survey report and CR-06 sign-off are still not frozen.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>Xjera / Ethan</strong> | Due: <strong>2026-05-04</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card cc-action-card-compact" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">In Progress</span>
+                </div>
+                <div class="cc-action-title">Loyang Point</div>
+                <div class="cc-action-issue">5-document package still needs closure before submission cut-off.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>CCTC / Xjera</strong> | Due: <strong>2026-05-04</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card cc-action-card-compact" href="bms-interface.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-waiting">P1</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Rivervale Plaza / Loyang Point</div>
+                <div class="cc-action-issue">BMS event mapping and final data owner remain partially confirmed.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>Univers / Xjera</strong> | Due: <strong>2026-05-06</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Workstream Links</h2>
+              <span class="cc-panel-tag">Open the right child page</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-workstream-grid">
+              <a class="cc-workstream-link" href="action-tracker.html">
+                <span class="cc-workstream-code">01</span>
+                <span class="cc-workstream-text">
+                  <strong>Action Tracker</strong>
+                  <small>Management-level action tracking for open, blocked, waiting and pending verification items.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="site-installation-tracker.html">
+                <span class="cc-workstream-code">02</span>
+                <span class="cc-workstream-text">
+                  <strong>Mall Tracker</strong>
+                  <small>Multi-mall site survey, installation, cabling, power, testing and handover control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="submission-tracker.html">
+                <span class="cc-workstream-code">03</span>
+                <span class="cc-workstream-text">
+                  <strong>Submission Control</strong>
+                  <small>Submission readiness, checklist summary, missing documents and key blockers.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="bms-interface.html">
+                <span class="cc-workstream-code">04</span>
+                <span class="cc-workstream-text">
+                  <strong>BMS Interface</strong>
+                  <small>Cloud BMS interface dependencies, data types, owners and testing readiness.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="cost-management.html">
+                <span class="cc-workstream-code">05</span>
+                <span class="cc-workstream-text">
+                  <strong>Cost Management</strong>
+                  <small>Procurement, materials, subcontractor, VO, claim and payment control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="risk-commercial-decision-log.html">
+                <span class="cc-workstream-code">06</span>
+                <span class="cc-workstream-text">
+                  <strong>Risk Watchlist</strong>
+                  <small>Cabling, power, lift, access and submission risks needing active control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="publishing-guide.html">
+                <span class="cc-workstream-code">07</span>
+                <span class="cc-workstream-text">
+                  <strong>Publishing Guide</strong>
+                  <small>Public publishing flow, release gate and exported package reference.</small>
+                </span>
+              </a>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Vendor Responsibility</h2>
+              <span class="cc-panel-tag">Owner snapshot</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-vendor-grid cc-vendor-grid-compact">
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Univers</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>1</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>2</strong></div>
+                <div class="cc-vendor-note">Main issues: PTW / access / interface coordination</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">CCTC</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>37</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>1</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>1</strong></div>
+                <div class="cc-vendor-note">Main issues: Submission package / baseline freeze</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Xjera</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>4</strong></div>
+                <div class="cc-vendor-note">Main issues: Survey / VA / BMS readiness</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Subcontractor</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>0</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Manpower / night work / site execution</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>No</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">HDB / MA</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>40</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Approval / sign-off / access</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Cloud BMS</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Event mapping / owner confirmation</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Data Quality</h2>
+              <span class="cc-panel-tag">Source / confidence</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-data-grid">
+                <div class="cc-data-row"><span>PDF Baseline</span><strong>Loaded</strong></div>
+                <div class="cc-data-row"><span>Site Survey</span><strong>Partially Updated</strong></div>
+                <div class="cc-data-row"><span>Mall Tracker</span><strong>Not Frozen</strong></div>
+                <div class="cc-data-row"><span>Footfall Split</span><strong>Pending Split</strong></div>
+                <div class="cc-data-row"><span>VA Function List</span><strong>Pending Confirmation</strong></div>
+                <div class="cc-data-row"><span>Last Updated By</span><strong>CCTC / Xjera</strong></div>
+                <div class="cc-data-row"><span>Last Updated</span><strong>04 May 2026</strong></div>
+              </div>
+            </div>
+          </article>
+          </div>
+        </section>
+        <section class="cc-grid cc-mobile-cockpit-grid">
+        <section class="cc-mobile-cockpit">
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Executive Command Bar</h2>
+              <span class="cc-panel-tag">Mobile first</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-desktop-entry">
+                <a class="cc-primary-cta" href="executive-desktop.html">Open PC Summary</a>
+                <p>Need the one-screen desktop overview? Open the dedicated PC version from here.</p>
+              </div>
+              <div class="cc-compact-kpis">
+                <div class="cc-compact-kpi"><strong>41</strong><span>Malls</span></div>
+                <div class="cc-compact-kpi"><strong>3,092</strong><span>CCTV</span></div>
+                <div class="cc-compact-kpi"><strong>1,075</strong><span>VA</span></div>
+                <div class="cc-compact-kpi"><strong>Pending Split</strong><span>Footfall</span></div>
+                <div class="cc-compact-kpi"><strong>0</strong><span>Completed</span></div>
+                <div class="cc-compact-kpi"><strong>3</strong><span>At Risk</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Action Need</h2>
+              <span class="cc-panel-tag">Top priority controls</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-action-list">
+              <a class="cc-action-card" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Canberra Plaza</div>
+                <div class="cc-action-issue">Survey report and CR-06 sign-off are still not frozen.</div>
+                <div class="cc-action-grid">
+                  <div><span class="cc-action-label">Impact</span><strong>Submission readiness and May handover path remain exposed.</strong></div>
+                  <div><span class="cc-action-label">Owner</span><strong>Xjera / Ethan</strong></div>
+                  <div><span class="cc-action-label">CEO Action</span><strong>Escalate formal sign-off with Univers and HDB this morning.</strong></div>
+                  <div><span class="cc-action-label">Due</span><strong>2026-05-04</strong></div>
+                </div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">In Progress</span>
+                </div>
+                <div class="cc-action-title">Loyang Point</div>
+                <div class="cc-action-issue">5-document package still needs closure before submission cut-off.</div>
+                <div class="cc-action-grid">
+                  <div><span class="cc-action-label">Impact</span><strong>Formal submission target slips if package freeze is not closed today.</strong></div>
+                  <div><span class="cc-action-label">Owner</span><strong>CCTC / Xjera</strong></div>
+                  <div><span class="cc-action-label">CEO Action</span><strong>Assign same-day package owner and close any document gap by noon.</strong></div>
+                  <div><span class="cc-action-label">Due</span><strong>2026-05-04</strong></div>
+                </div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card" href="bms-interface.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-waiting">P1</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Rivervale Plaza / Loyang Point</div>
+                <div class="cc-action-issue">BMS event mapping and final data owner remain partially confirmed.</div>
+                <div class="cc-action-grid">
+                  <div><span class="cc-action-label">Impact</span><strong>VA alert routing and Cloud BMS handoff cannot be frozen cleanly.</strong></div>
+                  <div><span class="cc-action-label">Owner</span><strong>Univers / Xjera</strong></div>
+                  <div><span class="cc-action-label">CEO Action</span><strong>Confirm one interface owner and lock the event catalogue this week.</strong></div>
+                  <div><span class="cc-action-label">Due</span><strong>2026-05-06</strong></div>
+                </div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card" href="action-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-waiting">P1</span>
+                  <span class="cc-state is-waiting">Waiting</span>
+                </div>
+                <div class="cc-action-title">Parc Point</div>
+                <div class="cc-action-issue">Survey access still depends on external MA and HDB response.</div>
+                <div class="cc-action-grid">
+                  <div><span class="cc-action-label">Impact</span><strong>Survey closure and downstream installation slot remain uncommitted.</strong></div>
+                  <div><span class="cc-action-label">Owner</span><strong>Xjera Labs</strong></div>
+                  <div><span class="cc-action-label">CEO Action</span><strong>Push MA / HDB for a committed survey slot and unblock sequencing.</strong></div>
+                  <div><span class="cc-action-label">Due</span><strong>2026-05-09</strong></div>
+                </div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>CEO Arrangements</h2>
+              <span class="cc-panel-tag">Today / This Week / Escalation</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-ceo-grid">
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">CEO Today</div>
+                <ul class="cc-ceo-list">
+                  <li>Call Univers PM and close Canberra / Loyang submission blockers.</li>
+                  <li>Assign final owner for BMS event mapping and Cloud BMS data path.</li>
+                  <li>Confirm survey access escalation path for Parc Point.</li>
+                </ul>
+              </article>
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">CEO This Week</div>
+                <ul class="cc-ceo-list">
+                  <li>Freeze mall tracker baseline for point split, add-on and VO exposure.</li>
+                  <li>Review installation manpower and subcontractor readiness for priority malls.</li>
+                  <li>Confirm completed-mall closure criteria for testing, submission and BMS.</li>
+                </ul>
+              </article>
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">External Coordination</div>
+                <ul class="cc-ceo-list">
+                  <li>HDB / MA sign-off for survey and submission control.</li>
+                  <li>Univers PM alignment on PTW, access and milestone ownership.</li>
+                  <li>Cloud BMS party confirmation for interface owner and event mapping.</li>
+                </ul>
+              </article>
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">Internal Decision</div>
+                <ul class="cc-ceo-list">
+                  <li>Freeze replacement / relocation / new-install point categorisation.</li>
+                  <li>Decide whether to add manpower for the at-risk submission path.</li>
+                  <li>Approve one standard submission evidence pack for priority malls.</li>
+                </ul>
+              </article>
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">Commercial / Contract</div>
+                <ul class="cc-ceo-list">
+                  <li>Close MA add-on visibility before VO assumptions drift.</li>
+                  <li>Review procurement / subcontractor exposure tied to unresolved scope split.</li>
+                </ul>
+              </article>
+              <article class="cc-ceo-card">
+                <div class="cc-ceo-title">Risk Escalation</div>
+                <ul class="cc-ceo-list">
+                  <li>Submission evidence not frozen.</li>
+                  <li>BMS event mapping owner still unclear.</li>
+                  <li>Survey access and sign-off dependencies remain external.</li>
+                </ul>
+              </article>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3 cc-map-panel">
+            <div class="cc-panel-head">
+              <h2>Mall Map & Vendor Layout</h2>
+              <span class="cc-panel-tag">Map command entry</span>
             </div>
             <div class="cc-panel-body">
               <div class="cc-map-toolbar-groups">
               <div class="cc-filter-group">
-                <div class="cc-filter-group-title">Stage Filter</div>
+                <div class="cc-filter-group-title">Status Filter</div>
                 <div class="cc-map-toolbar">
 <button class="cc-filter-chip active" type="button" data-filter-type="stage" data-filter-value="All">All <strong>41</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Not Started">Not Started <strong>37</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Site Survey">Site Survey <strong>1</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Installation">Installation <strong>0</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Testing">Testing <strong>0</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Submitting">Submitting <strong>2</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="BMS Interface">BMS Interface <strong>1</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Completed">Completed <strong>0</strong></button>
-<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Blocked">Blocked <strong>0</strong></button>
 <button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="At Risk">At Risk <strong>2</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Action Needed">Action Needed <strong>2</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Installing">Installing <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Testing">Testing <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Cloud BMS">Cloud BMS <strong>1</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Completed">Completed <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Not Started">Not Started <strong>36</strong></button>
                 </div>
               </div>
               <div class="cc-filter-group">
-                <div class="cc-filter-group-title">Region Filter</div>
+                <div class="cc-filter-group-title">Owner Filter</div>
                 <div class="cc-map-toolbar">
-<button class="cc-filter-chip is-region active" type="button" data-filter-type="region" data-filter-value="All">All <strong>41</strong></button>
-<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="North">North <strong>9</strong></button>
-<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="North-East">North-East <strong>8</strong></button>
-<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="East">East <strong>5</strong></button>
-<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="Central / South">Central / South <strong>9</strong></button>
-<button class="cc-filter-chip is-region" type="button" data-filter-type="region" data-filter-value="West">West <strong>10</strong></button>
+<button class="cc-filter-chip is-owner active" type="button" data-filter-type="owner" data-filter-value="All">All <strong>41</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Univers">Univers <strong>1</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="CCTC">CCTC <strong>37</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Xjera">Xjera <strong>3</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Subcontractor">Subcontractor <strong>0</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="HDB / MA">HDB / MA <strong>0</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="PMO">PMO <strong>0</strong></button>
                 </div>
               </div>
               </div>
@@ -199,428 +501,249 @@
                 </div>
                 <div class="cc-map-roster">
                   <div class="cc-filter-group-title">Priority Marker Roster</div>
-                  <a class="cc-map-roster-row" href="submission-tracker.html">
+                  <a class="cc-map-roster-row" href="submission-tracker.html" data-mall-name="Loyang Point">
                     <div class="cc-map-roster-main">
-                      <span class="cc-map-marker is-risk"></span>
+                      <span class="cc-map-marker is-risk shape-circle size-medium"></span>
                       <div>
                         <div class="cc-map-roster-title">Loyang Point</div>
-                        <div class="cc-map-roster-meta">East / Submitting</div>
+                        <div class="cc-map-roster-meta">East / Submitting / CCTC</div>
                       </div>
                     </div>
                     <span class="cc-state is-risk">At Risk</span>
                   </a>
-                  <a class="cc-map-roster-row" href="submission-tracker.html">
+                  <a class="cc-map-roster-row" href="submission-tracker.html" data-mall-name="Canberra Plaza">
                     <div class="cc-map-roster-main">
-                      <span class="cc-map-marker is-risk"></span>
+                      <span class="cc-map-marker is-risk shape-circle size-large"></span>
                       <div>
                         <div class="cc-map-roster-title">Canberra Plaza</div>
-                        <div class="cc-map-roster-meta">North / Submitting</div>
+                        <div class="cc-map-roster-meta">North / Submitting / Xjera</div>
                       </div>
                     </div>
                     <span class="cc-state is-risk">At Risk</span>
                   </a>
-                  <a class="cc-map-roster-row" href="bms-interface.html">
+                  <a class="cc-map-roster-row" href="bms-interface.html" data-mall-name="Rivervale Plaza">
                     <div class="cc-map-roster-main">
-                      <span class="cc-map-marker is-bms"></span>
+                      <span class="cc-map-marker is-bms shape-square size-small"></span>
                       <div>
                         <div class="cc-map-roster-title">Rivervale Plaza</div>
-                        <div class="cc-map-roster-meta">North-East / BMS Interface</div>
+                        <div class="cc-map-roster-meta">North-East / BMS Interface / Univers</div>
                       </div>
                     </div>
                     <span class="cc-state is-progress">In Preparation</span>
                   </a>
-                  <a class="cc-map-roster-row" href="action-tracker.html">
+                  <a class="cc-map-roster-row" href="action-tracker.html" data-mall-name="Parc Point">
                     <div class="cc-map-roster-main">
-                      <span class="cc-map-marker is-survey"></span>
+                      <span class="cc-map-marker is-survey shape-circle size-medium"></span>
                       <div>
                         <div class="cc-map-roster-title">Parc Point</div>
-                        <div class="cc-map-roster-meta">West / Site Survey</div>
+                        <div class="cc-map-roster-meta">West / Site Survey / Xjera</div>
                       </div>
                     </div>
                     <span class="cc-state is-waiting">Waiting</span>
                   </a>
                 </div>
               </div>
+              <div class="cc-mall-sheet-backdrop" hidden></div>
+              <section class="cc-mall-sheet" hidden aria-live="polite" aria-label="Mall detail bottom sheet">
+                <button class="cc-mall-sheet-close" type="button" aria-label="Close mall detail">Close</button>
+                <div class="cc-mall-sheet-content"></div>
+              </section>
             </div>
           </article>
-          <article class="cc-panel">
+          <article class="cc-panel cc-span-3">
             <div class="cc-panel-head">
-              <h2>Executive Alert Stack</h2>
-              <span class="cc-panel-tag">Deadlines / Risks</span>
+              <h2>Mall Delivery Pipeline</h2>
+              <span class="cc-panel-tag">Compact mobile stages</span>
             </div>
             <div class="cc-panel-body">
-              <div class="cc-alert-stack">
-              <a class="cc-alert-card is-risk" href="submission-tracker.html">
-                <div class="cc-alert-head">
-                  <div class="cc-alert-title">Critical Deadline</div>
-                  <span class="cc-state is-risk">Critical</span>
+              <div class="cc-pipeline-list">
+              <article class="cc-pipeline-card">
+                <div class="cc-pipeline-title">Loyang Point</div>
+                <div class="cc-pipeline-meta"><span class="cc-state is-risk">At Risk</span> <span>Submitting</span></div>
+                <div class="cc-pipeline-steps"><span class="cc-pipeline-step is-done"><strong>Survey</strong><span>&#10003;</span></span><span class="cc-pipeline-step is-progress"><strong>Install</strong><span>&#9681;</span></span><span class="cc-pipeline-step is-waiting"><strong>Test / VA</strong><span>&#9716;</span></span><span class="cc-pipeline-step is-progress"><strong>BMS</strong><span>&#9681;</span></span><span class="cc-pipeline-step is-progress"><strong>Submit</strong><span>&#9681;</span></span><span class="cc-pipeline-step is-not-started"><strong>Done</strong><span>&#8211;</span></span></div>
+                <a class="cc-action-link" href="submission-tracker.html">Open mall tracker</a>
+              </article>
+              <article class="cc-pipeline-card">
+                <div class="cc-pipeline-title">Canberra Plaza</div>
+                <div class="cc-pipeline-meta"><span class="cc-state is-risk">At Risk</span> <span>Submitting</span></div>
+                <div class="cc-pipeline-steps"><span class="cc-pipeline-step is-waiting"><strong>Survey</strong><span>&#9716;</span></span><span class="cc-pipeline-step is-tbc"><strong>Install</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-tbc"><strong>Test / VA</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-tbc"><strong>BMS</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-waiting"><strong>Submit</strong><span>&#9716;</span></span><span class="cc-pipeline-step is-not-started"><strong>Done</strong><span>&#8211;</span></span></div>
+                <a class="cc-action-link" href="submission-tracker.html">Open mall tracker</a>
+              </article>
+              <article class="cc-pipeline-card">
+                <div class="cc-pipeline-title">Rivervale Plaza</div>
+                <div class="cc-pipeline-meta"><span class="cc-state is-progress">In Preparation</span> <span>BMS Interface</span></div>
+                <div class="cc-pipeline-steps"><span class="cc-pipeline-step is-done"><strong>Survey</strong><span>&#10003;</span></span><span class="cc-pipeline-step is-done"><strong>Install</strong><span>&#10003;</span></span><span class="cc-pipeline-step is-progress"><strong>Test / VA</strong><span>&#9681;</span></span><span class="cc-pipeline-step is-progress"><strong>BMS</strong><span>&#9681;</span></span><span class="cc-pipeline-step is-tbc"><strong>Submit</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-not-started"><strong>Done</strong><span>&#8211;</span></span></div>
+                <a class="cc-action-link" href="bms-interface.html">Open mall tracker</a>
+              </article>
+              <article class="cc-pipeline-card">
+                <div class="cc-pipeline-title">Parc Point</div>
+                <div class="cc-pipeline-meta"><span class="cc-state is-waiting">Waiting</span> <span>Site Survey</span></div>
+                <div class="cc-pipeline-steps"><span class="cc-pipeline-step is-waiting"><strong>Survey</strong><span>&#9716;</span></span><span class="cc-pipeline-step is-not-started"><strong>Install</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-not-started"><strong>Test / VA</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-tbc"><strong>BMS</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-not-started"><strong>Submit</strong><span>&#8211;</span></span><span class="cc-pipeline-step is-not-started"><strong>Done</strong><span>&#8211;</span></span></div>
+                <a class="cc-action-link" href="action-tracker.html">Open mall tracker</a>
+              </article>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Mall Priority List</h2>
+              <span class="cc-panel-tag">At-risk malls first</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-mall-card-list">
+              <a class="cc-mall-card" href="submission-tracker.html" data-mall-name="Loyang Point">
+                <div class="cc-mall-card-head">
+                  <div class="cc-mall-card-title">Loyang Point</div>
+                  <span class="cc-state is-risk">At Risk</span>
                 </div>
-                <div class="cc-alert-grid">
-                  <div class="cc-alert-item"><span class="cc-alert-label">Affected Mall / Scope</span><strong>Loyang Point / Canberra Plaza</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Deadline</span><strong>2026-05-04 to 2026-05-06</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Risk Description</span><span>Submission pack close-out and CR-06 sign-off remain exposed against the Univers handover path.</span></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Lock the missing survey evidence, freeze the five-document package and escalate any owner gap within the week.</span></div>
-                </div>
+                <div class="cc-mall-card-meta">Stage: <strong>Submitting</strong></div>
+                <div class="cc-mall-card-metrics">CCTV: <strong>66</strong> | VA: <strong>22</strong> | Footfall: <strong>Pending Split</strong></div>
+                <div class="cc-mall-card-meta">Owner: <strong>CCTC / Xjera</strong></div>
+                <div class="cc-mall-card-note">Complete 5-document package before 4 May 2026</div>
+                <div class="cc-mall-card-meta">Due: <strong>2026-05-04</strong></div>
               </a>
-              <a class="cc-alert-card is-waiting" href="bms-interface.html">
-                <div class="cc-alert-head">
-                  <div class="cc-alert-title">BMS Interface Risk</div>
-                  <span class="cc-state is-waiting">Warning</span>
+              <a class="cc-mall-card" href="submission-tracker.html" data-mall-name="Canberra Plaza">
+                <div class="cc-mall-card-head">
+                  <div class="cc-mall-card-title">Canberra Plaza</div>
+                  <span class="cc-state is-risk">At Risk</span>
                 </div>
-                <div class="cc-alert-grid">
-                  <div class="cc-alert-item"><span class="cc-alert-label">Affected Mall / Scope</span><strong>Rivervale Plaza / Loyang Point</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Deadline</span><strong>2026-05-08</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Risk Description</span><span>VA event mapping, alarm routing and the final data owner remain only partially confirmed.</span></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Freeze the interface owner, confirm event catalogue and move the pending mapping list into a tested handoff path.</span></div>
-                </div>
+                <div class="cc-mall-card-meta">Stage: <strong>Submitting</strong></div>
+                <div class="cc-mall-card-metrics">CCTV: <strong>192</strong> | VA: <strong>20</strong> | Footfall: <strong>Pending Split</strong></div>
+                <div class="cc-mall-card-meta">Owner: <strong>Xjera / Ethan</strong></div>
+                <div class="cc-mall-card-note">Obtain survey report and MA/HDB sign-off for CR-06</div>
+                <div class="cc-mall-card-meta">Due: <strong>2026-05-06</strong></div>
               </a>
-              <a class="cc-alert-card is-waiting" href="cost-management.html">
-                <div class="cc-alert-head">
-                  <div class="cc-alert-title">Cost / VO Risk</div>
-                  <span class="cc-state is-waiting">Warning</span>
+              <a class="cc-mall-card" href="bms-interface.html" data-mall-name="Rivervale Plaza">
+                <div class="cc-mall-card-head">
+                  <div class="cc-mall-card-title">Rivervale Plaza</div>
+                  <span class="cc-state is-progress">In Preparation</span>
                 </div>
-                <div class="cc-alert-grid">
-                  <div class="cc-alert-item"><span class="cc-alert-label">Affected Mall / Scope</span><strong>Multi-mall scope split</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Deadline</span><strong>2026-05-06</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Risk Description</span><span>Replacement, relocation, new install and MA add-on counts are still not formally frozen for VO control.</span></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Close the point-split baseline and quantify any MA-driven addition before procurement or subcontractor assumptions drift.</span></div>
-                </div>
+                <div class="cc-mall-card-meta">Stage: <strong>BMS Interface</strong></div>
+                <div class="cc-mall-card-metrics">CCTV: <strong>29</strong> | VA: <strong>16</strong> | Footfall: <strong>Pending Split</strong></div>
+                <div class="cc-mall-card-meta">Owner: <strong>Univers / Xjera</strong></div>
+                <div class="cc-mall-card-note">Confirm site-level control summary and BMS dependency</div>
+                <div class="cc-mall-card-meta">Due: <strong>2026-05-08</strong></div>
               </a>
-              <a class="cc-alert-card is-muted" href="action-tracker.html">
-                <div class="cc-alert-head">
-                  <div class="cc-alert-title">Site Access Risk</div>
-                  <span class="cc-state is-muted">Info</span>
+              <a class="cc-mall-card" href="action-tracker.html" data-mall-name="Parc Point">
+                <div class="cc-mall-card-head">
+                  <div class="cc-mall-card-title">Parc Point</div>
+                  <span class="cc-state is-waiting">Waiting</span>
                 </div>
-                <div class="cc-alert-grid">
-                  <div class="cc-alert-item"><span class="cc-alert-label">Affected Mall / Scope</span><strong>Parc Point / survey access</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Deadline</span><strong>2026-05-09</strong></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Risk Description</span><span>Survey access still depends on external MA and HDB confirmation, delaying downstream installation sequencing.</span></div>
-                  <div class="cc-alert-item"><span class="cc-alert-label">Next Control Step</span><span>Chase the external response, confirm the survey slot and shift the site into a committed execution window.</span></div>
-                </div>
+                <div class="cc-mall-card-meta">Stage: <strong>Site Survey</strong></div>
+                <div class="cc-mall-card-metrics">CCTV: <strong>89</strong> | VA: <strong>20</strong> | Footfall: <strong>Pending Split</strong></div>
+                <div class="cc-mall-card-meta">Owner: <strong>Xjera Labs</strong></div>
+                <div class="cc-mall-card-note">Arrange site survey with MA and HDB support</div>
+                <div class="cc-mall-card-meta">Due: <strong>2026-05-09</strong></div>
               </a>
               </div>
             </div>
           </article>
           <article class="cc-panel cc-span-3">
             <div class="cc-panel-head">
-              <h2>Installation Data Summary</h2>
-              <span class="cc-panel-tag">Point baseline</span>
+              <h2>Vendor Responsibility</h2>
+              <span class="cc-panel-tag">Owner-based control</span>
             </div>
             <div class="cc-panel-body">
-              <div class="cc-mini-metric-grid">
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">Total CCTV Points</div>
-                <div class="cc-mini-metric-value">3,092</div>
-                <div class="cc-mini-metric-note">PDF baseline across the 41-mall export.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
+              <div class="cc-vendor-grid">
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Univers</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>1</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>2</strong></div>
+                <div class="cc-vendor-note">Main issues: PTW / access / interface coordination</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
               </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Replacement Only</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">No formal split is published yet.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">CCTC</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>37</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>1</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>1</strong></div>
+                <div class="cc-vendor-note">Main issues: Submission package / baseline freeze</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
               </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Relocation</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Relocation count remains pending split.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Xjera</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>4</strong></div>
+                <div class="cc-vendor-note">Main issues: Survey / VA / BMS readiness</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
               </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">New Installation</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Fresh installation scope is still being frozen.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Subcontractor</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>0</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Manpower / night work / site execution</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>No</strong></div>
               </article>
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">VA Function</div>
-                <div class="cc-mini-metric-value">1,075</div>
-                <div class="cc-mini-metric-note">PDF baseline for analytics-ready points.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">HDB / MA</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>40</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Approval / sign-off / access</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
               </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Footfall</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Keep as Pending Split until the mall tracker is frozen.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">As per Drawing</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Drawing baseline is still being structured in the export.</div>
-                <a class="cc-mini-metric-link" href="site-installation-tracker.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">MA Requested Addition</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Any add-on point can carry VO exposure.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">TBC / Unconfirmed</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Unfrozen categories remain visible and are never defaulted to zero.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Cloud BMS</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Event mapping / owner confirmation</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
               </article>
               </div>
-            </div>
-          </article>
-          <article class="cc-panel cc-span-3 cc-stage-board">
-            <div class="cc-panel-head">
-              <h2>Mall Stage + Installation Data Control Board</h2>
-              <span class="cc-panel-tag">41-mall control view</span>
-            </div>
-            <div class="cc-panel-body">
-<div class="table-responsive"><table class="cc-table">
-  <thead>
-    <tr><th>Mall</th><th>Region</th><th>Priority</th><th>Total CCTV</th><th>Replacement Only</th><th>Relocation</th><th>New Installation</th><th>VA Function</th><th>Footfall</th><th>As per Drawing</th><th>MA Add-on</th><th>Current Stage</th><th>Site Survey</th><th>Installation</th><th>Testing</th><th>Submission</th><th>BMS Interface</th><th>Completed</th><th>Cost / VO</th><th>Status</th><th>Next Action</th><th>Owner</th><th>Target Date</th><th>Linked Page</th></tr>
-  </thead>
-  <tbody>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="submission-tracker.html">Loyang Point</a></td><td data-label="Region">East</td><td data-label="Priority"><span class="cc-state is-risk">High</span></td><td data-label="Total CCTV">66</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">22</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Submitting</td><td data-label="Site Survey"><span class="cc-checkpoint is-done"><span class="cc-checkpoint-box">&#10003;</span><span class="cc-checkpoint-label">Done</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-progress"><span class="cc-checkpoint-box">&#9681;</span><span class="cc-checkpoint-label">In Progress</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-waiting"><span class="cc-checkpoint-box">&#9716;</span><span class="cc-checkpoint-label">Waiting</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-progress"><span class="cc-checkpoint-box">&#9681;</span><span class="cc-checkpoint-label">In Progress</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-progress"><span class="cc-checkpoint-box">&#9681;</span><span class="cc-checkpoint-label">In Progress</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-risk">At Risk</span></td><td data-label="Next Action">Complete 5-document package before 4 May 2026</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">2026-05-04</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="submission-tracker.html">Canberra Plaza</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-risk">High</span></td><td data-label="Total CCTV">192</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">20</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Submitting</td><td data-label="Site Survey"><span class="cc-checkpoint is-waiting"><span class="cc-checkpoint-box">&#9716;</span><span class="cc-checkpoint-label">Waiting</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-waiting"><span class="cc-checkpoint-box">&#9716;</span><span class="cc-checkpoint-label">Waiting</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-risk">At Risk</span></td><td data-label="Next Action">Obtain survey report and MA/HDB sign-off for CR-06</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Target Date">2026-05-06</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="bms-interface.html">Rivervale Plaza</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-risk">High</span></td><td data-label="Total CCTV">29</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">16</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">BMS Interface</td><td data-label="Site Survey"><span class="cc-checkpoint is-done"><span class="cc-checkpoint-box">&#10003;</span><span class="cc-checkpoint-label">Done</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-done"><span class="cc-checkpoint-box">&#10003;</span><span class="cc-checkpoint-label">Done</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-progress"><span class="cc-checkpoint-box">&#9681;</span><span class="cc-checkpoint-label">In Progress</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-progress"><span class="cc-checkpoint-box">&#9681;</span><span class="cc-checkpoint-label">In Progress</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Status"><span class="cc-state is-progress">In Preparation</span></td><td data-label="Next Action">Confirm site-level control summary and BMS dependency</td><td data-label="Owner">Univers / Xjera</td><td data-label="Target Date">2026-05-08</td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="action-tracker.html">Parc Point</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-waiting">Medium</span></td><td data-label="Total CCTV">89</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">20</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Site Survey</td><td data-label="Site Survey"><span class="cc-checkpoint is-waiting"><span class="cc-checkpoint-box">&#9716;</span><span class="cc-checkpoint-label">Waiting</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Next Action">Arrange site survey with MA and HDB support</td><td data-label="Owner">Xjera Labs</td><td data-label="Target Date">2026-05-09</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="action-tracker.html">Admiralty Place</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-waiting">Medium</span></td><td data-label="Total CCTV">81</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">12</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm whether backup-candidate status should activate</td><td data-label="Owner">PMO / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">888 Plaza</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">15</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">10</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Anchorvale Village</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">127</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">16</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Bras Basah Complex</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">52</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">37</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Buangkok Square</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">66</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">18</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Choa Chu Kang Centre</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">69</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">47</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Connection One</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">156</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">80</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Dawson Place</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">25</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">15</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Depot Heights Shopping Centre</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">38</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">23</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Elias Mall</a></td><td data-label="Region">East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">15</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">15</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Fajar Shopping Centre</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">27</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">20</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Greenridge Shopping Centre</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">24</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">24</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">HDB Hub</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">508</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">120</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">HDB Hub Data Centre and DRC</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">53</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">53</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Hougang Rivercourt</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">110</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">18</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Joo Chiat Complex</a></td><td data-label="Region">East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">121</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">24</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Kampung Admiralty</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">179</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">18</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Kitchener Complex</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">133</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">60</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Limbang Shopping Centre</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">96</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">42</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">MND Complex</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">2</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">2</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">New Bridge Centre</a></td><td data-label="Region">Central / South</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">70</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">55</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Northshore Plaza I</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">32</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">6</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Northshore Plaza II</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">33</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">6</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Oasis Terraces</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">143</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">18</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Pasir Ris West Plaza</a></td><td data-label="Region">East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">34</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">22</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Pioneer Mall</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">23</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">20</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Plantation Plaza</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">122</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">52</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Punggol Town Square</a></td><td data-label="Region">North-East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">26</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">4</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Sembawang Mart</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">29</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">10</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Sunshine Place</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">32</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">22</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Taman Jurong Shopping Centre</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">19</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">15</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Tampines Central Community Complex</a></td><td data-label="Region">East</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">22</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">16</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Vista Point</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">30</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">10</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Woodlands Civic Centre</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">82</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">24</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Woodlands Mart</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">33</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">10</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Woodlands North Plaza</a></td><td data-label="Region">North</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">24</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">10</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall"><a class="cc-inline-link" href="site-installation-tracker.html">Yew Tee Square</a></td><td data-label="Region">West</td><td data-label="Priority"><span class="cc-state is-progress">Main</span></td><td data-label="Total CCTV">22</td><td data-label="Replacement Only">Pending Split</td><td data-label="Relocation">Pending Split</td><td data-label="New Installation">Pending Split</td><td data-label="VA Function">20</td><td data-label="Footfall">Pending Split</td><td data-label="As per Drawing">Pending Split</td><td data-label="MA Add-on">Pending Split</td><td data-label="Current Stage">Not Started</td><td data-label="Site Survey"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Installation"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Testing"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Submission"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="BMS Interface"><span class="cc-checkpoint is-tbc"><span class="cc-checkpoint-box">?</span><span class="cc-checkpoint-label">TBC</span></span></td><td data-label="Completed"><span class="cc-checkpoint is-not-started"><span class="cc-checkpoint-box">&#9633;</span><span class="cc-checkpoint-label">Not Started</span></span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Status"><span class="cc-state is-muted">Pending Verification</span></td><td data-label="Next Action">Confirm point split, site stage and installation path</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Target Date">TBC</td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  </tbody>
-</table></div>
-            </div>
-          </article>
-          <article class="cc-panel cc-span-2">
-            <div class="cc-panel-head">
-              <h2>Active Priority Malls</h2>
-              <span class="cc-panel-tag">Current execution queue</span>
-            </div>
-            <div class="cc-panel-body">
-<div class="table-responsive"><table class="cc-table">
-  <thead>
-    <tr><th>Mall</th><th>Current Stage</th><th>Total CCTV</th><th>VA</th><th>Footfall</th><th>Submission</th><th>BMS</th><th>Cost / VO</th><th>Blocker</th><th>Next Action</th><th>Owner</th><th>Linked Page</th></tr>
-  </thead>
-  <tbody>
-  <tr><td data-label="Mall">Loyang Point</td><td data-label="Current Stage">Submitting</td><td data-label="Total CCTV">66</td><td data-label="VA">22</td><td data-label="Footfall">Pending Split</td><td data-label="Submission"><span class="cc-state is-progress">In Progress</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Blocker">Point list split and survey package confirmation</td><td data-label="Next Action">Complete 5-document package before 4 May 2026</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall">Canberra Plaza</td><td data-label="Current Stage">Submitting</td><td data-label="Total CCTV">192</td><td data-label="VA">20</td><td data-label="Footfall">Pending Split</td><td data-label="Submission"><span class="cc-state is-waiting">Waiting</span></td><td data-label="BMS"><span class="cc-state is-tbc">TBC</span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Blocker">Survey report and MA/HDB sign-off still pending</td><td data-label="Next Action">Obtain survey report and MA/HDB sign-off for CR-06</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Mall">Rivervale Plaza</td><td data-label="Current Stage">BMS Interface</td><td data-label="Total CCTV">29</td><td data-label="VA">16</td><td data-label="Footfall">Pending Split</td><td data-label="Submission"><span class="cc-state is-tbc">TBC</span></td><td data-label="BMS"><span class="cc-state is-progress">In Progress</span></td><td data-label="Cost / VO"><span class="cc-state is-waiting">Waiting</span></td><td data-label="Blocker">BMS coordination path still being structured</td><td data-label="Next Action">Confirm site-level control summary and BMS dependency</td><td data-label="Owner">Univers / Xjera</td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td></tr>
-  <tr><td data-label="Mall">Parc Point</td><td data-label="Current Stage">Site Survey</td><td data-label="Total CCTV">89</td><td data-label="VA">20</td><td data-label="Footfall">Pending Split</td><td data-label="Submission"><span class="cc-state is-not-started">Not Started</span></td><td data-label="BMS"><span class="cc-state is-tbc">TBC</span></td><td data-label="Cost / VO"><span class="cc-state is-tbc">TBC</span></td><td data-label="Blocker">External survey response from MA / HDB</td><td data-label="Next Action">Arrange site survey with MA and HDB support</td><td data-label="Owner">Xjera Labs</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td></tr>
-  </tbody>
-</table></div>
-            </div>
-          </article>
-          <article class="cc-panel" id="completed-malls">
-            <div class="cc-panel-head">
-              <h2>Completed Malls</h2>
-              <span class="cc-panel-tag">Formal closure only</span>
-            </div>
-            <div class="cc-panel-body">
-              <div class="cc-empty-state">
-                <div class="cc-empty-title">0 confirmed completed malls</div>
-                <p>No mall is formally closed across installation, testing, submission, BMS and cost at the time of this export.</p>
-              </div>
-            </div>
-          </article>
-          <article class="cc-panel cc-span-2">
-            <div class="cc-panel-head">
-              <h2>Cost / VO Exposure Snapshot</h2>
-              <span class="cc-panel-tag">Commercial control</span>
-            </div>
-            <div class="cc-panel-body">
-              <div class="cc-mini-metric-grid">
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">Replacement Only Points</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Kept pending until the mall tracker point split is approved.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">Relocation Points</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Relocation scope is still under classification control.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">New Installation Points</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Fresh installation points remain a VO-sensitive category.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">MA Requested Addition Points</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Any MA add-on must stay visible as a commercial exposure.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">Unconfirmed / TBC Points</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Never default TBC to zero inside the cockpit export.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">Estimated VO Exposure</div>
-                <div class="cc-mini-metric-value">At Risk</div>
-                <div class="cc-mini-metric-note">Scope freeze is not yet formal for replacement, relocation, add-on and enabling works.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Procurement Pending Items</div>
-                <div class="cc-mini-metric-value">TBC</div>
-                <div class="cc-mini-metric-note">Procurement control should only close once the point split and enabling works are frozen.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Subcontractor Pending Items</div>
-                <div class="cc-mini-metric-value">TBC</div>
-                <div class="cc-mini-metric-note">Subcontractor and night-work assumptions remain tied to unresolved scope definition.</div>
-                <a class="cc-mini-metric-link" href="cost-management.html">Open detail</a>
-              </article>
-              </div>
-            </div>
-          </article>
-          <article class="cc-panel">
-            <div class="cc-panel-head">
-              <h2>BMS Interface Snapshot</h2>
-              <span class="cc-panel-tag">Interface control</span>
-            </div>
-            <div class="cc-panel-body">
-              <div class="cc-mini-metric-grid">
-              <article class="cc-mini-metric cc-mini-metric-success">
-                <div class="cc-mini-metric-label">BMS Connected Malls</div>
-                <div class="cc-mini-metric-value">0</div>
-                <div class="cc-mini-metric-note">Formal BMS close-out is still limited in the current export.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-accent">
-                <div class="cc-mini-metric-label">BMS In Progress</div>
-                <div class="cc-mini-metric-value">2</div>
-                <div class="cc-mini-metric-note">These malls are already inside an active interface coordination path.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">BMS Pending</div>
-                <div class="cc-mini-metric-value">39</div>
-                <div class="cc-mini-metric-note">Pending means no published BMS closure is available yet.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">VA Event Mapping Pending</div>
-                <div class="cc-mini-metric-value">39</div>
-                <div class="cc-mini-metric-note">VA intrusion and alert-event mapping remain open where BMS is not closed.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-warn">
-                <div class="cc-mini-metric-label">Footfall Data Mapping Pending</div>
-                <div class="cc-mini-metric-value">Pending Split</div>
-                <div class="cc-mini-metric-note">Footfall data mapping remains pending until point categorisation is frozen.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">Alarm Routing Pending</div>
-                <div class="cc-mini-metric-value">39</div>
-                <div class="cc-mini-metric-note">Alarm routing and acknowledgement handling remain open in the pending mall set.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              <article class="cc-mini-metric cc-mini-metric-risk">
-                <div class="cc-mini-metric-label">API / Data Owner TBC</div>
-                <div class="cc-mini-metric-value">39</div>
-                <div class="cc-mini-metric-note">These malls still need final data owner confirmation for Cloud BMS delivery.</div>
-                <a class="cc-mini-metric-link" href="bms-interface.html">Open detail</a>
-              </article>
-              </div>
-            </div>
-          </article>
-          <article class="cc-panel cc-span-2">
-            <div class="cc-panel-head">
-              <h2>Key Blockers</h2>
-              <span class="cc-panel-tag">Execution and interface risks</span>
-            </div>
-            <div class="cc-panel-body">
-<div class="table-responsive"><table class="cc-table">
-  <thead>
-    <tr><th>Blocker</th><th>Affected Mall</th><th>Impact Type</th><th>Impact</th><th>Owner</th><th>Next Control Step</th><th>Due Date</th><th>Linked Page</th><th>Status</th></tr>
-  </thead>
-  <tbody>
-  <tr><td data-label="Blocker">Canberra Plaza survey report and MA/HDB sign-off (CR-06)</td><td data-label="Affected Mall">Canberra Plaza</td><td data-label="Impact Type">Submission</td><td data-label="Impact">Affects submission readiness and May target path.</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Next Control Step">Obtain survey report and formal sign-off.</td><td data-label="Due Date">2026-05-06</td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
-  <tr><td data-label="Blocker">BMS event mapping and interface owner still TBC</td><td data-label="Affected Mall">Loyang Point / Rivervale Plaza</td><td data-label="Impact Type">BMS</td><td data-label="Impact">Blocks interface clarity for VA alert routing.</td><td data-label="Owner">Univers / Xjera</td><td data-label="Next Control Step">Confirm owner, data types and event mapping.</td><td data-label="Due Date">2026-05-08</td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
-  <tr><td data-label="Blocker">MA add-on scope and VO exposure remain unconfirmed</td><td data-label="Affected Mall">Multi-mall</td><td data-label="Impact Type">Commercial / VO</td><td data-label="Impact">Can shift count baseline and cost exposure.</td><td data-label="Owner">PMO / Cost</td><td data-label="Next Control Step">Freeze add-on list and quantify VO impact.</td><td data-label="Due Date">2026-05-06</td><td data-label="Linked Page"><a class="cc-inline-link" href="cost-management.html">Open page</a></td><td data-label="Status"><span class="cc-state is-tbc">TBC</span></td></tr>
-  <tr><td data-label="Blocker">Power point, DB tap-in and LEW scope clarification</td><td data-label="Affected Mall">Multi-mall</td><td data-label="Impact Type">Site</td><td data-label="Impact">Affects installation sequencing and assumptions.</td><td data-label="Owner">Site / PMO</td><td data-label="Next Control Step">Resolve utility and enabling-work dependencies.</td><td data-label="Due Date">2026-05-10</td><td data-label="Linked Page"><a class="cc-inline-link" href="risk-commercial-decision-log.html">Open page</a></td><td data-label="Status"><span class="cc-state is-progress">Open</span></td></tr>
-  <tr><td data-label="Blocker">Parc Point survey response from MA / HDB</td><td data-label="Affected Mall">Parc Point</td><td data-label="Impact Type">Schedule</td><td data-label="Impact">Prevents survey closure and downstream planning.</td><td data-label="Owner">Xjera Labs</td><td data-label="Next Control Step">Chase external response and lock survey date.</td><td data-label="Due Date">2026-05-09</td><td data-label="Linked Page"><a class="cc-inline-link" href="action-tracker.html">Open page</a></td><td data-label="Status"><span class="cc-state is-waiting">Waiting</span></td></tr>
-  </tbody>
-</table></div>
-            </div>
-          </article>
-          <article class="cc-panel">
-            <div class="cc-panel-head">
-              <h2>This Week Control</h2>
-              <span class="cc-panel-tag">Action checklist</span>
-            </div>
-            <div class="cc-panel-body">
-<div class="table-responsive"><table class="cc-table">
-  <thead>
-    <tr><th>Action</th><th>Mall</th><th>Owner</th><th>Due Date</th><th>Impact</th><th>Status</th><th>Linked Page</th></tr>
-  </thead>
-  <tbody>
-  <tr><td data-label="Action">Confirm Canberra Plaza survey report and CR-06 sign-off</td><td data-label="Mall">Canberra Plaza</td><td data-label="Owner">Xjera / Ethan</td><td data-label="Due Date">2026-05-04</td><td data-label="Impact">Submission readiness</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Action">Complete Loyang Point 5-document package</td><td data-label="Mall">Loyang Point</td><td data-label="Owner">CCTC / Xjera</td><td data-label="Due Date">2026-05-04</td><td data-label="Impact">Submission target</td><td data-label="Status"><span class="cc-state is-progress">In Progress</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="submission-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Action">Confirm BMS event mapping for VA alerts</td><td data-label="Mall">Loyang Point / Rivervale Plaza</td><td data-label="Owner">Univers / Xjera</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">BMS interface</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="bms-interface.html">Open page</a></td></tr>
-  <tr><td data-label="Action">Confirm point list split: replacement / relocation / new install</td><td data-label="Mall">Multi-mall</td><td data-label="Owner">PMO / Mall Tracker</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">Installation data baseline</td><td data-label="Status"><span class="cc-state is-progress">Open</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="site-installation-tracker.html">Open page</a></td></tr>
-  <tr><td data-label="Action">Confirm MA add-on points and VO impact</td><td data-label="Mall">Multi-mall</td><td data-label="Owner">PMO / Cost</td><td data-label="Due Date">2026-05-06</td><td data-label="Impact">Cost exposure</td><td data-label="Status"><span class="cc-state is-tbc">TBC</span></td><td data-label="Linked Page"><a class="cc-inline-link" href="cost-management.html">Open page</a></td></tr>
-  </tbody>
-</table></div>
             </div>
           </article>
           <article class="cc-panel cc-span-3">
             <div class="cc-panel-head">
-              <h2>Data Source / Internal Notes</h2>
-              <span class="cc-panel-tag">Collapsed</span>
+              <h2>KPI Summary</h2>
+              <span class="cc-panel-tag">Compact executive metrics</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-compact-kpis">
+                <div class="cc-compact-kpi"><strong>41</strong><span>Malls</span></div>
+                <div class="cc-compact-kpi"><strong>3,092</strong><span>CCTV</span></div>
+                <div class="cc-compact-kpi"><strong>1,075</strong><span>VA</span></div>
+                <div class="cc-compact-kpi"><strong>Pending Split</strong><span>Footfall</span></div>
+                <div class="cc-compact-kpi"><strong>0</strong><span>Completed</span></div>
+                <div class="cc-compact-kpi"><strong>3</strong><span>At Risk</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-3" id="completed-malls">
+            <div class="cc-panel-head">
+              <h2>Completed / Closed</h2>
+              <span class="cc-panel-tag">Collapsed by default</span>
             </div>
             <div class="cc-panel-body">
               <details class="cc-disclosure">
-                <summary>Data source and internal notes</summary>
-                <p>This public cockpit uses the current PDF-derived mall baseline: 41 main malls / complexes, 3,092 CCTV points and 1,075 VA points.</p>
-                <p>Footfall, replacement-only, relocation, new-installation, as-per-drawing and MA add-on point splits remain visible as <strong>Pending Split</strong> until the detailed mall tracker is formally frozen.</p>
-                <p>The map panel is already structured for a future OneMap / Mapbox / Leaflet container. Until that is wired, the export deliberately stays on the safe static fallback image.</p>
-                <p>Raw CEO records, Telegram notes, survey attachments, and unresolved working files remain inside the internal vault and are intentionally not reproduced on the executive home screen.</p>
-                <p>Sub-site support is preserved in the generator data model for HDB Hub variants and related clusters. This cockpit currently renders 41 main mall / complex rows in the control board.</p>
+                <summary>Completed / Closed (0)</summary>
+                <p>No mall is formally closed across testing, submission, BMS and cost in the current export.</p>
               </details>
             </div>
           </article>
+          <article class="cc-panel cc-span-3">
+            <div class="cc-panel-head">
+              <h2>Data Quality / Source Log</h2>
+              <span class="cc-panel-tag">Confidence and refresh trail</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-data-grid">
+                <div class="cc-data-row"><span>PDF Baseline</span><strong>Loaded</strong></div>
+                <div class="cc-data-row"><span>Site Survey</span><strong>Partially Updated</strong></div>
+                <div class="cc-data-row"><span>Mall Tracker</span><strong>Not Frozen</strong></div>
+                <div class="cc-data-row"><span>Footfall Split</span><strong>Pending Split</strong></div>
+                <div class="cc-data-row"><span>VA Function List</span><strong>Pending Confirmation</strong></div>
+                <div class="cc-data-row"><span>Last Updated By</span><strong>CCTC / Xjera</strong></div>
+                <div class="cc-data-row"><span>Last Updated</span><strong>04 May 2026</strong></div>
+              </div>
+            </div>
+          </article>
         </section>
-
-        <p class="footer">Public-safe cockpit view. Raw source records, attachments and internal chat notes remain outside this export package.</p>
+        </section>
+        <p class="footer">Public-safe cockpit view. Desktop briefing stays one screen; detailed trackers, raw records and internal notes remain in linked child pages and the internal vault.</p>
       </div>
     </main>
   </div>

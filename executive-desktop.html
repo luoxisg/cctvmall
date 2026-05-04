@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Executive Desktop Summary</title>
+  <link rel="stylesheet" href="assets/style.css?v=1d15aea8d3">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+</head>
+<body class="cc-cockpit-page">
+  <div class="cc-shell">
+    <button class="cc-sidebar-backdrop" type="button" aria-label="Close navigation"></button>
+    <aside class="cc-sidebar" id="cc-sidebar">
+      <div class="cc-brand">
+        <div class="cc-brand-eyebrow">PMO Command Center</div>
+        <h1 class="cc-brand-title">HDB Cloud BMS-CCTV / VA / Footfall PMO Dashboard</h1>
+        <div class="cc-brand-tags">
+          <span class="cc-brand-tag">HDB</span>
+          <span class="cc-brand-tag">Univers</span>
+          <span class="cc-brand-tag success">Xjera</span>
+        </div>
+      </div>
+      <div class="cc-nav-section">Public Dashboards</div>
+      <nav class="cc-sidebar-nav" aria-label="Public dashboards">
+          <a class="cc-nav-item active" href="index.html"><span class="cc-nav-label">00 Executive Dashboard</span></a>
+          <a class="cc-nav-item" href="action-tracker.html"><span class="cc-nav-label">01 Action Tracker</span></a>
+          <a class="cc-nav-item" href="site-installation-tracker.html"><span class="cc-nav-label">02 Mall Tracker</span></a>
+          <a class="cc-nav-item" href="submission-tracker.html"><span class="cc-nav-label">03 Submission Control</span></a>
+          <a class="cc-nav-item" href="bms-interface.html"><span class="cc-nav-label">04 BMS Interface</span></a>
+          <a class="cc-nav-item" href="cost-management.html"><span class="cc-nav-label">05 Cost Management</span></a>
+          <a class="cc-nav-item" href="risk-commercial-decision-log.html"><span class="cc-nav-label">06 Risk Watchlist</span></a>
+          <a class="cc-nav-item" href="publishing-guide.html"><span class="cc-nav-label">07 Publishing Guide</span></a>
+      </nav>
+      <div class="cc-sidebar-foot">
+        <div class="cc-status-dot"></div>
+        <div>
+          <div class="cc-status-label">Pending Verification</div>
+          <div class="cc-status-meta">Public-safe export only</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="cc-main">
+      <header class="cc-topbar cc-cockpit-topbar">
+        <button class="cc-menu-toggle" type="button" aria-controls="cc-sidebar" aria-expanded="false" aria-label="Open navigation">&#9776;</button>
+        <div class="cc-cockpit-titlewrap">
+          <div class="cc-topbar-title">PC / Executive Summary</div>
+          <div class="cc-topbar-subtitle">One-screen summary board for large-screen briefing and navigation.</div>
+          <div class="cc-cockpit-meta-line">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Last Updated: <strong>04 May 2026</strong></div>
+        </div>
+        <div class="cc-topbar-meta">
+          <span class="cc-badge">At Risk</span>
+          <span class="cc-badge cc-badge-secondary">41 Malls</span>
+          <span class="cc-badge cc-badge-secondary">3,092 CCTV</span>
+          <span class="cc-badge cc-badge-secondary">1,075 VA</span>
+        </div>
+      </header>
+
+      <div class="cc-canvas">
+        <section class="cc-desktop-board-page">
+          <div class="cc-command-card cc-command-card-desktop">
+            <div class="cc-command-eyebrow">Executive Desktop Summary</div>
+            <h2>00 Executive Cockpit</h2>
+            <p>Keep this page to one briefing screen. Open linked workstream pages for detailed trackers, boards and evidence.</p>
+            <div class="cc-command-chipbar">
+              <span class="cc-command-chip cc-command-chip-risk">
+                <strong>3</strong>
+                <span>At Risk</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>41</strong>
+                <span>Malls</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>3,092</strong>
+                <span>CCTV</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-neutral">
+                <strong>1,075</strong>
+                <span>VA</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-warn">
+                <strong>Pending Split</strong>
+                <span>Footfall</span>
+              </span>
+              <span class="cc-command-chip cc-command-chip-success">
+                <strong>0</strong>
+                <span>Completed</span>
+              </span>
+            </div>
+            <div class="cc-command-meta">Client: <strong>HDB</strong> | Lead: <strong>Univers</strong> | Delivery: <strong>CCTC / Xjera</strong> | Data: <strong>PDF Baseline / Site Survey / Tracker</strong></div>
+          </div>
+          <div class="cc-desktop-board-layout">
+          <article class="cc-panel cc-span-2">
+            <div class="cc-panel-head">
+              <h2>Live Mall Map</h2>
+              <span class="cc-panel-tag">Command entry</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-map-toolbar-groups cc-map-toolbar-groups-compact">
+              <div class="cc-filter-group">
+                <div class="cc-filter-group-title">Status Filter</div>
+                <div class="cc-map-toolbar">
+<button class="cc-filter-chip active" type="button" data-filter-type="stage" data-filter-value="All">All <strong>41</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="At Risk">At Risk <strong>2</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Action Needed">Action Needed <strong>2</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Installing">Installing <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Testing">Testing <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Cloud BMS">Cloud BMS <strong>1</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Completed">Completed <strong>0</strong></button>
+<button class="cc-filter-chip" type="button" data-filter-type="stage" data-filter-value="Not Started">Not Started <strong>36</strong></button>
+                </div>
+              </div>
+              <div class="cc-filter-group">
+                <div class="cc-filter-group-title">Owner Filter</div>
+                <div class="cc-map-toolbar">
+<button class="cc-filter-chip is-owner active" type="button" data-filter-type="owner" data-filter-value="All">All <strong>41</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Univers">Univers <strong>1</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="CCTC">CCTC <strong>37</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Xjera">Xjera <strong>3</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="Subcontractor">Subcontractor <strong>0</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="HDB / MA">HDB / MA <strong>0</strong></button>
+<button class="cc-filter-chip is-owner" type="button" data-filter-type="owner" data-filter-value="PMO">PMO <strong>0</strong></button>
+                </div>
+              </div>
+              </div>
+              <div class="cc-map-shell cc-map-shell-compact">
+                <div class="cc-map-banner">Live map command entry</div>
+                <div id="mall-live-map" class="cc-live-map" aria-label="Singapore live mall coverage map" data-default-lat="1.3521" data-default-lng="103.8198" data-default-zoom="11"></div>
+                <div class="cc-map-fallback" hidden>
+                  <img src="assets/images/mall-map.png" alt="Static fallback map for Singapore mall coverage">
+                  <div class="cc-map-footnote">Static fallback shown because live map API is unavailable.</div>
+                </div>
+              </div>
+              <div class="cc-desktop-map-links">
+                <a class="cc-workstream-link" href="site-installation-tracker.html"><span class="cc-workstream-code">02</span><span class="cc-workstream-text"><strong>Mall Tracker</strong><small>Open the full multi-mall board.</small></span></a>
+                <a class="cc-workstream-link" href="risk-commercial-decision-log.html"><span class="cc-workstream-code">06</span><span class="cc-workstream-text"><strong>Risk Watchlist</strong><small>Review blockers and escalations.</small></span></a>
+                <a class="cc-workstream-link" href="bms-interface.html"><span class="cc-workstream-code">04</span><span class="cc-workstream-text"><strong>BMS Interface</strong><small>Open interface and event-mapping control.</small></span></a>
+              </div>
+              <div class="cc-mall-sheet-backdrop" hidden></div>
+              <section class="cc-mall-sheet" hidden aria-live="polite" aria-label="Mall detail bottom sheet">
+                <button class="cc-mall-sheet-close" type="button" aria-label="Close mall detail">Close</button>
+                <div class="cc-mall-sheet-content"></div>
+              </section>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Action Need</h2>
+              <span class="cc-panel-tag">Top 3 priorities</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-action-list">
+              <a class="cc-action-card cc-action-card-compact" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Canberra Plaza</div>
+                <div class="cc-action-issue">Survey report and CR-06 sign-off are still not frozen.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>Xjera / Ethan</strong> | Due: <strong>2026-05-04</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card cc-action-card-compact" href="submission-tracker.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-risk">P0</span>
+                  <span class="cc-state is-progress">In Progress</span>
+                </div>
+                <div class="cc-action-title">Loyang Point</div>
+                <div class="cc-action-issue">5-document package still needs closure before submission cut-off.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>CCTC / Xjera</strong> | Due: <strong>2026-05-04</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              <a class="cc-action-card cc-action-card-compact" href="bms-interface.html">
+                <div class="cc-action-head">
+                  <span class="cc-state is-waiting">P1</span>
+                  <span class="cc-state is-progress">Open</span>
+                </div>
+                <div class="cc-action-title">Rivervale Plaza / Loyang Point</div>
+                <div class="cc-action-issue">BMS event mapping and final data owner remain partially confirmed.</div>
+                <div class="cc-action-meta-inline">Owner: <strong>Univers / Xjera</strong> | Due: <strong>2026-05-06</strong></div>
+                <span class="cc-action-link">Open linked tracker</span>
+              </a>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel cc-span-2">
+            <div class="cc-panel-head">
+              <h2>Workstream Links</h2>
+              <span class="cc-panel-tag">Go to child pages</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-workstream-grid">
+              <a class="cc-workstream-link" href="action-tracker.html">
+                <span class="cc-workstream-code">01</span>
+                <span class="cc-workstream-text">
+                  <strong>Action Tracker</strong>
+                  <small>Management-level action tracking for open, blocked, waiting and pending verification items.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="site-installation-tracker.html">
+                <span class="cc-workstream-code">02</span>
+                <span class="cc-workstream-text">
+                  <strong>Mall Tracker</strong>
+                  <small>Multi-mall site survey, installation, cabling, power, testing and handover control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="submission-tracker.html">
+                <span class="cc-workstream-code">03</span>
+                <span class="cc-workstream-text">
+                  <strong>Submission Control</strong>
+                  <small>Submission readiness, checklist summary, missing documents and key blockers.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="bms-interface.html">
+                <span class="cc-workstream-code">04</span>
+                <span class="cc-workstream-text">
+                  <strong>BMS Interface</strong>
+                  <small>Cloud BMS interface dependencies, data types, owners and testing readiness.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="cost-management.html">
+                <span class="cc-workstream-code">05</span>
+                <span class="cc-workstream-text">
+                  <strong>Cost Management</strong>
+                  <small>Procurement, materials, subcontractor, VO, claim and payment control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="risk-commercial-decision-log.html">
+                <span class="cc-workstream-code">06</span>
+                <span class="cc-workstream-text">
+                  <strong>Risk Watchlist</strong>
+                  <small>Cabling, power, lift, access and submission risks needing active control.</small>
+                </span>
+              </a>
+              <a class="cc-workstream-link" href="publishing-guide.html">
+                <span class="cc-workstream-code">07</span>
+                <span class="cc-workstream-text">
+                  <strong>Publishing Guide</strong>
+                  <small>Public publishing flow, release gate and exported package reference.</small>
+                </span>
+              </a>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Vendor Responsibility</h2>
+              <span class="cc-panel-tag">Owner snapshot</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-vendor-grid cc-vendor-grid-compact">
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Univers</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>1</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>2</strong></div>
+                <div class="cc-vendor-note">Main issues: PTW / access / interface coordination</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">CCTC</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>37</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>1</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>1</strong></div>
+                <div class="cc-vendor-note">Main issues: Submission package / baseline freeze</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Xjera</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>4</strong></div>
+                <div class="cc-vendor-note">Main issues: Survey / VA / BMS readiness</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Subcontractor</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>0</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>0</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Manpower / night work / site execution</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>No</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">HDB / MA</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>40</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Approval / sign-off / access</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              <article class="cc-vendor-card">
+                <div class="cc-vendor-title">Cloud BMS</div>
+                <div class="cc-vendor-meta">Responsible Malls: <strong>41</strong></div>
+                <div class="cc-vendor-meta">At Risk: <strong>3</strong></div>
+                <div class="cc-vendor-meta">Pending Actions: <strong>0</strong></div>
+                <div class="cc-vendor-note">Main issues: Event mapping / owner confirmation</div>
+                <div class="cc-vendor-meta">CEO Attention: <strong>Yes</strong></div>
+              </article>
+              </div>
+            </div>
+          </article>
+          <article class="cc-panel">
+            <div class="cc-panel-head">
+              <h2>Data Quality</h2>
+              <span class="cc-panel-tag">Source / confidence</span>
+            </div>
+            <div class="cc-panel-body">
+              <div class="cc-data-grid">
+                <div class="cc-data-row"><span>PDF Baseline</span><strong>Loaded</strong></div>
+                <div class="cc-data-row"><span>Site Survey</span><strong>Partially Updated</strong></div>
+                <div class="cc-data-row"><span>Mall Tracker</span><strong>Not Frozen</strong></div>
+                <div class="cc-data-row"><span>Footfall Split</span><strong>Pending Split</strong></div>
+                <div class="cc-data-row"><span>VA Function List</span><strong>Pending Confirmation</strong></div>
+                <div class="cc-data-row"><span>Last Updated By</span><strong>CCTC / Xjera</strong></div>
+                <div class="cc-data-row"><span>Last Updated</span><strong>04 May 2026</strong></div>
+              </div>
+            </div>
+          </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="assets/map-config.js"></script>
+  <script src="assets/map-runtime.js"></script>
+<script>
+  (() => {
+    const shell = document.querySelector('.cc-shell');
+    const toggle = document.querySelector('.cc-menu-toggle');
+    const sidebar = document.querySelector('.cc-sidebar');
+    const backdrop = document.querySelector('.cc-sidebar-backdrop');
+    if (!shell || !toggle || !sidebar || !backdrop) return;
+
+    const setOpen = (open) => {
+      shell.classList.toggle('is-sidebar-open', open);
+      document.body.classList.toggle('cc-nav-lock', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      setOpen(!shell.classList.contains('is-sidebar-open'));
+    });
+
+    backdrop.addEventListener('click', () => setOpen(false));
+    sidebar.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+      }
+    });
+  })();
+</script>
+</body>
+</html>

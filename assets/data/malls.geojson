@@ -40,9 +40,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -84,9 +91,16 @@
         "target_date": "TBC",
         "blocker": "Awaiting formal priority confirmation",
         "linked_page": "action-tracker.html",
+        "vendor_lead": "Xjera",
+        "delivery_lead": "PMO / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Action Needed",
+        "owner_group": "Xjera",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -128,9 +142,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -172,9 +193,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -216,9 +244,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -260,9 +295,16 @@
         "target_date": "2026-05-06",
         "blocker": "Survey report and MA/HDB sign-off still pending",
         "linked_page": "submission-tracker.html",
+        "vendor_lead": "Xjera",
+        "delivery_lead": "Xjera / Ethan",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-risk"
+        "map_marker_class": "is-risk",
+        "map_filter_group": "At Risk",
+        "owner_group": "Xjera",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-large"
       }
     },
     {
@@ -304,9 +346,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -348,9 +397,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-large"
       }
     },
     {
@@ -392,9 +448,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -436,9 +499,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -480,9 +550,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -524,9 +601,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -568,9 +652,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -612,9 +703,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-large"
       }
     },
     {
@@ -656,9 +754,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "Shared HDB Hub parent coordinate",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -700,9 +805,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -744,9 +856,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -788,9 +907,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-large"
       }
     },
     {
@@ -832,9 +958,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -876,9 +1009,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -920,9 +1060,16 @@
         "target_date": "2026-05-04",
         "blocker": "Point list split and survey package confirmation",
         "linked_page": "submission-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-risk"
+        "map_marker_class": "is-risk",
+        "map_filter_group": "At Risk",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -964,9 +1111,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1008,9 +1162,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -1052,9 +1213,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1096,9 +1264,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1140,9 +1315,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -1184,9 +1366,16 @@
         "target_date": "2026-05-09",
         "blocker": "External survey response from MA / HDB",
         "linked_page": "action-tracker.html",
+        "vendor_lead": "Xjera",
+        "delivery_lead": "Xjera Labs",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-survey"
+        "map_marker_class": "is-survey",
+        "map_filter_group": "Action Needed",
+        "owner_group": "Xjera",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -1228,9 +1417,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1272,9 +1468,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1316,9 +1519,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -1360,9 +1570,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1404,9 +1621,16 @@
         "target_date": "2026-05-08",
         "blocker": "BMS coordination path still being structured",
         "linked_page": "bms-interface.html",
+        "vendor_lead": "Univers",
+        "delivery_lead": "Univers / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-bms"
+        "map_marker_class": "is-bms",
+        "map_filter_group": "Cloud BMS",
+        "owner_group": "Univers",
+        "marker_shape_class": "shape-square",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1448,9 +1672,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1492,9 +1723,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1536,9 +1774,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1580,9 +1825,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": false,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1624,9 +1876,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1668,9 +1927,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-medium"
       }
     },
     {
@@ -1712,9 +1978,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1756,9 +2029,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     },
     {
@@ -1800,9 +2080,16 @@
         "target_date": "TBC",
         "blocker": "None formally logged in public export",
         "linked_page": "site-installation-tracker.html",
+        "vendor_lead": "CCTC",
+        "delivery_lead": "CCTC / Xjera",
+        "subcontractor": "Pending Verification",
         "coordinate_source": "OneMap search",
         "coordinate_verified": true,
-        "map_marker_class": "is-not-started"
+        "map_marker_class": "is-not-started",
+        "map_filter_group": "Not Started",
+        "owner_group": "CCTC",
+        "marker_shape_class": "shape-circle",
+        "marker_size_class": "size-small"
       }
     }
   ]
